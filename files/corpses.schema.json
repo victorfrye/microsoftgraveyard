@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "description": "A human readable unique identifier for the item",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name and title of the item",
+      "type": "string"
+    },
+    "subtitle": {
+      "description": "An optional subtitle for the item",
+      "type": "string"
+    },
+    "birth": {
+      "description": "The date the item was released, or announced if release data is not feasible",
+      "type": "string",
+      "format": "date"
+    },
+    "death": {
+      "description": "The date the item was finally discontinued",
+      "type": "string",
+      "format": "date"
+    },
+    "description": {
+      "description": "A description of the item",
+      "type": "string"
+    },
+    "link": {
+      "description": "A link to a web page with more information about the item (this should not be the page which announces the item's death)",
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": ["slug", "name", "death"]
+}
