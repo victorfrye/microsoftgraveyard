@@ -1,39 +1,46 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "$id": "https://",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/victorfrye/microsoft-graveyard/main/files/corpses.schema.json",
   "type": "object",
   "properties": {
-    "slug": {
-      "description": "A human readable unique identifier for the item",
-      "type": "string"
+    "corpses": {
+      "description": "The list of dead products, killed by Microsoft",
+      "type": "array",
+      "properties": {
+        "slug": {
+          "description": "A human readable unique identifier for the item",
+          "type": "string"
+        },
+        "name": {
+          "description": "The name and title of the item",
+          "type": "string"
+        },
+        "subtitle": {
+          "description": "An optional subtitle for the item",
+          "type": "string"
+        },
+        "birth": {
+          "description": "The date the item was released, or announced if release data is not feasible",
+          "type": "string",
+          "format": "date"
+        },
+        "death": {
+          "description": "The date the item was finally discontinued",
+          "type": "string",
+          "format": "date"
+        },
+        "description": {
+          "description": "A description of the item",
+          "type": "string"
+        },
+        "link": {
+          "description": "A link to a web page with more information about the item (this should not be the page which announces the item's death)",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": ["slug", "name", "death"]
     },
-    "name": {
-      "description": "The name and title of the item",
-      "type": "string"
-    },
-    "subtitle": {
-      "description": "An optional subtitle for the item",
-      "type": "string"
-    },
-    "birth": {
-      "description": "The date the item was released, or announced if release data is not feasible",
-      "type": "string",
-      "format": "date"
-    },
-    "death": {
-      "description": "The date the item was finally discontinued",
-      "type": "string",
-      "format": "date"
-    },
-    "description": {
-      "description": "A description of the item",
-      "type": "string"
-    },
-    "link": {
-      "description": "A link to a web page with more information about the item (this should not be the page which announces the item's death)",
-      "type": "string",
-      "format": "uri"
-    }
-  },
-  "required": ["slug", "name", "death"]
+    "required": ["corpses"]
+  }
 }
