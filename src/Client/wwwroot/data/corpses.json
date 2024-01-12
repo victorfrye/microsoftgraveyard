@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../files/corpses.schema.json",
+  "corpses": [
+    {
+      "slug": "windows-95",
+      "name": "Windows 95",
+      "birthDate": "1995-08-24",
+      "deathDate": "2001-12-31",
+      "description": null,
+      "link": "https://en.wikipedia.org/wiki/Windows_95"
+    },
+    {
+      "slug": "windows-98",
+      "name": "Windows 98",
+      "birthDate": "1998-06-25",
+      "deathDate": "2006-07-11",
+      "description": null,
+      "link": "https://en.wikipedia.org/wiki/Windows_98"
+    },
+    {
+      "slug": "windows-me",
+      "name": "Windows Millennium Edition",
+      "subtitle": "aka Windows Me",
+      "birthDate": "2000-09-14",
+      "deathDate": "2006-07-11",
+      "description": null,
+      "link": "https://en.wikipedia.org/wiki/Windows_Me"
+    },
+    {
+      "slug": "xbox-console",
+      "name": "Xbox",
+      "subtitle": "the original",
+      "birthDate": "2001-11-15",
+      "deathDate": "2009-04-20",
+      "description": null,
+      "link": "https://en.wikipedia.org/wiki/Xbox_(console)"
+    }
+  ]
+}

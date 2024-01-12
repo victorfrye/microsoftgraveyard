@@ -1,7 +1,30 @@
 ﻿@page "/"
+@inject IHttpClientFactory ClientFactory
+@inject NavigationManager NavigationManager
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Microsoft Graveyard</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Hello, cruel world!</h1>
 
-Welcome to your new app.
+Welcome to your list of death.
+
+<CorpseList Corpses=@_corpses/>
+
+@code {
+    private List<Corpse> _corpses = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = ClientFactory.CreateClient();
+        client.BaseAddress = new Uri(NavigationManager.BaseUri);
+
+        var response = await client.GetFromJsonAsync<CorpsesJson>("/data/corpses.json");
+
+        _corpses = response?.Corpses ?? [];
+    }
+
+    internal class CorpsesJson
+    {
+        public List<Corpse> Corpses { get; set; } = [];
+    }
+}
