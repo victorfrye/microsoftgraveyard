@@ -4,10 +4,6 @@
 
 <PageTitle>Microsoft Graveyard</PageTitle>
 
-<h1>Hello, cruel world!</h1>
-
-Welcome to your list of death.
-
 <CorpseList Corpses=@_corpses/>
 
 @code {
@@ -23,7 +19,7 @@ Welcome to your list of death.
         _corpses = response?.Corpses ?? [];
     }
 
-    internal class CorpsesJson
+    internal record CorpsesJson
     {
         public List<Corpse> Corpses { get; set; } = [];
     }

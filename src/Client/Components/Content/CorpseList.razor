@@ -1,0 +1,38 @@
+<div class="d-flex flex-wrap justify-content-center">
+    @foreach (var corpse in Corpses)
+    {
+        @CorpseTemplate(corpse)
+    }
+</div>
+
+@code {
+    [Parameter]
+    public IList<Corpse> Corpses { get; set; } = [];
+
+    private RenderFragment<Corpse> CorpseTemplate = (corpse) =>
+    @<div class='d-inline-flex px-3 py-2 m-2 rounded text-light'>
+        <div>
+            <img className="center" src="./images/headstone.svg" class="img-graveyard" />
+            @if (corpse.BirthDate.HasValue)
+        {
+            <p>@corpse.BirthDate.Value.ToString("yyyy") - @corpse.DeathDate.ToString("yyyy")</p>
+        } else
+        {
+            <p>@corpse.DeathDate.ToString("yyyy")</p>
+        }
+        </div>
+
+        <div>
+            @if (corpse.Subtitle is not null)
+        {
+            <h2>@corpse.Name (@corpse.Subtitle)</h2>
+        } else
+        {
+            <h2>@corpse.Name</h2>
+        }
+
+            <p>@corpse.Description</p>
+        </div>
+
+    </div>;
+}

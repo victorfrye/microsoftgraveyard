@@ -1,36 +1,39 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
-<PropertyGroup>
-  <TargetFramework>net8.0</TargetFramework>
-  <Nullable>enable</Nullable>
-  <ImplicitUsings>enable</ImplicitUsings>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
 
-  <Title>Microsoft Graveyard</Title>
-  <Description>🪦 A graveyard of all the products killed by Microsoft </Description>
-  <Authors>VictorFrye</Authors>
-  <RepositoryUrl>https://github.com/victorfrye/microsoft-graveyard</RepositoryUrl>
+    <Title>Microsoft Graveyard</Title>
+    <Description>🪦 A graveyard of all the products killed by Microsoft </Description>
+    <Authors>VictorFrye</Authors>
+    <RepositoryUrl>https://github.com/victorfrye/microsoft-graveyard</RepositoryUrl>
 
-  <AssemblyName>VictorFrye.MicrosoftGraveyard.Client</AssemblyName>
-  <RootNamespace>VictorFrye.MicrosoftGraveyard.Client</RootNamespace>
+    <AssemblyName>VictorFrye.MicrosoftGraveyard.Client</AssemblyName>
+    <RootNamespace>VictorFrye.MicrosoftGraveyard.Client</RootNamespace>
 
-  <PackageLicenseFile>LICENSE</PackageLicenseFile>
-  <PackageReadmeFile>README.md</PackageReadmeFile>
-</PropertyGroup>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
 
-<ItemGroup>
-  <None Include="..\..\LICENSE">
-    <Pack>True</Pack>
-    <PackagePath>\</PackagePath>
-  </None>
-  <None Include="..\..\README.md">
-    <Pack>True</Pack>
-    <PackagePath>\</PackagePath>
-  </None>
-</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
-<ItemGroup>
-  <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Emoji" Version="4.0.0" />
-  <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.0.0" />
-</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" />
+
+    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Emoji" Version="4.0.0" />
+    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.0.0" />
+  </ItemGroup>
 
 </Project>
