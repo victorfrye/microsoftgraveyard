@@ -1,38 +1,47 @@
-<div class="d-flex flex-wrap justify-content-center">
+<ul class="d-flex flex-wrap justify-content-center container mw-100">
     @foreach (var corpse in Corpses)
     {
         @CorpseTemplate(corpse)
     }
-</div>
+</ul>
 
 @code {
     [Parameter]
     public IList<Corpse> Corpses { get; set; } = [];
 
     private RenderFragment<Corpse> CorpseTemplate = (corpse) =>
-    @<div class='d-inline-flex px-3 py-2 m-2 rounded text-light'>
-        <div>
-            <img className="center" src="./images/headstone.svg" class="img-graveyard" />
-            @if (corpse.BirthDate.HasValue)
+    @<li class='col-3 d-inline-flex p-3 my-2 mx-md-5 rounded text-light'>
+        <div class="d-flex flex-column align-items-center">
+        @if (corpse.IsDead())
         {
-            <p>@corpse.BirthDate.Value.ToString("yyyy") - @corpse.DeathDate.ToString("yyyy")</p>
-        } else
+            <img src="/images/headstone.svg" class="img-corpse m-2" />
+        if (corpse.BirthDate is not null)
         {
-            <p>@corpse.DeathDate.ToString("yyyy")</p>
+            <p class="text-rip-year">@corpse.BirthDate.Value.ToString("yyyy") - @corpse.DeathDate.ToString("yyyy")</p>
+        }
+        else
+        {
+            <p class="text-rip-year">@corpse.DeathDate.ToString("yyyy")</p>
+        }
+        }
+        else
+        {
+            <img src="/images/skull.svg" class="img-corpse m-2" />
+            <p class="text-rip-year">@corpse.DeathDate.ToString("MMMM yyyy")</p>
         }
         </div>
 
         <div>
             @if (corpse.Subtitle is not null)
         {
-            <h2>@corpse.Name (@corpse.Subtitle)</h2>
+            <h2 class="d-block"><a href=@corpse.Link target="_blank">@corpse.Name (@corpse.Subtitle)</a></h2>
         } else
         {
-            <h2>@corpse.Name</h2>
+            <h2 class="d-block"><a href=@corpse.Link target="_blank">@corpse.Name</a></h2>
         }
 
             <p>@corpse.Description</p>
         </div>
 
-    </div>;
+    </li>;
 }

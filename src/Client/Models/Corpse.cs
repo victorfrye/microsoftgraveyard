@@ -9,7 +9,7 @@ public class Corpse
 
     public DateOnly DeathDate { get; set; }
     public string Description { get; set; }
-    public string? Link { get; set; }
+    public string Link { get; set; }
 
     public Corpse() { }
 
@@ -22,5 +22,10 @@ public class Corpse
         DeathDate = deathDate;
         Description = description;
         Link = link;
+    }
+
+    public bool IsDead()
+    {
+        return DeathDate <= DateOnly.FromDateTime(DateTime.Now);
     }
 }

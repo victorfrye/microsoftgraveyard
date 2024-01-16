@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org//2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/victorfrye/microsoft-graveyard/main/files/corpses.schema.json",
+  "$id": "https://raw.githubusercontent.com/victorfrye/microsoftgraveyard/main/files/corpses.schema.json",
   "type": "object",
   "properties": {
     "corpses": {
@@ -41,7 +41,7 @@
             "format": "uri"
           }
         },
-        "required": ["slug", "name", "death", "description"]
+        "required": ["slug", "name", "deathDate", "description", "link"]
       }
     },
     "required": ["corpses"]

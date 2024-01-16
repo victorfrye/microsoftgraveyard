@@ -16,7 +16,7 @@
 
         var response = await client.GetFromJsonAsync<CorpsesJson>("/data/corpses.json");
 
-        _corpses = response?.Corpses ?? [];
+        _corpses = response?.Corpses.OrderByDescending(c => c.DeathDate).ToList() ?? [];
     }
 
     internal record CorpsesJson
