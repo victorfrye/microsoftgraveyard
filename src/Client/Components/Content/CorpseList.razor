@@ -1,4 +1,4 @@
-<ul class="d-flex flex-wrap justify-content-center container mw-100">
+<ul class="d-flex flex-wrap justify-content-center container min-vw-100">
     @foreach (var corpse in Corpses)
     {
         @CorpseTemplate(corpse)
@@ -7,40 +7,26 @@
 
 @code {
     [Parameter]
-    public IList<Corpse> Corpses { get; set; } = [];
+    public IList<Corpse> Corpses { get; init; } = [];
 
     private RenderFragment<Corpse> CorpseTemplate = (corpse) =>
-    @<li class='col-3 d-inline-flex p-3 my-2 mx-md-5 rounded text-light'>
-        <div class="d-flex flex-column align-items-center">
-        @if (corpse.IsDead())
+    @<li class='col-3 d-flex p-3 my-2 mx-4 rounded text-light'>
+        <div class="d-flex flex-column p-1">
+            @if (corpse.IsDead())
         {
             <img src="/images/headstone.svg" class="img-corpse m-2" />
-        if (corpse.BirthDate is not null)
-        {
-            <p class="text-rip-year">@corpse.BirthDate.Value.ToString("yyyy") - @corpse.DeathDate.ToString("yyyy")</p>
-        }
-        else
-        {
-            <p class="text-rip-year">@corpse.DeathDate.ToString("yyyy")</p>
-        }
+            <p class="text-rip-year">@corpse.GetLifeDates()</p>
         }
         else
         {
             <img src="/images/skull.svg" class="img-corpse m-2" />
-            <p class="text-rip-year">@corpse.DeathDate.ToString("MMMM yyyy")</p>
+            <p class="text-rip-year text-center">@corpse.GetExpectedDeathDate()</p>
         }
         </div>
 
-        <div>
-            @if (corpse.Subtitle is not null)
-        {
-            <h2 class="d-block"><a href=@corpse.Link target="_blank">@corpse.Name (@corpse.Subtitle)</a></h2>
-        } else
-        {
-            <h2 class="d-block"><a href=@corpse.Link target="_blank">@corpse.Name</a></h2>
-        }
-
-            <p>@corpse.Description</p>
+        <div class="d-block p-1">
+            <h2><a href=@corpse.Link target="_blank">@corpse.GetFullName()</a></h2>
+            <p>@corpse.GetObituary()</p>
         </div>
 
     </li>;
