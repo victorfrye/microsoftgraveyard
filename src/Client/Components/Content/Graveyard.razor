@@ -1,0 +1,33 @@
+<ul class="d-flex flex-wrap justify-content-center container min-vw-100">
+    @foreach (var corpse in Corpses)
+    {
+        @CorpseTemplate(corpse)
+    }
+</ul>
+
+@code {
+    [Parameter]
+    public IList<Corpse> Corpses { get; init; } = [];
+
+    private RenderFragment<Corpse> CorpseTemplate = (corpse) =>
+    @<li class='col-3 d-flex p-3 my-2 mx-4 rounded text-light'>
+        <div class="d-flex flex-column p-1">
+            @if (corpse.IsDead())
+        {
+            <img src="/images/headstone.svg" class="img-corpse m-2" />
+            <p class="text-life-dates text-center">@corpse.GetLifeDates()</p>
+        }
+        else
+        {
+            <img src="/images/skull.svg" class="img-corpse m-2" />
+            <p class="text-life-dates text-center">@corpse.GetExpectedDeathDate()</p>
+        }
+        </div>
+
+        <div class="d-block p-1">
+            <h2><a href=@corpse.Link target="_blank">@corpse.GetFullName()</a></h2>
+            <p>@corpse.GetObituary()</p>
+        </div>
+
+    </li>;
+}

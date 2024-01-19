@@ -1,0 +1,500 @@
+{
+  "$schema": "../../../../files/corpses.schema.json",
+  "corpses": [
+    {
+      "name": "Azure Blueprints",
+      "birthDate": "2018-09-01",
+      "deathDate": "2026-07-11",
+      "description": "a declarative way to orchestrate the deployment of various resource templates, policies, role assignments, and other artifacts",
+      "link": "https://www.pluralsight.com/resources/blog/cloud/azure-blueprints-shelved",
+      "slug": "azure-blueprints"
+    },
+    {
+      "name": "Windows 10",
+      "birthDate": "2015-07-15",
+      "deathDate": "2025-11-14",
+      "description": "a major release of the Windows NT operating system succeeding Windows 8.1",
+      "link": "https://en.wikipedia.org/wiki/Windows_10",
+      "slug": "windows-10"
+    },
+    {
+      "name": "Teams Live Events",
+      "birthDate": "2019-03-26",
+      "deathDate": "2024-09-30",
+      "description": "a feature of Teams that allowed users to broadcast live, on-demand video events up to 10k attendees",
+      "link": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "slug": "teams-live-events"
+    },
+    {
+      "name": "Visual Studio for Mac",
+      "birthDate": "1905-07-08",
+      "deathDate": "2024-08-31",
+      "description": "a Mac-specific integrated development environment for projects using Mono or the .NET cross-platform framework",
+      "link": "https://www.bleepingcomputer.com/news/software/microsoft-retires-visual-studio-for-mac-support-ends-in-a-year/",
+      "slug": "visual-studio-for-mac"
+    },
+    {
+      "name": "Xbox 360 Store",
+      "birthDate": "2005-11-22",
+      "deathDate": "2024-07-29",
+      "description": "a marketplace for digital games released on the Xbox 360 console",
+      "link": "https://support.xbox.com/en-US/help/xbox-360/store/xbox-360-marketplace-update",
+      "slug": "xbox-360-store"
+    },
+    {
+      "name": "Xamarin",
+      "birthDate": "2011-05-16",
+      "deathDate": "2024-05-01",
+      "description": "a cross-platform app development tool and framework that extended the .NET ecosystem",
+      "link": "https://diversido.io/blog/xamarin-is-being-discontinued-what-does-it-mean-for-developers",
+      "slug": "xamarin"
+    },
+    {
+      "name": "Windows Mixed Reality",
+      "birthDate": "2016-10-01",
+      "deathDate": "2023-12-21",
+      "description": "an augmented and virtual reality platform for compatible Windows headsets",
+      "link": "https://www.theverge.com/2023/12/21/24010787/microsoft-windows-mixed-reality-deprecated",
+      "slug": "windows-mixed-reality"
+    },
+    {
+      "name": "VBScript",
+      "birthDate": "1996-08-01",
+      "deathDate": "2023-10-01",
+      "description": "an Active Scripting language modeled on Visual Basic",
+      "link": "https://en.wikipedia.org/wiki/VBScript",
+      "slug": "vbscript"
+    },
+    {
+      "name": "Xbox Live Gold",
+      "birthDate": "2002-11-15",
+      "deathDate": "2023-09-14",
+      "description": "a gaming subscription service that enabled console multiplayer services",
+      "link": "https://www.theverge.com/2023/7/17/23794792/microsoft-xbox-game-pass-core-live-gold-replacement",
+      "slug": "xbox-live-gold"
+    },
+    {
+      "name": "WordPad",
+      "birthDate": "1995-08-24",
+      "deathDate": "2023-09-01",
+      "description": "a basic word processor software with rich text editing",
+      "link": "https://www.msn.com/en-us/news/technology/microsoft-is-saying-goodbye-to-wordpad-forever/ar-AA1muYal",
+      "slug": "wordpad"
+    },
+    {
+      "name": "Cortana",
+      "birthDate": "2014-04-02",
+      "deathDate": "2023-08-31",
+      "description": "a virtual assistant that used Bing search engine to perform tasks",
+      "link": "https://www.theverge.com/2023/8/11/23828311/microsoft-shuts-down-cortana-windows-11",
+      "slug": "cortana"
+    },
+    {
+      "name": "Kaizala",
+      "birthDate": "2019-06-29",
+      "deathDate": "2023-08-31",
+      "description": "a secure messaging and workplace productivity application for collaboration",
+      "link": "https://www.zdnet.com/article/microsoft-to-drop-its-kaizala-group-messaging-service-in-2023/",
+      "slug": "kaizala"
+    },
+    {
+      "name": "Windows 8.1",
+      "birthDate": "2013-11-13",
+      "deathDate": "2023-01-10",
+      "description": "a release of the Windows NT operating system succeeding Windows 8 with an improved Start screen",
+      "link": "https://en.wikipedia.org/wiki/Windows_8.1",
+      "slug": "windows-8-1"
+    },
+    {
+      "name": "Atom",
+      "birthDate": "2015-06-25",
+      "deathDate": "2022-12-14",
+      "description": "a free, cross-platform, open-source text and source code editor developed by GitHub",
+      "link": "https://github.blog/2022-06-08-sunsetting-atom/",
+      "slug": "atom"
+    },
+    {
+      "name": "Internet Explorer",
+      "birthDate": "1995-08-24",
+      "deathDate": "2022-06-15",
+      "description": "a web browser that once attained a peak 95% usage share",
+      "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date",
+      "slug": "internet-explorer"
+    },
+    {
+      "name": "JScript",
+      "birthDate": "1996-08-01",
+      "deathDate": "2022-06-15",
+      "description": "a dialect of the ECMAScript standard used by Internet Explorer",
+      "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date",
+      "slug": "jscript"
+    },
+    {
+      "name": "Trident",
+      "birthDate": "1995-08-24",
+      "deathDate": "2022-06-15",
+      "description": "a proprietary browser engine (aka MSHTML) for Internet Explorer and IE mode of Edge",
+      "link": "https://en.wikipedia.org/wiki/Trident_(software)",
+      "slug": "trident"
+    },
+    {
+      "name": "Forza Street",
+      "birthDate": "2018-05-08",
+      "deathDate": "2022-04-11",
+      "description": "a free-to-play racing game developed by Electric Square and initially released as Miami Street on Windows PCs before rebranding and launching on mobile devices",
+      "link": "https://comicbook.com/gaming/news/forza-street-game-shutting-down/",
+      "slug": "forza-street"
+    },
+    {
+      "name": "Channel 9",
+      "birthDate": "2004-04-01",
+      "deathDate": "2021-12-01",
+      "description": "a website for hosting videos and podcasts that Microsoft employees created and the company's first blob",
+      "link": "https://www.windowscentral.com/microsoft-learn-absorbs-channel-9-and-commits-preserving-its-essence",
+      "slug": "channel-9"
+    },
+    {
+      "name": "Silverlight",
+      "birthDate": "2007-09-05",
+      "deathDate": "2021-10-12",
+      "description": "an application framework for writing and running web applications",
+      "link": "https://support.microsoft.com/en-us/windows/silverlight-end-of-support-0a3be3c7-bead-e203-2dfd-74f0a64f1788",
+      "slug": "silverlight"
+    },
+    {
+      "name": "Skype for Business",
+      "subtitle": "fka Lync",
+      "birthDate": "2007-07-28",
+      "deathDate": "2021-07-31",
+      "description": "an enterprise software application for instant messaging and videotelephony",
+      "link": "https://www.theverge.com/2017/9/25/16360072/microsoft-teams-replacing-skype-for-business",
+      "slug": "skype-for-business"
+    },
+    {
+      "name": "Xbox SmartGlass",
+      "birthDate": "2012-06-05",
+      "deathDate": "2021-06-30",
+      "description": "a companion application to provide supplement content while playing games on Xbox devices",
+      "link": "https://mspoweruser.com/microsoft-killing-xbox-one-smartglass-app-windows-pcs/#:~:text=Microsoft%20today%20announced%20that%20Xbox%20One%20SmartGlass%20app,who%20already%20downloaded%20the%20app%20to%20their%20devices.",
+      "slug": "xbox-smartglass"
+    },
+    {
+      "name": "Gears POP!",
+      "birthDate": "2019-08-22",
+      "deathDate": "2021-04-26",
+      "description": "a mobile real-time strategy game in which two players battle using Funko POP! stylized characters",
+      "link": "https://www.destructoid.com/gears-pop-will-shut-down-its-servers-in-april-2021/",
+      "slug": "gears-pop!"
+    },
+    {
+      "name": "Flight Arcade",
+      "birthDate": "2015-05-01",
+      "deathDate": "2021-04-17",
+      "description": "a free-to-play flight simulator and demonstration of how modern browsers handle high-end 3D graphics",
+      "link": "https://www.windowscentral.com/microsoft-revisits-its-flight-simulator-series-web-based-flight-arcade-game",
+      "slug": "flight-arcade"
+    },
+    {
+      "name": "EdgeHTML",
+      "birthDate": "2015-07-15",
+      "deathDate": "2021-03-09",
+      "description": "a proprietary browser engine used in Edge before being replaced by the Chromium-based version of Edge",
+      "link": "https://www.reddit.com/r/firefox/comments/a2wfx8/gecko_is_the_last_engine_standing_microsoft_is/",
+      "slug": "edgehtml"
+    },
+    {
+      "name": "Visual Studio Codespaces",
+      "subtitle": "fka Visual Studio Online",
+      "birthDate": "2019-11-04",
+      "deathDate": "2021-02-17",
+      "description": "a service providing cloud-hosted development environments",
+      "link": "https://mspoweruser.com/microsoft-is-killing-visual-studio-codespaces/",
+      "slug": "visual-studio-codespaces"
+    },
+    {
+      "name": "Bleeding Edge",
+      "birthDate": "2020-03-24",
+      "deathDate": "2021-01-28",
+      "description": "a multiplayer online battle arena game developed by Ninja Theory",
+      "link": "https://www.polygon.com/2021/1/28/22254694/bleeding-edge-ended-development-shut-down-ninja-theory",
+      "slug": "bleeding-edge"
+    },
+    {
+      "name": "Xbox One",
+      "birthDate": "2013-11-22",
+      "deathDate": "2020-12-31",
+      "description": "the third gaming console from Microsoft and competed closely with the PlayStation 4",
+      "link": "https://www.theverge.com/2022/1/13/22881211/microsoft-discontinues-xbox-one-consoles-2020",
+      "slug": "xbox-one"
+    },
+    {
+      "name": "Mixer",
+      "birthDate": "2016-01-05",
+      "deathDate": "2020-07-22",
+      "description": "a gaming streaming platform that allowed viewers to interact with and watch streamers",
+      "link": "https://www.theverge.com/2020/6/22/21299032/microsoft-mixer-closing-facebook-gaming-partnership-xcloud-features",
+      "slug": "mixer"
+    },
+    {
+      "name": "Wunderlist",
+      "birthDate": "2010-11-09",
+      "deathDate": "2020-05-06",
+      "description": "a task management application that allowed users to creat lists of and manage tasks across devices",
+      "link": "https://techcrunch.com/2019/12/09/microsoft-to-finally-shut-down-to-do-list-app-wunderlist-on-may-6-2020/",
+      "slug": "wunderlist"
+    },
+    {
+      "name": "Windows 7",
+      "birthDate": "2009-07-22",
+      "deathDate": "2020-01-14",
+      "description": "a major release of the Windows NT operating system succeeding and improving on Windows Vista",
+      "link": "whttps://en.wikipedia.org/wiki/Windows_7",
+      "slug": "windows-7"
+    },
+    {
+      "name": "Windows Phone",
+      "birthDate": "2010-10-21",
+      "deathDate": "2020-01-14",
+      "description": "a family of mobile operating systems that succeeded Windows Mobile and Zune before being discontinued",
+      "link": "https://www.cnet.com/tech/mobile/windows-10-mobile-features-hardware-death-sentence-microsoft/",
+      "slug": "windows-phone"
+    },
+    {
+      "name": "HealthVault",
+      "birthDate": "2007-10-04",
+      "deathDate": "2019-11-20",
+      "description": "a web-based personal health record to store and maintain health and fitness information",
+      "link": "https://www.zdnet.com/article/microsoft-is-closing-its-healthvault-patient-records-service-on-november-20/",
+      "slug": "healthvault"
+    },
+    {
+      "name": "Excel Viewer",
+      "birthDate": "1997-02-27",
+      "deathDate": "2018-04-30",
+      "description": "a freeware program for Windows that can display and print Microsoft Excel spreadsheets",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Excel#Microsoft_Excel_Viewer",
+      "slug": "excel-viewer"
+    },
+    {
+      "name": "PowerPoint Viewer",
+      "birthDate": "1992-08-01",
+      "deathDate": "2018-04-30",
+      "description": "a freeware program for Windows that can display and print Microsoft PowerPoint presentations",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_PowerPoint#PowerPoint_Viewer",
+      "slug": "powerpoint-viewer"
+    },
+    {
+      "name": "Reader",
+      "subtitle": "document app",
+      "birthDate": "2012-10-01",
+      "deathDate": "2018-02-16",
+      "description": "a freeware program for reading documents in PDF, XPS, and TIFF formats",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Reader",
+      "slug": "reader"
+    },
+    {
+      "name": "Groove Music Pass",
+      "subtitle": "fka Zune Music Pass",
+      "birthDate": "2006-11-14",
+      "deathDate": "2017-12-31",
+      "description": "a music subscription service that allowed streaming of its music catalog to a device",
+      "link": "https://en.wikipedia.org/wiki/Groove_Music",
+      "slug": "groove-music-pass"
+    },
+    {
+      "name": "Word Viewer",
+      "birthDate": "1995-03-20",
+      "deathDate": "2017-11-30",
+      "description": "a freeware program for Windows that can display and print Microsoft Word documents",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Word_Viewer",
+      "slug": "word-viewer"
+    },
+    {
+      "name": "Visual J#",
+      "birthDate": "2002-07-01",
+      "deathDate": "2017-10-10",
+      "description": "a implementation of the J# programming language and transitional language for Java developers into the .NET ecosystem",
+      "link": "https://en.wikipedia.org/wiki/Visual_J_Sharp",
+      "slug": "visual-jsharp"
+    },
+    {
+      "name": "Xbox Fitness",
+      "birthDate": "2013-11-22",
+      "deathDate": "2017-07-01",
+      "description": "a service providing fitness videos and used the Kinect sensor to track player heart rate and calorie burn",
+      "link": "https://www.vg247.com/xbox-fitness-is-shutting-down-but-you-still-have-time-to-try-it",
+      "slug": "xbox-fitness"
+    },
+    {
+      "name": "So.cl",
+      "birthDate": "2012-12-04",
+      "deathDate": "2017-05-15",
+      "description": "a social networking service and social search engine allowing the posting of collages to be shared with friends or followers",
+      "link": "https://en.wikipedia.org/wiki/So.cl",
+      "slug": "socl"
+    },
+    {
+      "name": "Windows Vista",
+      "birthDate": "2007-01-25",
+      "deathDate": "2017-04-11",
+      "description": "a major release of the Windows NT operating system, succeeding Windows XP",
+      "link": "https://en.wikipedia.org/wiki/Windows_Vista",
+      "slug": "windows-vista"
+    },
+    {
+      "name": "Scalebound",
+      "deathDate": "2017-01-09",
+      "description": "an unreleased action role-playing game in development by PlatinumGames and to be published by Microsoft before being cancelled",
+      "link": "https://www.ign.com/articles/2017/01/09/microsoft-confirms-scalebound-is-cancelled",
+      "slug": "scalebound"
+    },
+    {
+      "name": "Lumia",
+      "birthDate": "2011-10-26",
+      "deathDate": "2016-12-31",
+      "description": "a line of mobile devices running Windows Phone operating system originally created by Nokia before being acquired and later abandoned by Microsoft",
+      "link": "https://web.archive.org/web/20170509205747/http://hothardware.com/news/microsoft-ends-sales-of-all-lumia-windows-10-mobile-devices-from-microsoft-store",
+      "slug": "lumia"
+    },
+    {
+      "name": "Band",
+      "birthDate": "2014-10-30",
+      "deathDate": "2016-10-04",
+      "description": "a smart band with smartwatch and fitness tracker features",
+      "link": "https://www.theverge.com/circuitbreaker/2016/10/3/13152590/microsoft-band-discontinued",
+      "slug": "band"
+    },
+    {
+      "name": "Lionhead Studios",
+      "birthDate": "1997-07-01",
+      "deathDate": "2016-04-29",
+      "description": "a British video game development studio best known for Black & White and Fable series",
+      "link": "https://www.polygon.com/2016/3/7/11172408/fable-legends-canceled-lionhead-studios-closing",
+      "slug": "lionhead-studios"
+    },
+    {
+      "name": "Xbox 360",
+      "birthDate": "2005-11-22",
+      "deathDate": "2016-04-20",
+      "description": "the second gaming console from Microsoft and competed with the PlayStation 3 and Nintendo Wii in the seventh generation of console gaming hardware",
+      "link": "https://news.xbox.com/en-us/2016/04/20/xbox-360-celebrating-10-years/",
+      "slug": "xbox-360"
+    },
+    {
+      "name": "Fable Legends",
+      "deathDate": "2016-04-13",
+      "description": "a cancelled 4v1 multiplayer entry in the Fable series before being cancelled and its active beta shutdown before release",
+      "link": "https://www.eurogamer.net/articles/2016-03-07-fable-developer-lionhead-studios-to-shut-down",
+      "slug": "fable-legends"
+    },
+    {
+      "name": "Windows 8",
+      "birthDate": "2012-10-30",
+      "deathDate": "2016-01-12",
+      "description": "a major release of the Windows NT operating system with a touch-optimized experience and based on Metro design language",
+      "link": "https://en.wikipedia.org/wiki/Windows_8",
+      "slug": "windows-8"
+    },
+    {
+      "name": "Live Messenger",
+      "subtitle": "fka MSN Messenger",
+      "birthDate": "1999-07-22",
+      "deathDate": "2014-10-31",
+      "description": "a cross-platform instant-messaging client",
+      "link": "https://thenextweb.com/news/microsoft-to-retire-its-messenger-im-service-in-q1-2013-moving-100mm-users-to-skype-in-single-move",
+      "slug": "live-messenger"
+    },
+    {
+      "name": "Windows XP",
+      "birthDate": "2001-08-24",
+      "deathDate": "2014-04-08",
+      "description": "a major release of the Windows operating system built on Windows NT kernel explicitly for consumer use",
+      "link": "https://en.wikipedia.org/wiki/Windows_XP",
+      "slug": "windows-xp"
+    },
+    {
+      "name": "Reader",
+      "subtitle": "e-book app",
+      "birthDate": "2000-08-01",
+      "deathDate": "2012-08-01",
+      "description": "a application for reading e-books and used its own .LIT format",
+      "link": "https://web.archive.org/web/20051012094653/http://www.microsoft.com/reader/default.asp",
+      "slug": "reader"
+    },
+    {
+      "name": "Zune",
+      "birthDate": "2006-11-14",
+      "deathDate": "2012-06-30",
+      "description": "a portable media player turned music software brand",
+      "link": "https://appleinsider.com/articles/11/10/04/microsoft_changes_its_story_concedes_death_of_zune_hardware",
+      "slug": "zune"
+    },
+    {
+      "name": "MSJVM",
+      "birthDate": "1996-10-13",
+      "deathDate": "2007-12-31",
+      "description": "a proprietary Java virtual machine from Microsoft",
+      "link": "https://web.archive.org/web/20140831134121/https://support.microsoft.com/gp/lifean12",
+      "slug": "msjvm"
+    },
+    {
+      "name": "Clippit",
+      "subtitle": "aka Clippy",
+      "birthDate": "1996-11-19",
+      "deathDate": "2007-01-30",
+      "description": "the default Office Assistant and currently lives on in spirit as the Windows paperclip emoji",
+      "link": "https://en.wikipedia.org/wiki/Office_Assistant",
+      "slug": "clippit"
+    },
+    {
+      "name": "Office Assistant",
+      "birthDate": "1996-11-19",
+      "deathDate": "2007-01-30",
+      "description": "an intelligent user interface for Microsoft Office products",
+      "link": "https://en.wikipedia.org/wiki/Office_Assistant",
+      "slug": "office-assistant"
+    },
+    {
+      "name": "Xbox",
+      "subtitle": "original console",
+      "birthDate": "2001-11-15",
+      "deathDate": "2006-12-31",
+      "description": "the first entry into the gaming console market by Microsoft and origin of the Xbox brand",
+      "link": "https://en.wikipedia.org/wiki/Xbox_(console)",
+      "slug": "xbox"
+    },
+    {
+      "name": "MSN Music",
+      "birthDate": "2004-02-18",
+      "deathDate": "2006-11-14",
+      "description": "a music download store made to compete with Apple's iTunes Music Store",
+      "link": "https://www.neowin.net/news/msn-music-shutting-down-for-zune/",
+      "slug": "msn-music"
+    },
+    {
+      "name": "Windows 98",
+      "birthDate": "1998-06-25",
+      "deathDate": "2006-07-11",
+      "description": "a major release of the Windows operating system in 1998, succeeding Windows 95",
+      "link": "https://en.wikipedia.org/wiki/Windows_98",
+      "slug": "windows-98"
+    },
+    {
+      "name": "Windows Millennium Edition",
+      "subtitle": "aka Windows Me",
+      "birthDate": "2000-09-14",
+      "deathDate": "2006-07-11",
+      "description": "a major release of the Windows operating system in 2000, succeeding Windows 98",
+      "link": "https://en.wikipedia.org/wiki/Windows_Me",
+      "slug": "windows-millennium-edition"
+    },
+    {
+      "name": "Windows 95",
+      "birthDate": "1995-08-24",
+      "deathDate": "2001-12-31",
+      "description": "a major release of the Windows operating system in 1995 and the first of the Windows 9x family",
+      "link": "https://en.wikipedia.org/wiki/Windows_95",
+      "slug": "windows-95"
+    }
+  ]
+}

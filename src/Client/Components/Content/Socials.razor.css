@@ -1,0 +1,42 @@
+.d-socials {
+    gap: 1rem;
+}
+
+.img-social {
+    height: 20px;
+    width: 20px;
+}
+
+.btn-social {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: grid;
+    place-items: center;
+}
+
+.btn-social:hover {
+    outline-offset: 3px;
+    transition: all 0.15s;
+}
+
+.btn-social img {
+    transition: all 0.15s;
+}
+
+.btn-social:hover img {
+    transform: scale(1.15);
+}
+
+.btn-social:hover:nth-child(1) {
+    background: var(--bg-threads)
+}
+
+.btn-social:hover:nth-child(2) {
+    background: var(--bg-github);
+}
