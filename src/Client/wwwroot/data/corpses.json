@@ -1,5 +1,5 @@
 {
-  "$schema": "../../../../files/corpses.schema.json",
+  "$schema": "https://raw.githubusercontent.com/victorfrye/microsoftgraveyard/main/files/corpses.schema.json",
   "corpses": [
     {
       "name": "Azure Blueprints",

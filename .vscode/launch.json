@@ -1,11 +1,30 @@
 {
-    "configurations": [
+  "version": "0.2.0",
+  "configurations": [
     {
-        "name": "Launch Edge",
-        "request": "launch",
-        "type": "msedge",
-        "url": "http://localhost:5236",
-        "webRoot": "${workspaceFolder}/src/Client",
+      "name": "Launch and Debug Standalone Blazor WebAssembly App",
+      "type": "blazorwasm",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/src/Client",
+      "browser": "edge",
+      "url": "http://localhost:5139",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Launch Edge against localhost",
+      "url": "http://localhost:5139",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:5139",
+      "webRoot": "${workspaceFolder}"
     }
-    ]
+  ]
 }
