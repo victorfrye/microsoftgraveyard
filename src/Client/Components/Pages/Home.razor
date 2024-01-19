@@ -4,7 +4,7 @@
 
 <PageTitle>Microsoft Graveyard</PageTitle>
 
-<CorpseList Corpses=@_corpses/>
+<Graveyard Corpses=@_corpses/>
 
 @code {
     private List<Corpse> _corpses = [];
@@ -14,7 +14,7 @@
         var client = ClientFactory.CreateClient();
         client.BaseAddress = new Uri(NavigationManager.BaseUri);
 
-        var response = await client.GetFromJsonAsync<CorpsesJson>("/data/corpses.json");
+        var response = await client.GetFromJsonAsync<CorpsesJson>("./data/corpses.json");
 
         _corpses = response?.Corpses.OrderByDescending(c => c.DeathDate).ToList() ?? [];
     }

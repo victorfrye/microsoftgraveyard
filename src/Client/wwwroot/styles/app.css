@@ -20,7 +20,7 @@
 html,
 body {
     background: var(--bg);
-    font-family: var(--body-font)
+    font-family: var(--bs-body-font-family);
 }
 
 .text-primary {

@@ -18,6 +18,14 @@
       "slug": "windows-10"
     },
     {
+      "name": "Teams Live Events",
+      "birthDate": "2019-03-26",
+      "deathDate": "2024-09-30",
+      "description": "a feature of Teams that allowed users to broadcast live, on-demand video events up to 10k attendees",
+      "link": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "slug": "teams-live-events"
+    },
+    {
       "name": "Visual Studio for Mac",
       "birthDate": "1905-07-08",
       "deathDate": "2024-08-31",
@@ -174,7 +182,7 @@
       "name": "Gears POP!",
       "birthDate": "2019-08-22",
       "deathDate": "2021-04-26",
-      "description": "a mobile real-time strategy game in which two players battle using Funko Pop! Stylized characters",
+      "description": "a mobile real-time strategy game in which two players battle using Funko POP! stylized characters",
       "link": "https://www.destructoid.com/gears-pop-will-shut-down-its-servers-in-april-2021/",
       "slug": "gears-pop!"
     },
@@ -182,7 +190,7 @@
       "name": "Flight Arcade",
       "birthDate": "2015-05-01",
       "deathDate": "2021-04-17",
-      "description": "a free-to-play flight simulator and demonstation of how modern browsers handle high-end 3D graphics",
+      "description": "a free-to-play flight simulator and demonstration of how modern browsers handle high-end 3D graphics",
       "link": "https://www.windowscentral.com/microsoft-revisits-its-flight-simulator-series-web-based-flight-arcade-game",
       "slug": "flight-arcade"
     },

@@ -15,12 +15,12 @@
             @if (corpse.IsDead())
         {
             <img src="/images/headstone.svg" class="img-corpse m-2" />
-            <p class="text-rip-year">@corpse.GetLifeDates()</p>
+            <p class="text-life-dates text-center">@corpse.GetLifeDates()</p>
         }
         else
         {
             <img src="/images/skull.svg" class="img-corpse m-2" />
-            <p class="text-rip-year text-center">@corpse.GetExpectedDeathDate()</p>
+            <p class="text-life-dates text-center">@corpse.GetExpectedDeathDate()</p>
         }
         </div>
 
