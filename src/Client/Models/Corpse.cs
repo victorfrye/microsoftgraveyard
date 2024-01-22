@@ -13,7 +13,7 @@ public class Corpse(string slug, string name, string? subtitle, DateOnly? birthD
     public string Description { get; init; } = description;
     public string Link { get; init; } = link;
 
-    private DateOnly _now = DateOnly.FromDateTime(DateTime.Now);
+    private readonly DateOnly _now = DateOnly.FromDateTime(DateTime.Now);
 
     public bool IsDead() => DeathDate <= _now;
 
@@ -27,11 +27,14 @@ public class Corpse(string slug, string name, string? subtitle, DateOnly? birthD
     {
         var obituary = new StringBuilder();
 
-        if (IsDead()) {
+        if (IsDead())
+        {
             var timeDead = GetAge(DeathDate, _now);
             var message = timeDead.Value.Age == 0 ? "today" : $"{timeDead.Value.Age} {timeDead.Value.Period} ago";
             obituary.Append($"Killed by Microsoft {message}, ");
-        } else {
+        }
+        else
+        {
             var execution = GetAge(_now, DeathDate);
             obituary.Append($"To be killed by Microsoft in {execution.Value.Age} {execution.Value.Period}, ");
         }

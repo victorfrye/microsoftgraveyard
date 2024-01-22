@@ -10,7 +10,7 @@
     public IList<Corpse> Corpses { get; init; } = [];
 
     private RenderFragment<Corpse> CorpseTemplate = (corpse) =>
-    @<li class='col-3 d-flex p-3 my-2 mx-4 rounded text-light'>
+    @<li class='col-8 col-md-5 col-xl-3 d-flex my-3 mx-md-4 rounded text-light'>
         <div class="d-flex flex-column p-1">
             @if (corpse.IsDead())
         {
@@ -28,6 +28,5 @@
             <h2><a href=@corpse.Link target="_blank">@corpse.GetFullName()</a></h2>
             <p>@corpse.GetObituary()</p>
         </div>
-
     </li>;
 }
