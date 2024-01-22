@@ -1,8 +1,8 @@
 :root {
     --primary: #c0c0c0;
-    --secondary: #f8f8ff;
-    --tertiary: #36454f;
-    --bg: #171717;
+    --secondary: #ececec;
+    --tertiary: #333333;
+    --body-bg: #171717;
     --footer-bg: #333333;
 
     --body-font: 'Segoe UI Variable',
@@ -19,8 +19,16 @@
 
 html,
 body {
-    background: var(--bg);
+    background: var(--body-bg);
     font-family: var(--bs-body-font-family);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 10px auto auto 10px;
+    background: var(--footer-bg);
+    align-items: center;
+    padding: 10px 10px;
 }
 
 .text-primary {
@@ -47,16 +55,6 @@ a:hover {
     color: var(--primary);
     border-bottom: none;
 }
-
-footer {
-    display: grid;
-    grid-template-columns: 10px auto auto 10px;
-    background: var(--footer-bg);
-    /* color: var(--neutral-foreground-rest); */
-    align-items: center;
-    padding: 10px 10px;
-}
-
 
 .alert {
     border: 1px dashed var(--accent-fill-rest);
