@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-dotnettools.csharp",
+    "ms-vscode.azure-account",
+    "ms-azuretools.vscode-azurestaticwebapps",
+    "ms-azuretools.vscode-azureresourcegroups"
+  ]
+}
