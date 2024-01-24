@@ -1,12 +1,13 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/headstone.svg" alt="headstone" style="height: 64px; width: 64px; padding: 0 20px;"/>
+    <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/headstone.svg" alt="headstone" height="64" width="64" />
     <h1>Microsoft Graveyard</h1>
-    <p>The virtual graveyard for all products killed by Microsoft.</p>
+    <p>The virtual graveyard for all products killed by Microsoft</p>
 </div>
 
 <div align="center">
 
-[![GitHub issues](https://img.shields.io/github/issues/victorfrye/microsoftgraveyard)](https://github.com/victorfrye/microsoftgraveyard/issues)
+[![Azure Static Web Apps CI/CD](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/azure-swa.yml/badge.svg)](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/azure-swa.yml)
+[![GitHub Issues](https://img.shields.io/github/issues/victorfrye/microsoftgraveyard)](https://github.com/victorfrye/microsoftgraveyard/issues)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](/.github/CODE_OF_CONDUCT.md)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
