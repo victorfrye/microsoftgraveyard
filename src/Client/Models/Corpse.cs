@@ -2,11 +2,11 @@ using System.Text;
 
 namespace VictorFrye.MicrosoftGraveyard.Client.Models;
 
-public class Corpse(string slug, string name, string? subtitle, DateOnly? birthDate, DateOnly deathDate, string description, string link)
+public class Corpse(string name, string? qualifier, DateOnly? birthDate, DateOnly deathDate, string description, string link)
 {
-    public string Slug { get; init; } = slug;
+    public string Slug { get; init; } = $"{name}-{qualifier}".ToLower().Replace(" ", "-");
     public string Name { get; init; } = name;
-    public string? Subtitle { get; init; } = subtitle;
+    public string? Qualifier { get; init; } = qualifier;
     public DateOnly? BirthDate { get; init; } = birthDate;
 
     public DateOnly DeathDate { get; init; } = deathDate;
@@ -21,7 +21,7 @@ public class Corpse(string slug, string name, string? subtitle, DateOnly? birthD
 
     public string GetLifeDates() => BirthDate is null ? $"{DeathDate:yyyy}" : $"{BirthDate.Value:yyyy} - {DeathDate:yyyy}";
 
-    public string GetFullName() => Subtitle is null ? Name : $"{Name} ({Subtitle})";
+    public string GetFullName() => Qualifier is null ? Name : $"{Name} ({Qualifier})";
 
     public string GetObituary()
     {
@@ -65,11 +65,6 @@ public class Corpse(string slug, string name, string? subtitle, DateOnly? birthD
         }
 
         var months = end.Month - start.Month + (12 * (end.Year - start.Year));
-
-        if (end.Month == start.Month && end.Day < start.Day)
-        {
-            months--;
-        }
 
         if (months >= 1)
         {
