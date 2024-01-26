@@ -65,6 +65,13 @@
       "link": "https://www.theverge.com/2023/7/17/23794792/microsoft-xbox-game-pass-core-live-gold-replacement"
     },
     {
+      "name": "Surface Duo",
+      "birthDate": "2020-09-10",
+      "deathDate": "2023-09-10",
+      "description": "a line of dual-screen Android devices that acted as Microsoft's re-entry into the mobile device market",
+      "link": "https://arstechnica.com/gadgets/2023/01/rip-surface-duo-microsoft-reportedly-gives-up-on-the-weird-form-factor/"
+    },
+    {
       "name": "WordPad",
       "birthDate": "1995-08-24",
       "deathDate": "2023-09-01",
@@ -84,6 +91,13 @@
       "deathDate": "2023-08-31",
       "description": "a secure messaging and workplace productivity application for collaboration",
       "link": "https://www.zdnet.com/article/microsoft-to-drop-its-kaizala-group-messaging-service-in-2023/"
+    },
+    {
+      "name": "Kinect",
+      "birthDate": "2010-11-04",
+      "deathDate": "2023-08-17",
+      "description": "a motion sensing input device originally launched as a gaming peripheral and later acted as a development tool for machine learning, visual recognition, and robotics",
+      "link": "https://techcrunch.com/2023/08/22/microsoft-cant-stop-discontinuing-kinect/"
     },
     {
       "name": "Windows 8.1",
@@ -265,6 +279,13 @@
       "link": "https://en.wikipedia.org/wiki/Groove_Music"
     },
     {
+      "name": "CodePlex",
+      "birthDate": "2006-05-01",
+      "deathDate": "2017-12-15",
+      "description": "a open-source developer platform for hosting software project source code, wiki pages, and issue tracking",
+      "link": "https://www.zdnet.com/article/microsoft-takes-codeplex-to-death-row-on-back-of-github-monoculture/"
+    },
+    {
       "name": "Word Viewer",
       "birthDate": "1995-03-20",
       "deathDate": "2017-11-30",
@@ -272,11 +293,25 @@
       "link": "https://en.wikipedia.org/wiki/Microsoft_Word_Viewer"
     },
     {
+      "name": "WebMatrix",
+      "birthDate": "2010-07-07",
+      "deathDate": "2017-11-01",
+      "description": "a lightweight web development tool with full support for PHP and ASP.NET web pages that succeeded ASP.NET Web Matrix",
+      "link": "https://blogs.iis.net/webmatrix/webmatrix-product-support-ends-on-november-1st-2017"
+    },
+    {
       "name": "Visual J#",
       "birthDate": "2002-07-01",
       "deathDate": "2017-10-10",
       "description": "a implementation of the J# programming language and transitional language for Java developers into the .NET ecosystem",
       "link": "https://en.wikipedia.org/wiki/Visual_J_Sharp"
+    },
+    {
+      "name": "Visual SourceSafe",
+      "birthDate": "1994-01-01",
+      "deathDate": "2017-07-11",
+      "description": "a source control software, originally created by One Tree Software before being acquired by Microsoft",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe"
     },
     {
       "name": "Xbox Fitness",
@@ -340,6 +375,13 @@
       "link": "https://www.eurogamer.net/articles/2016-03-07-fable-developer-lionhead-studios-to-shut-down"
     },
     {
+      "name": "Tay",
+      "birthDate": "2016-03-23",
+      "deathDate": "2016-03-24",
+      "description": "an artificial intelligence chatbot released on Twitter that was shut down after only 16 hours due to inflammatory tweets",
+      "link": "https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist"
+    },
+    {
       "name": "Windows 8",
       "birthDate": "2012-10-30",
       "deathDate": "2016-01-12",
@@ -375,6 +417,20 @@
       "deathDate": "2012-06-30",
       "description": "a portable media player turned music software brand",
       "link": "https://appleinsider.com/articles/11/10/04/microsoft_changes_its_story_concedes_death_of_zune_hardware"
+    },
+    {
+      "name": "Kin",
+      "birthDate": "2010-04-12",
+      "deathDate": "2010-06-30",
+      "description": "a short-lived family of mobile devices that heavily integrated social networking services",
+      "link": "https://www.engadget.com/2010-06-30-microsoft-kin-is-dead.html"
+    },
+    {
+      "name": "Tafiti",
+      "birthDate": "2007-01-01",
+      "deathDate": "2009-01-01",
+      "description": "an animated search engine that used Silverlight to display search results",
+      "link": "https://en.wikipedia.org/wiki/Tafiti"
     },
     {
       "name": "MSJVM",
@@ -427,6 +483,13 @@
       "deathDate": "2006-07-11",
       "description": "a major release of the Windows operating system in 2000, succeeding Windows 98",
       "link": "https://en.wikipedia.org/wiki/Windows_Me"
+    },
+    {
+      "name": "ASP.NET Web Matrix",
+      "birthDate": "2002-06-01",
+      "deathDate": "2005-11-01",
+      "description": "a development tool that was a lightweight alternative to Visual Studio and ideal for web application workloads",
+      "link": "https://web.archive.org/web/20100505221027/http://www.asp.net/downloads/archived-v1.1/web-matrix/"
     },
     {
       "name": "Windows 95",
