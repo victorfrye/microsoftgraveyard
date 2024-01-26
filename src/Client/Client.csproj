@@ -5,8 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 
+    <RunAOTCompilation>true</RunAOTCompilation>
+
     <Title>Microsoft Graveyard</Title>
-    <Description>🪦 A graveyard of all the products killed by Microsoft </Description>
+    <Description>🪦 The virtual graveyard for all products killed by Microsoft</Description>
     <Authors>VictorFrye</Authors>
     <RepositoryUrl>https://github.com/victorfrye/microsoft-graveyard</RepositoryUrl>
 
