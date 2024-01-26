@@ -9,16 +9,12 @@
       "items": {
         "type": "object",
         "properties": {
-          "slug": {
-            "description": "A human readable unique identifier for the item",
-            "type": "string"
-          },
           "name": {
             "description": "The name and title of the item",
             "type": "string"
           },
-          "subtitle": {
-            "description": "An optional subtitle for the item",
+          "qualifier": {
+            "description": "An optional qualifier for the item",
             "type": "string"
           },
           "birthDate": {
@@ -41,7 +37,7 @@
             "format": "uri"
           }
         },
-        "required": ["slug", "name", "deathDate", "description", "link"]
+        "required": ["name", "deathDate", "description", "link"]
       }
     },
     "required": ["corpses"]
