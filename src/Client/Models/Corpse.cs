@@ -1,10 +1,9 @@
-using System.Text;
-
 namespace VictorFrye.MicrosoftGraveyard.Client.Models;
+
+using System.Text;
 
 public class Corpse(string name, string? qualifier, DateOnly? birthDate, DateOnly deathDate, string description, string link)
 {
-    public string Slug { get; init; } = $"{name}-{qualifier}".ToLower().Replace(" ", "-");
     public string Name { get; init; } = name;
     public string? Qualifier { get; init; } = qualifier;
     public DateOnly? BirthDate { get; init; } = birthDate;

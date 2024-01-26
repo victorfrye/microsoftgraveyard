@@ -190,7 +190,13 @@ public class CorpseTests
         Assert.Equal(expected, actual);
     }
 
-    private static Corpse NewMockCorpse(string name = "Test Corpse", string? qualifier = null, DateOnly? birthDate = null, DateOnly? deathDate = null, string description = "nice words said", string link = "https://somelink.com")
+    private static Corpse NewMockCorpse(
+        string name = "Test Corpse",
+        string? qualifier = null,
+        DateOnly? birthDate = null,
+        DateOnly? deathDate = null,
+        string description = "nice words said",
+        string link = "https://somelink.com")
     {
         return new(
             name,

@@ -434,6 +434,13 @@
       "deathDate": "2001-12-31",
       "description": "a major release of the Windows operating system in 1995 and the first of the Windows 9x family",
       "link": "https://en.wikipedia.org/wiki/Windows_95"
+    },
+    {
+      "name": "Bob",
+      "birthDate": "1995-03-10",
+      "deathDate": "1996-01-01",
+      "description": "a Microsoft project intended to provide a personalized alternative interface for the Windows operating system",
+      "link": "https://www.youtube.com/watch?v=rXHu9OmLd8Y"
     }
   ]
 }
