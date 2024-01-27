@@ -28,28 +28,28 @@ public class Corpse(string name, string? qualifier, DateOnly? birthDate, DateOnl
 
         if (IsDead())
         {
-            var timeDead = GetAge(DeathDate, _now);
-            var message = timeDead.Value.Age == 0 ? "today" : $"{timeDead.Value.Age} {timeDead.Value.Period} ago";
+            var (age, period) = GetAge(DeathDate, _now);
+            var message = age == 0 ? "today" : $"{age} {period} ago";
             obituary.Append($"Killed by Microsoft {message}, ");
         }
         else
         {
-            var execution = GetAge(_now, DeathDate);
-            obituary.Append($"To be killed by Microsoft in {execution.Value.Age} {execution.Value.Period}, ");
+            var (age, period) = GetAge(_now, DeathDate);
+            obituary.Append($"To be killed by Microsoft in {age} {period}, ");
         }
 
         obituary.Append($"{Name} {(IsDead() ? "was" : "is")} {Description}.");
 
         if (IsDead() && BirthDate is not null)
         {
-            var timeLived = GetAge(BirthDate.Value, DeathDate);
-            obituary.Append($" It was {timeLived.Value.Age} {timeLived.Value.Period} old.");
+            var (age, period) = GetAge(BirthDate.Value, DeathDate);
+            obituary.Append($" It was {age} {period} old.");
         }
 
         return obituary.ToString();
     }
 
-    private static (int Age, string Period)? GetAge(DateOnly start, DateOnly end)
+    private static (int Age, string Period) GetAge(DateOnly start, DateOnly end)
     {
         var years = end.Year - start.Year;
 

@@ -44,6 +44,12 @@
       "link": "https://diversido.io/blog/xamarin-is-being-discontinued-what-does-it-mean-for-developers"
     },
     {
+      "name": "Odyssey",
+      "deathDate": "2024-01-25",
+      "description": "an unreleased survival game that was in development by Blizzard and cancelled after the acquisition of Activision Blizzard by Microsoft",
+      "link": "https://www.msn.com/en-us/entertainment/gaming/blizzard-cancels-survival-game-following-layoffs/ar-BB1hftuk"
+    },
+    {
       "name": "Windows Mixed Reality",
       "birthDate": "2016-10-01",
       "deathDate": "2023-12-21",
@@ -98,6 +104,13 @@
       "deathDate": "2023-08-17",
       "description": "a motion sensing input device originally launched as a gaming peripheral and later acted as a development tool for machine learning, visual recognition, and robotics",
       "link": "https://techcrunch.com/2023/08/22/microsoft-cant-stop-discontinuing-kinect/"
+    },
+    {
+      "name": "Yammer",
+      "birthDate": "2008-09-08",
+      "deathDate": "2023-06-30",
+      "description": "an enterprise social networking service primarily used for private communication within organizations that was acquired by Microsoft in 2012",
+      "link": "https://www.zdnet.com/home-and-office/work-life/microsoft-say-goodbye-to-yammer-brand-hello-to-viva-engage/"
     },
     {
       "name": "Windows 8.1",
@@ -282,7 +295,7 @@
       "name": "CodePlex",
       "birthDate": "2006-05-01",
       "deathDate": "2017-12-15",
-      "description": "a open-source developer platform for hosting software project source code, wiki pages, and issue tracking",
+      "description": "an open-source developer platform for hosting software project source code, wiki pages, and issue tracking",
       "link": "https://www.zdnet.com/article/microsoft-takes-codeplex-to-death-row-on-back-of-github-monoculture/"
     },
     {
@@ -303,7 +316,7 @@
       "name": "Visual J#",
       "birthDate": "2002-07-01",
       "deathDate": "2017-10-10",
-      "description": "a implementation of the J# programming language and transitional language for Java developers into the .NET ecosystem",
+      "description": "an implementation of the J# programming language and transitional language for Java developers into the .NET ecosystem",
       "link": "https://en.wikipedia.org/wiki/Visual_J_Sharp"
     },
     {
@@ -408,7 +421,7 @@
       "qualifier": "e-book app",
       "birthDate": "2000-08-01",
       "deathDate": "2012-08-01",
-      "description": "a application for reading e-books and used its own .LIT format",
+      "description": "an application for reading e-books and used its own .LIT format",
       "link": "https://web.archive.org/web/20051012094653/http://www.microsoft.com/reader/default.asp"
     },
     {
