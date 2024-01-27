@@ -5,13 +5,6 @@
     --body-bg: #171717;
     --footer-bg: #333333;
 
-    --body-font: 'Segoe UI Variable',
-            'Segoe UI',
-            'Helvetica Neue',
-            Helvetica,
-            Arial,
-            sans-serif;
-
     --bg-threads: radial-gradient(circle at 30% 107%, #ffd600 0%, #ffd600 10%, #ff7a00 20%, #ff0069 50%, #d300c5 75%, #7638fa 90%);
     --bg-github: #333333;
 }
