@@ -9,8 +9,8 @@ on:
 
 env:
   DOTNET_VERSION: '8.x'
-  APP_PROJECT_FILE: './src/Client/Client.csproj'
-  APP_OUTPUT_LOCATION: './artifacts/client'
+  APP_PROJECT_FILE: 'src/Client/Client.csproj'
+  APP_OUTPUT_LOCATION: 'artifacts/client'
 
 jobs:
   build_and_deploy_job:
@@ -27,19 +27,19 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
-      - name: Install WASM tools
+      - name: Install WASM build tools
         run: dotnet workload install wasm-tools
       - name: Restore dependencies
         run: dotnet restore
       - name: Verify formatting
         run: dotnet format --verify-no-changes --no-restore
-      - name: Build
+      - name: Build solution
         run: dotnet build -c Release --no-restore
-      - name: Test
+      - name: Test solution
         run: dotnet test -c Release --no-restore --no-build
-      - name: Publish
+      - name: Publish app project
         run: dotnet publish ${{ env.APP_PROJECT_FILE }} -c Release -o ${{ env.APP_OUTPUT_LOCATION }} --no-restore --no-build
-      - name: Deploy
+      - name: Deploy static web app
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
