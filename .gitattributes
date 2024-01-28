@@ -84,8 +84,11 @@
 
 # CSharp
 *.cs       text diff=csharp
+*.cs       text eol=crlf
 *.cshtml   text diff=html
+*.cshtml   text eol=crlf
 *.csx      text diff=csharp
+*.csx      text eol=crlf
 *.sln      text eol=crlf
 *.csproj   text eol=crlf
 

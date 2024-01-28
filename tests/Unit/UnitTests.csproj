@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
 
         <IsTestProject>true</IsTestProject>
+        <IsPublishable>false</IsPublishable>
 		<IsPackable>false</IsPackable>
 
         <AssemblyName>VictorFrye.MicrosoftGraveyard.Tests.Unit</AssemblyName>

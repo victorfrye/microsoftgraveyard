@@ -7,7 +7,6 @@ public class Corpse(string name, string? qualifier, DateOnly? birthDate, DateOnl
     public string Name { get; init; } = name;
     public string? Qualifier { get; init; } = qualifier;
     public DateOnly? BirthDate { get; init; } = birthDate;
-
     public DateOnly DeathDate { get; init; } = deathDate;
     public string Description { get; init; } = description;
     public string Link { get; init; } = link;
