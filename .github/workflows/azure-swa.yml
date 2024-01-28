@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: dotnet build -c Release --no-restore
       - name: Test
-        run: dotnet test --no-restore --no-build
+        run: dotnet test -c Release --no-restore --no-build
       - name: Publish
         run: dotnet publish ${{ env.APP_PROJECT_FILE }} -c Release -o ${{ env.APP_OUTPUT_LOCATION }} --no-restore --no-build
       - name: Deploy
