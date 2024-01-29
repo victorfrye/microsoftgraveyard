@@ -368,6 +368,13 @@
       "link": "https://www.theverge.com/circuitbreaker/2016/10/3/13152590/microsoft-band-discontinued"
     },
     {
+      "name": "Sunrise",
+      "birthDate": "2013-02-19",
+      "deathDate": "2016-09-13",
+      "description": "a calendar application that provided a comprehensive view of daily events before later being acquired by Microsoft and merged into Outlook",
+      "link": "https://www.theverge.com/2016/9/1/12746910/microsoft-sunrise-shut-down-delayed"
+    },
+    {
       "name": "Lionhead Studios",
       "birthDate": "1997-07-01",
       "deathDate": "2016-04-29",
@@ -400,6 +407,14 @@
       "deathDate": "2016-01-12",
       "description": "a major release of the Windows NT operating system with a touch-optimized experience and based on Metro design language",
       "link": "https://en.wikipedia.org/wiki/Windows_8"
+    },
+    {
+      "name": "FoxPro",
+      "qualifier": "fka FoxBASE",
+      "birthDate": "1984-12-01",
+      "deathDate": "2015-01-13",
+      "description": "a data-centric procedural programming language and database management system originally developed by Fox Software before being acquired by Microsoft",
+      "link": "http://www.foxprohistory.org/foxprotimeline.htm"
     },
     {
       "name": "Live Messenger",
