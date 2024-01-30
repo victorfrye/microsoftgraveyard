@@ -99,6 +99,13 @@
       "link": "https://www.zdnet.com/article/microsoft-to-drop-its-kaizala-group-messaging-service-in-2023/"
     },
     {
+      "name": "Soundscape",
+      "birthDate": "2018-03-01",
+      "deathDate": "2023-08-30",
+      "description": "an iOS app that used 3D audio technology to help users get around and explore their surroundings",
+      "link": "https://www.theverge.com/2021/12/1/22811883/microsoft-soundscape-ios-app-shutdown"
+    },
+    {
       "name": "Kinect",
       "birthDate": "2010-11-04",
       "deathDate": "2023-08-17",
@@ -111,6 +118,13 @@
       "deathDate": "2023-06-30",
       "description": "an enterprise social networking service primarily used for private communication within organizations that was acquired by Microsoft in 2012",
       "link": "https://www.zdnet.com/home-and-office/work-life/microsoft-say-goodbye-to-yammer-brand-hello-to-viva-engage/"
+    },
+    {
+      "name": "AltspaceVR",
+      "birthDate": "2015-05-20",
+      "deathDate": "2023-03-10",
+      "description": "a social VR platform that allowed users to attend live events, play games, and watch videos with other users",
+      "link": "https://www.theverge.com/2023/1/21/23565188/altspace-vr-shutting-down-microsoft-layoffs"
     },
     {
       "name": "Windows 8.1",
@@ -169,6 +183,13 @@
       "link": "https://support.microsoft.com/en-us/windows/silverlight-end-of-support-0a3be3c7-bead-e203-2dfd-74f0a64f1788"
     },
     {
+      "name": "Azure Blockchain",
+      "birthDate": "2015-11-09",
+      "deathDate": "2021-09-10",
+      "description": "a managed blockchain service that allowed users to build, govern, and expand consortium blockchain networks",
+      "link": "https://www.zdnet.com/finance/blockchain/microsoft-is-shutting-down-its-azure-blockchain-service/"
+    },
+    {
       "name": "Skype for Business",
       "qualifier": "fka Lync",
       "birthDate": "2007-07-28",
@@ -182,6 +203,13 @@
       "deathDate": "2021-06-30",
       "description": "a companion application to provide supplement content while playing games on Xbox devices",
       "link": "https://mspoweruser.com/microsoft-killing-xbox-one-smartglass-app-windows-pcs/#:~:text=Microsoft%20today%20announced%20that%20Xbox%20One%20SmartGlass%20app,who%20already%20downloaded%20the%20app%20to%20their%20devices."
+    },
+    {
+      "name": "Minecraft Earth",
+      "birthDate": "2019-10-17",
+      "deathDate": "2021-06-30",
+      "description": "an augmented reality and geo-location sandbox game that allowed players to build structures in the real world",
+      "link": "https://kotaku.com/minecraft-earth-ends-this-summer-1845992885"
     },
     {
       "name": "Gears POP!",
@@ -260,6 +288,13 @@
       "deathDate": "2019-11-20",
       "description": "a web-based personal health record to store and maintain health and fitness information",
       "link": "https://www.zdnet.com/article/microsoft-is-closing-its-healthvault-patient-records-service-on-november-20/"
+    },
+    {
+      "name": "Zo",
+      "birthDate": "2016-12-05",
+      "deathDate": "2019-09-07",
+      "description": "a chatbot that was a successor to Tay and was available on Kik, Facebook, GroupMe, and Twitter",
+      "link": "https://web.archive.org/web/20190811123337/https://www.zo.ai/"
     },
     {
       "name": "Excel Viewer",
@@ -375,6 +410,13 @@
       "link": "https://www.theverge.com/2016/9/1/12746910/microsoft-sunrise-shut-down-delayed"
     },
     {
+      "name": "Project Spark",
+      "birthDate": "2014-10-07",
+      "deathDate": "2016-08-12",
+      "description": "a game creation video game that allowed users to create their own games, movies, and other experiences",
+      "link": "https://kotaku.com/microsoft-kills-project-spark-1776573028"
+    },
+    {
       "name": "Lionhead Studios",
       "birthDate": "1997-07-01",
       "deathDate": "2016-04-29",
@@ -402,6 +444,13 @@
       "link": "https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist"
     },
     {
+      "name": "Press Play",
+      "birthDate": "2006-01-01",
+      "deathDate": "2016-03-10",
+      "description": "a Danish video game development studio best known for Max & the Magic Marker, Max: The Curse of Brotherhood, and Kalimba",
+      "link": "https://mcvuk.com/business-news/publishing/lionhead-ceases-fable-legends-development-considering-closure/"
+    },
+    {
       "name": "Windows 8",
       "birthDate": "2012-10-30",
       "deathDate": "2016-01-12",
@@ -423,6 +472,13 @@
       "deathDate": "2014-10-31",
       "description": "a cross-platform instant-messaging client",
       "link": "https://thenextweb.com/news/microsoft-to-retire-its-messenger-im-service-in-q1-2013-moving-100mm-users-to-skype-in-single-move"
+    },
+    {
+      "name": "Xbox Entertainment Studios",
+      "birthDate": "2012-09-01",
+      "deathDate": "2014-10-29",
+      "description": "a television and movie studio that produced original content for Xbox Live",
+      "link": "https://www.ign.com/articles/2014/10/30/xbox-entertainment-studios-reportedly-shuttered-as-heads-leave"
     },
     {
       "name": "Windows XP",
@@ -447,6 +503,13 @@
       "link": "https://appleinsider.com/articles/11/10/04/microsoft_changes_its_story_concedes_death_of_zune_hardware"
     },
     {
+      "name": "Money",
+      "birthDate": "1991-10-07",
+      "deathDate": "2011-01-31",
+      "description": "a personal finance management software that allowed users to track bank accounts, investments, and bills",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Money"
+    },
+    {
       "name": "Kin",
       "birthDate": "2010-04-12",
       "deathDate": "2010-06-30",
@@ -454,11 +517,46 @@
       "link": "https://www.engadget.com/2010-06-30-microsoft-kin-is-dead.html"
     },
     {
+      "name": "Encarta",
+      "birthDate": "1993-03-01",
+      "deathDate": "2009-12-31",
+      "description": "a digital multimedia encyclopedia published initially available on CD-ROM or DVD before later being available online",
+      "link": "https://en.wikipedia.org/wiki/Encarta"
+    },
+    {
+      "name": "Agent",
+      "birthDate": "1997-11-05",
+      "deathDate": "2009-10-22",
+      "description": "a software technology that utilized animated characters, text-to-speech engines, and speech recognition to interact with users",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Agent"
+    },
+    {
+      "name": "Ensemble Studios",
+      "birthDate": "1994-01-01",
+      "deathDate": "2009-01-29",
+      "description": "a video game development studio best known for the Age of Empires series and launch of Halo Wars",
+      "link": "https://kotaku.com/read-the-ensemble-youre-done-here-email-from-microso-5047753"
+    },
+    {
+      "name": "Aces Game Studio",
+      "birthDate": "1988-01-01",
+      "deathDate": "2009-01-23",
+      "description": "a video game development studio best known for the Microsoft Flight Simulator series",
+      "link": "https://www.ign.com/articles/2009/01/23/microsoft-confirms-aces-closure"
+    },
+    {
       "name": "Tafiti",
       "birthDate": "2007-01-01",
       "deathDate": "2009-01-01",
       "description": "an animated search engine that used Silverlight to display search results",
       "link": "https://en.wikipedia.org/wiki/Tafiti"
+    },
+    {
+      "name": "Windows 3.1",
+      "birthDate": "1992-04-06",
+      "deathDate": "2008-11-01",
+      "description": "a major release of the Windows operating system and successor to Windows 3.0",
+      "link": "https://en.wikipedia.org/wiki/Windows_3.1x"
     },
     {
       "name": "MSJVM",
@@ -513,6 +611,13 @@
       "link": "https://en.wikipedia.org/wiki/Windows_Me"
     },
     {
+      "name": "MS-DOS",
+      "birthDate": "1981-08-12",
+      "deathDate": "2006-07-11",
+      "description": "an operating system for x86-based personal computers that was the dominant operating system in the 1980s",
+      "link": "https://en.wikipedia.org/wiki/MS-DOS"
+    },
+    {
       "name": "ASP.NET Web Matrix",
       "birthDate": "2002-06-01",
       "deathDate": "2005-11-01",
@@ -525,6 +630,34 @@
       "deathDate": "2001-12-31",
       "description": "a major release of the Windows operating system in 1995 and the first of the Windows 9x family",
       "link": "https://en.wikipedia.org/wiki/Windows_95"
+    },
+    {
+      "name": "Windows 3.0",
+      "birthDate": "1990-05-22",
+      "deathDate": "2001-12-31",
+      "description": "the third major release of the Windows operating system and successor to Windows 2.1",
+      "link": "https://en.wikipedia.org/wiki/Windows_3.0"
+    },
+    {
+      "name": "Windows 2.1",
+      "birthDate": "1988-05-27",
+      "deathDate": "2001-12-31",
+      "description": "a major release of the Windows operating system and successor to Windows 2.0",
+      "link": "https://en.wikipedia.org/wiki/Windows_2.1x"
+    },
+    {
+      "name": "Windows 2.0",
+      "birthDate": "1987-12-09",
+      "deathDate": "2001-12-31",
+      "description": "the second major release of the Windows operating system and successor to Windows 1.0",
+      "link": "https://en.wikipedia.org/wiki/Windows_2.0x"
+    },
+    {
+      "name": "Windows 1.0",
+      "birthDate": "1985-11-20",
+      "deathDate": "2001-12-31",
+      "description": "the first major release of the Windows operating system",
+      "link": "https://en.wikipedia.org/wiki/Windows_1.0x"
     },
     {
       "name": "Bob",
