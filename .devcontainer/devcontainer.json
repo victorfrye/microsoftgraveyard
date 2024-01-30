@@ -1,0 +1,15 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.base.schema.json",
+  "name": "DotCom",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/powershell": "latest",
+    "devwasm.azurecr.io/dev-wasm/dev-wasm-feature/dotnet-wasi:0": "latest"
+  },
+  "forwardPorts": [5139],
+  "postCreateCommand": "dotnet restore; pwsh",
+  "shutdownAction": "stopContainer",
+  "remoteUser": "root"
+}
