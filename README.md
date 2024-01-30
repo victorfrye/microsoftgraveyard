@@ -34,7 +34,13 @@ Microsoft Graveyard is a static web application built utilizing .NET Blazor WASM
 
 ## Contributing
 
-Contributions are welcome and key to maintaining this project! Please read the [contributing guide](/.github/CONTRIBUTING.md) below before submitting a pull request.
+Contributions are welcome and key to maintaining this project! Please read the [contributing guide](/.github/CONTRIBUTING.md) for opening issues or pull requests. If you are simply looking to request a new product be added, continuing reading for how to [add a new dead product](#add-a-new-dead-product).
+
+### Add a new dead product
+
+To request a headstone be added to the graveyard for a missing product killed by Microsoft, please open a [new dead product issue](https://github.com/victorfrye/microsoftgraveyard/issues/new?assignees=&labels=new+dead+product&projects=&template=1_new_dead_product.md&title=%5BNEW+CORPSE%5D+) and add the relevant information.
+
+If you're looking to contribute directly, Please read our [contributing guide](/.github/CONTRIBUTING.md) for more information including how to run the project and add data to the existing collection of products.
 
 ## Code of Conduct
 
