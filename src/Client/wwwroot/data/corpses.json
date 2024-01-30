@@ -50,6 +50,14 @@
       "link": "https://www.msn.com/en-us/entertainment/gaming/blizzard-cancels-survival-game-following-layoffs/ar-BB1hftuk"
     },
     {
+      "name": "Dynamics 365 Human Resources",
+      "qualifier": "Stand-alone",
+      "birthDate": "2017-09-01",
+      "deathDate": "2023-12-31",
+      "description": "an offering of the Dynamics 365 HR module that runs independently from Finance and Operations",
+      "link": "https://community.dynamics.com/blogs/post/?postid=846a24e2-4928-4980-9578-d56753b36175"
+    },
+    {
       "name": "Windows Mixed Reality",
       "birthDate": "2016-10-01",
       "deathDate": "2023-12-21",
