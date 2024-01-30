@@ -488,6 +488,14 @@
       "link": "https://en.wikipedia.org/wiki/Windows_XP"
     },
     {
+      "name": "PixelSense",
+      "qualifier": "fka Surface",
+      "birthDate": "2008-04-17",
+      "deathDate": "2013-12-03",
+      "description": "a multi-touch digital table for public places that allowed multiple users to interact with the device simultaneously",
+      "link": "https://finance.yahoo.com/news/microsofts-very-first-surface-largely-184340037.html"
+    },
+    {
       "name": "Reader",
       "qualifier": "e-book app",
       "birthDate": "2000-08-01",
