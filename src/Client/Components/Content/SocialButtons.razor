@@ -1,4 +1,4 @@
-<ul class="d-socials d-flex flex-row flex-nowrap mb-3 pb-3">
+<ul class="d-flex flex-row flex-nowrap gap-3 p-0 pb-3">
     @foreach (var social in Socials)
     {
         @ButtonTemplate(social)
@@ -10,7 +10,7 @@
     public IList<Social> Socials { get; set; } = [];
 
     private RenderFragment<Social> ButtonTemplate = (social) =>
-    @<a href=@social.UserUrl target="_blank" class="btn-link btn-social px-2">
+    @<a href=@social.UserUrl target="_blank" class="btn-link btn-social">
         <img src=@social.IconUrl alt=@social.Name class="img-social" />
     </a>;
 }

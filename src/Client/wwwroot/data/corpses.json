@@ -16,6 +16,13 @@
       "link": "https://en.wikipedia.org/wiki/Windows_10"
     },
     {
+      "name": "Visual Studio LightSwitch",
+      "birthDate": "2010-08-23",
+      "deathDate": "2025-10-14",
+      "description": "a low-code development tool that enabled users to create business applications for the desktop, cloud, and mobile devices",
+      "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
+    },
+    {
       "name": "Teams Live Events",
       "birthDate": "2019-03-26",
       "deathDate": "2024-09-30",
@@ -40,7 +47,7 @@
       "name": "Xamarin",
       "birthDate": "2011-05-16",
       "deathDate": "2024-05-01",
-      "description": "a cross-platform app development tool and framework that extended the .NET ecosystem",
+      "description": "a cross-platform application development tool and framework for building native platform applications and extended the .NET ecosystem",
       "link": "https://diversido.io/blog/xamarin-is-being-discontinued-what-does-it-mean-for-developers"
     },
     {
@@ -54,7 +61,7 @@
       "qualifier": "Stand-alone",
       "birthDate": "2017-09-01",
       "deathDate": "2023-12-31",
-      "description": "an offering of the Dynamics 365 HR module that runs independently from Finance and Operations",
+      "description": "a stand-alone offering of the Dynamics 365 HR module that runs independently from Finance and Operations",
       "link": "https://community.dynamics.com/blogs/post/?postid=846a24e2-4928-4980-9578-d56753b36175"
     },
     {
@@ -126,6 +133,13 @@
       "deathDate": "2023-06-30",
       "description": "an enterprise social networking service primarily used for private communication within organizations that was acquired by Microsoft in 2012",
       "link": "https://www.zdnet.com/home-and-office/work-life/microsoft-say-goodbye-to-yammer-brand-hello-to-viva-engage/"
+    },
+    {
+      "name": "Money in Excel",
+      "birthDate": "2020-06-15",
+      "deathDate": "2023-06-30",
+      "description": "a personal finance management add-in for Excel that allowed users to connect their bank and credit card accounts",
+      "link": "https://www.howtogeek.com/808679/microsoft-is-shutting-down-money-in-excel-and-more/"
     },
     {
       "name": "AltspaceVR",
@@ -391,6 +405,34 @@
       "link": "https://en.wikipedia.org/wiki/Windows_Vista"
     },
     {
+      "name": "Windows Movie Maker",
+      "birthDate": "2000-09-14",
+      "deathDate": "2017-01-10",
+      "description": "a video editing software that allowed users to create and edit videos as well as publish them on OneDrive, Facebook, Vimeo, YouTube, and Flickr",
+      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
+    },
+    {
+      "name": "Windows Photo Gallery",
+      "birthDate": "2003-06-03",
+      "deathDate": "2017-01-10",
+      "description": "a photo management software that allowed users to import photos from their cameras, organize them into albums, and edit them",
+      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
+    },
+    {
+      "name": "Windows Live Writer",
+      "birthDate": "2007-11-06",
+      "deathDate": "2017-01-10",
+      "description": "a desktop blog-publishing application that allowed users to compose blog posts offline and publish them to their website",
+      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
+    },
+    {
+      "name": "Windows Live Mail",
+      "birthDate": "2007-11-06",
+      "deathDate": "2017-01-10",
+      "description": "a desktop email client that allowed users to access multiple email accounts in one place",
+      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
+    },
+    {
       "name": "Scalebound",
       "deathDate": "2017-01-09",
       "description": "an unreleased action role-playing game in development by PlatinumGames and to be published by Microsoft before being cancelled",
@@ -466,6 +508,13 @@
       "link": "https://en.wikipedia.org/wiki/Windows_8"
     },
     {
+      "name": "Windows Media Center",
+      "birthDate": "2002-10-29",
+      "deathDate": "2015-10-30",
+      "description": "a digital video recorder and media player that allowed users to watch and record live TV, as well as organize and play music and videos",
+      "link": "https://en.wikipedia.org/wiki/Windows_Media_Center"
+    },
+    {
       "name": "FoxPro",
       "qualifier": "fka FoxBASE",
       "birthDate": "1984-12-01",
@@ -474,7 +523,7 @@
       "link": "http://www.foxprohistory.org/foxprotimeline.htm"
     },
     {
-      "name": "Live Messenger",
+      "name": "Windows Live Messenger",
       "qualifier": "fka MSN Messenger",
       "birthDate": "1999-07-22",
       "deathDate": "2014-10-31",
@@ -533,11 +582,25 @@
       "link": "https://www.engadget.com/2010-06-30-microsoft-kin-is-dead.html"
     },
     {
+      "name": "Response Point",
+      "birthDate": "2007-03-01",
+      "deathDate": "2010-05-14",
+      "description": "a software-based telephone private-branch-exchange system targeted towards small businesses",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Response_Point"
+    },
+    {
       "name": "Encarta",
       "birthDate": "1993-03-01",
       "deathDate": "2009-12-31",
       "description": "a digital multimedia encyclopedia published initially available on CD-ROM or DVD before later being available online",
       "link": "https://en.wikipedia.org/wiki/Encarta"
+    },
+    {
+      "name": "Office Accounting",
+      "birthDate": "2006-09-19",
+      "deathDate": "2009-11-16",
+      "description": "an accounting software application targeted towards small businesses",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Office_Accounting"
     },
     {
       "name": "Agent",
