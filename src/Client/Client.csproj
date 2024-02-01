@@ -8,7 +8,7 @@
     <Title>Microsoft Graveyard</Title>
     <Description>🪦 The virtual graveyard for all products killed by Microsoft</Description>
     <Authors>VictorFrye</Authors>
-    <RepositoryUrl>https://github.com/victorfrye/microsoft-graveyard</RepositoryUrl>
+    <RepositoryUrl>https://github.com/victorfrye/microsoftgraveyard</RepositoryUrl>
 
     <AssemblyName>VictorFrye.MicrosoftGraveyard.Client</AssemblyName>
     <RootNamespace>VictorFrye.MicrosoftGraveyard.Client</RootNamespace>
