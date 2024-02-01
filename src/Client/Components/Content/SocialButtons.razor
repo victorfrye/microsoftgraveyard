@@ -1,9 +1,9 @@
-<ul class="d-flex flex-row flex-nowrap gap-3 p-0 pb-3">
+<div class="d-flex flex-row flex-nowrap gap-3 p-0 pb-3">
     @foreach (var social in Socials)
     {
         @ButtonTemplate(social)
     }
-</ul>
+</div>
 
 @code {
     [Parameter]

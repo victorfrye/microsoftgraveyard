@@ -7,6 +7,8 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddHttpClient();
+builder.Services
+    .AddHttpClient()
+    .AddSingleton(TimeProvider.System);
 
 await builder.Build().RunAsync();

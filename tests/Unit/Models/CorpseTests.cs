@@ -6,16 +6,16 @@ namespace VictorFrye.MicrosoftGraveyard.Tests.Unit.Models;
 
 public class CorpseTests
 {
-    private static readonly DateOnly Now = DateOnly.FromDateTime(DateTime.Now);
+    private static readonly DateOnly GivenDate = new(2024, 1, 22);
 
     [Fact]
     public void ShouldReturnIsAlive()
     {
         // Arrange
-        var dateToBeKilled = Now.AddYears(1);
+        var dateToBeKilled = GivenDate.AddYears(1);
 
         // Act
-        var actual = NewMockCorpse(deathDate: dateToBeKilled).IsDead();
+        var actual = NewMockCorpse(deathDate: dateToBeKilled).IsDead(GivenDate);
 
         // Assert
         Assert.False(actual);
@@ -25,10 +25,10 @@ public class CorpseTests
     public void ShouldReturnIsDead()
     {
         // Arrange
-        var dateToBeKilled = Now.AddYears(-1);
+        var dateToBeKilled = GivenDate.AddYears(-1);
 
         // Act
-        var actual = NewMockCorpse(deathDate: dateToBeKilled).IsDead();
+        var actual = NewMockCorpse(deathDate: dateToBeKilled).IsDead(GivenDate);
 
         // Assert
         Assert.True(actual);
@@ -106,7 +106,7 @@ public class CorpseTests
         var expected = "Killed by Microsoft today, Skype was a video calling service. It was 1 year old.";
 
         // Act
-        var actual = NewMockCorpse(name: "Skype", birthDate: Now.AddYears(-1), deathDate: Now, description: "a video calling service").GetObituary();
+        var actual = NewMockCorpse(name: "Skype", birthDate: GivenDate.AddYears(-1), deathDate: GivenDate, description: "a video calling service").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);
@@ -119,7 +119,7 @@ public class CorpseTests
         var expected = "Killed by Microsoft 1 day ago, Skype was a video calling service.";
 
         // Act
-        var actual = NewMockCorpse(name: "Skype", birthDate: null, deathDate: Now.AddDays(-1), description: "a video calling service").GetObituary();
+        var actual = NewMockCorpse(name: "Skype", birthDate: null, deathDate: GivenDate.AddDays(-1), description: "a video calling service").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);
@@ -132,7 +132,7 @@ public class CorpseTests
         var expected = "Killed by Microsoft 2 days ago, Skype was a video calling service. It was 4 months old.";
 
         // Act
-        var actual = NewMockCorpse(name: "Skype", birthDate: Now.AddMonths(-4), deathDate: Now.AddDays(-2), description: "a video calling service").GetObituary();
+        var actual = NewMockCorpse(name: "Skype", birthDate: GivenDate.AddMonths(-4), deathDate: GivenDate.AddDays(-2), description: "a video calling service").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);
@@ -145,7 +145,7 @@ public class CorpseTests
         var expected = "Killed by Microsoft 1 month ago, Skype was a video calling service. It was 9 years old.";
 
         // Act
-        var actual = NewMockCorpse(name: "Skype", birthDate: Now.AddYears(-10), deathDate: Now.AddMonths(-1).AddDays(-2), description: "a video calling service").GetObituary();
+        var actual = NewMockCorpse(name: "Skype", birthDate: GivenDate.AddYears(-10), deathDate: GivenDate.AddMonths(-1).AddDays(-2), description: "a video calling service").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);
@@ -158,7 +158,7 @@ public class CorpseTests
         var expected = "To be killed by Microsoft in 1 year, Skype is a video calling service.";
 
         // Act
-        var actual = NewMockCorpse(name: "Skype", birthDate: Now, deathDate: Now.AddYears(1), description: "a video calling service").GetObituary();
+        var actual = NewMockCorpse(name: "Skype", birthDate: GivenDate, deathDate: GivenDate.AddYears(1), description: "a video calling service").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);
@@ -171,7 +171,7 @@ public class CorpseTests
         var expected = "To be killed by Microsoft in 1 month, Skype is a video calling service.";
 
         // Act
-        var actual = NewMockCorpse(name: "Skype", birthDate: Now, deathDate: Now.AddMonths(1), description: "a video calling service").GetObituary();
+        var actual = NewMockCorpse(name: "Skype", birthDate: GivenDate, deathDate: GivenDate.AddMonths(1), description: "a video calling service").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);
@@ -184,7 +184,7 @@ public class CorpseTests
         var expected = "To be killed by Microsoft in 2 months, Skype is a video calling service.";
 
         // Act
-        var actual = NewMockCorpse(name: "Skype", birthDate: Now, deathDate: Now.AddMonths(2), description: "a video calling service").GetObituary();
+        var actual = NewMockCorpse(name: "Skype", birthDate: GivenDate, deathDate: GivenDate.AddMonths(2), description: "a video calling service").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);
@@ -202,7 +202,7 @@ public class CorpseTests
             name,
             qualifier,
             birthDate,
-            deathDate ?? Now,
+            deathDate ?? GivenDate,
             description,
             link);
     }

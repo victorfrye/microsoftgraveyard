@@ -11,9 +11,7 @@ public class Corpse(string name, string? qualifier, DateOnly? birthDate, DateOnl
     public string Description { get; init; } = description;
     public string Link { get; init; } = link;
 
-    private readonly DateOnly _now = DateOnly.FromDateTime(DateTime.Now);
-
-    public bool IsDead() => DeathDate <= _now;
+    public bool IsDead(DateOnly today) => DeathDate <= today;
 
     public string GetExpectedDeathDate() => $"{DeathDate:MMMM yyyy}";
 
@@ -21,25 +19,26 @@ public class Corpse(string name, string? qualifier, DateOnly? birthDate, DateOnl
 
     public string GetFullName() => Qualifier is null ? Name : $"{Name} ({Qualifier})";
 
-    public string GetObituary()
+    public string GetObituary(DateOnly today)
     {
         var obituary = new StringBuilder();
+        var isDead = IsDead(today);
 
-        if (IsDead())
+        if (isDead)
         {
-            var (age, period) = GetAge(DeathDate, _now);
+            var (age, period) = GetAge(DeathDate, today);
             var message = age == 0 ? "today" : $"{age} {period} ago";
             obituary.Append($"Killed by Microsoft {message}, ");
         }
         else
         {
-            var (age, period) = GetAge(_now, DeathDate);
+            var (age, period) = GetAge(today, DeathDate);
             obituary.Append($"To be killed by Microsoft in {age} {period}, ");
         }
 
-        obituary.Append($"{Name} {(IsDead() ? "was" : "is")} {Description}.");
+        obituary.Append($"{Name} {(isDead ? "was" : "is")} {Description}.");
 
-        if (IsDead() && BirthDate is not null)
+        if (isDead && BirthDate is not null)
         {
             var (age, period) = GetAge(BirthDate.Value, DeathDate);
             obituary.Append($" It was {age} {period} old.");
