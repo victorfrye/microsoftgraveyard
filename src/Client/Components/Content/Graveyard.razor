@@ -14,12 +14,12 @@
         <div class="d-flex flex-column p-1">
             @if (corpse.IsDead())
         {
-            <img src="/images/headstone.svg" class="img-grave m-2" />
+            <img src="/images/headstone.svg" class="img-grave m-2" alt="headstone" />
             <p class="text-life-dates text-center">@corpse.GetLifeDates()</p>
         }
         else
         {
-            <img src="/images/coffin.svg" class="img-grave m-2" />
+            <img src="/images/coffin.svg" class="img-grave m-2" alt="coffin" />
             <p class="text-life-dates text-center">@corpse.GetExpectedDeathDate()</p>
         }
         </div>
