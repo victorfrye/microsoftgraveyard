@@ -19,7 +19,7 @@
             <a href="https://killedbygoogle.com/" target="_blank">Killed by Google</a> project.
         </p>
 
-        <p>©2024 Victor Frye</p>
+        <p>©@today.Year Victor Frye</p>
     </div>
 </footer>
 
@@ -37,4 +37,7 @@
             iconUrl: "/images/github.svg"
         )
     ];
+
+
+    private DateOnly today = DateOnly.FromDateTime(DateTime.Now);
 }
