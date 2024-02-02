@@ -1,0 +1,59 @@
+@inherits TestContext
+
+@code {
+
+    [Fact]
+    public void ShouldRenderNoAnchorsWhenZeroSocials()
+    {
+        // Arrange
+        var expectedSocials = new List<Social>();
+
+        // Act
+        var cut = RenderComponentUnderTest(expectedSocials);
+
+        var actualAnchors = cut.FindAll("a");
+
+        // Assert
+        Assert.Empty(actualAnchors);
+    }
+
+    [Fact]
+    public void ShouldRenderOneAnchorWithExpectedHref()
+    {
+        // Arrange
+        var expectedSocial = new Social("Fake", "https://fake.com/user", "/images/fake.svg");
+        var expectedSocials = new List<Social> { expectedSocial };
+
+        // Act
+        var cut = RenderComponentUnderTest(expectedSocials);
+
+        var actualAnchors = cut.FindAll("a");
+
+        // Assert
+        Assert.Single(actualAnchors);
+        var firstAnchorHref = actualAnchors.First().GetAttribute("href");
+        Assert.Equal(expectedSocial.UserUrl, firstAnchorHref);
+    }
+
+    [Fact]
+    public void ShouldRenderTenAnchors()
+    {
+        // Arrange
+        var expectedCount = 10;
+        var expectedSocial = new Social("Fake", "https://fake.com/user", "/images/fake.svg");
+        var expectedSocials = Enumerable.Repeat(expectedSocial, expectedCount).ToList();
+
+        // Act
+        var cut = RenderComponentUnderTest(expectedSocials);
+
+        var actualAnchors = cut.FindAll("a");
+
+        // Assert
+        Assert.Equal(expectedCount, actualAnchors.Count);
+    }
+
+    private IRenderedFragment RenderComponentUnderTest(IList<Social> socials)
+    {
+        return Render(@<SocialButtons Socials=socials />);
+    }
+}
