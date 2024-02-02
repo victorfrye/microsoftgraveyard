@@ -1,11 +1,13 @@
 @inject TimeProvider TimeProvider
 
-<ul class="d-flex flex-wrap justify-content-center p-0">
-    @foreach (var corpse in Corpses)
-    {
-        @GraveTemplate(corpse)
-    }
-</ul>
+<section id="graveyard">
+    <ul class="d-flex flex-wrap justify-content-center p-0">
+        @foreach (var corpse in Corpses)
+        {
+            @GraveTemplate(corpse)
+        }
+    </ul>
+</section>
 
 @code {
     [Parameter]

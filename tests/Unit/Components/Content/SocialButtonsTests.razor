@@ -1,16 +1,14 @@
 @inherits TestContext
 
 @code {
-
     [Fact]
-    public void ShouldRenderNoAnchorsWhenZeroSocials()
+    public void ShouldRenderNoAnchorsWhenSocialsEmpty()
     {
         // Arrange
         var expectedSocials = new List<Social>();
 
         // Act
         var cut = RenderComponentUnderTest(expectedSocials);
-
         var actualAnchors = cut.FindAll("a");
 
         // Assert
@@ -26,7 +24,6 @@
 
         // Act
         var cut = RenderComponentUnderTest(expectedSocials);
-
         var actualAnchors = cut.FindAll("a");
 
         // Assert
@@ -45,7 +42,6 @@
 
         // Act
         var cut = RenderComponentUnderTest(expectedSocials);
-
         var actualAnchors = cut.FindAll("a");
 
         // Assert

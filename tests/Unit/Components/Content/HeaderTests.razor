@@ -1,7 +1,6 @@
 @inherits TestContext
 
 @code {
-
     [Fact]
     public void ShouldRenderHeadingAndImage()
     {
@@ -11,7 +10,6 @@
 
         // Act
         var cut = RenderComponentUnderTest();
-
         var actualHeading = cut.Find("h1");
         var actualImage = cut.Find("img");
 
