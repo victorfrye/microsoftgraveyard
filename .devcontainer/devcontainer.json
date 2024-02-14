@@ -1,15 +1,27 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.base.schema.json",
-  "name": "DotCom",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+  "name": "Microsoft Graveyard",
+
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers/features/powershell": "latest",
-    "devwasm.azurecr.io/dev-wasm/dev-wasm-feature/dotnet-wasi:0": "latest"
+    "ghcr.io/devcontainers/features/azure-cli": "latest",
+    "ghcr.io/devcontainers/features/github-cli": "latest"
   },
-  "forwardPorts": [5139],
-  "postCreateCommand": "dotnet restore; pwsh",
-  "shutdownAction": "stopContainer",
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "npm install",
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   "remoteUser": "root"
 }
