@@ -163,6 +163,13 @@
       "link": "https://github.blog/2022-06-08-sunsetting-atom/"
     },
     {
+      "name": "SQL Server Data Mining",
+      "birthDate": "2000-01-01",
+      "deathDate": "2022-11-16",
+      "description": "an integrated platform for predictive analytics and machine learning",
+      "link": "https://learn.microsoft.com/en-us/analysis-services/data-mining/data-mining-ssas"
+    },
+    {
       "name": "Internet Explorer",
       "birthDate": "1995-08-24",
       "deathDate": "2022-06-15",
@@ -523,6 +530,12 @@
       "link": "http://www.foxprohistory.org/foxprotimeline.htm"
     },
     {
+      "name": "Midori",
+      "deathDate": "2015-01-01",
+      "description": "a managed code operating system that was in research and development but never released",
+      "link": "https://www.zdnet.com/article/whatever-happened-to-microsofts-midori-operating-system-project/"
+    },
+    {
       "name": "Windows Live Messenger",
       "qualifier": "fka MSN Messenger",
       "birthDate": "1999-07-22",
@@ -545,12 +558,26 @@
       "link": "https://en.wikipedia.org/wiki/Windows_XP"
     },
     {
+      "name": "XNA",
+      "birthDate": "2006-03-14",
+      "deathDate": "2014-04-01",
+      "description": "a framework and tool set for developing video games for Windows, Xbox 360, and Windows Phone devices",
+      "link": "https://www.gamedeveloper.com/business/it-s-official-xna-is-dead"
+    },
+    {
       "name": "PixelSense",
       "qualifier": "fka Surface",
       "birthDate": "2008-04-17",
       "deathDate": "2013-12-03",
       "description": "a multi-touch digital table for public places that allowed multiple users to interact with the device simultaneously",
       "link": "https://finance.yahoo.com/news/microsofts-very-first-surface-largely-184340037.html"
+    },
+    {
+      "name": "SQL Server English Query",
+      "birthDate": "2000-01-01",
+      "deathDate": "2013-01-01",
+      "description": "a natural language processing tool that allowed users to query databases using English",
+      "link": "https://www.infoq.com/news/English-Query-Discontinued/"
     },
     {
       "name": "Reader",
@@ -737,6 +764,12 @@
       "deathDate": "2001-12-31",
       "description": "the first major release of the Windows operating system",
       "link": "https://en.wikipedia.org/wiki/Windows_1.0x"
+    },
+    {
+      "name": "Fahrenheit",
+      "deathDate": "2000-12-31",
+      "description": "a suite of high-level 3D computer graphic APIs in development by Microsoft and SGI but abandoned before release",
+      "link": "https://web.archive.org/web/20080421215948/http://www.directx.com/graphics/fahrenheit.htm"
     },
     {
       "name": "Bob",
