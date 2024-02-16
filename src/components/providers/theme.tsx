@@ -3,6 +3,7 @@
 import {
     BrandVariants,
     FluentProvider,
+    PartialTheme,
     Theme,
     createDarkTheme,
     createLightTheme

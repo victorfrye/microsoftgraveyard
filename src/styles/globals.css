@@ -52,11 +52,6 @@ body {
   --outlook-bg: #127CD6;
 }
 
-html,
-body {
-  background: var(--body-bg);
-}
-
 h1 {
   font-size: 2rem !important;
 }

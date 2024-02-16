@@ -37,7 +37,7 @@ export default function RootLayout({
         <ThemeProvider>
             <Header />
 
-            <main>
+          <main className="d-flex flex-column min-vh-100 mb-auto text-light">
               {children}
             </main>
 
