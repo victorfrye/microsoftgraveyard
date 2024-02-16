@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@microsoft-graveyard/styles/globals.css";
+import ThemeProvider from "@microsoft-graveyard/components/providers/theme";
+import Footer from "@microsoft-graveyard/components/shared/footer";
+import Header from "@microsoft-graveyard/components/shared/header";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://microsoftgraveyard.com'),
-  title: "Microsoft Graveyard",
-  description: "Microsoft Graveyard is the virtual graveyard for all products killed by Microsoft; a free and open source collection of dead Microsoft products built by a passionate and nostalgic community.",
+  title: "Microsoft Graveyard | In remembrance of those killed by Microsoft",
+  description: "Microsoft Graveyard is the virtual graveyard for remembering all products killed by Microsoft; a free and open source collection of dead Microsoft products built by a passionate and nostalgic community.",
   keywords: ["microsoft graveyard", "killed by microsoft", "microsoft cemetery", "microsoft", "dead products"],
   icons: ["images/headstone.svg"],
   authors: {
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     title: "Microsoft Graveyard",
-    description: "The virtual graveyard for all products killed by Microsoft.",
+    description: "The virtual graveyard for remembering all products killed by Microsoft.",
     siteName: "Microsoft Graveyard",
   }
 };
@@ -30,7 +33,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>
+            <Header />
+
+            <main>
+              {children}
+            </main>
+
+            <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
