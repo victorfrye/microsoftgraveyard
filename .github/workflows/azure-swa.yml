@@ -8,9 +8,7 @@ on:
     branches: ["main"]
 
 env:
-  DOTNET_VERSION: '8.x'
-  APP_PROJECT_FILE: 'src/Client/Client.csproj'
-  APP_OUTPUT_LOCATION: 'artifacts/client'
+  NODE_VERSION: '20.x'
 
 jobs:
   build_and_deploy_job:
@@ -24,32 +22,27 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}
-      - name: Install WASM build tools
-        run: dotnet workload install wasm-tools
-      - name: Restore dependencies
-        run: dotnet restore
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install dependencies
+        run: npm ci
       - name: Verify formatting
-        run: dotnet format --verify-no-changes --no-restore
-      - name: Build solution
-        run: dotnet build -c Release --no-restore
-      - name: Test solution
-        run: dotnet test -c Release --no-restore --no-build
-      - name: Publish app project
-        run: dotnet publish ${{ env.APP_PROJECT_FILE }} -c Release -o ${{ env.APP_OUTPUT_LOCATION }} --no-restore --no-build
+        run: npm run lint
+      - name: Build sources
+        run: npm run build
       - name: Deploy static web app
         id: deploy
         uses: Azure/static-web-apps-deploy@v1
         env:
           SKIP_DEPLOY_ON_MISSING_SECRETS: ${{ github.event_name == 'pull_request' }}
+          IS_STATIC_EXPORT: true
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: 'upload'
-          app_location: '${{ env.APP_OUTPUT_LOCATION }}/wwwroot'
+          app_location: 'out'
           skip_app_build: true
           skip_api_build: true
 

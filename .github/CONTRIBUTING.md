@@ -34,7 +34,7 @@ Before opening a pull request, please note the following are required and checke
 
 ### Adding a new corpse to the graveyard
 
-The core list of dead products is maintained in the [corpses.json](/src/Client/wwwroot/data/corpses.json) file within the `wwwroot/data` directory. This file is a JSON array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
+The core list of dead products is maintained in the [corpses.json](/public/data/corpses.json) file within the `public/data` directory. This file is a JSON array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
 
 - `name` - The name of the product. This should NOT include Microsoft unless absolutely necessary as all products in this list are Microsoft products and could be prepended with the company's name.
 
