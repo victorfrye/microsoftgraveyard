@@ -2,6 +2,13 @@
   "$schema": "https://raw.githubusercontent.com/victorfrye/microsoftgraveyard/main/files/corpses.schema.json",
   "corpses": [
     {
+      "name": "Publisher",
+      "birthDate": "1991-09-16",
+      "deathDate": "2026-10-13",
+      "description": "a desktop publishing application that allowed users to create graphical layouts and documents for print and digital media",
+      "link": "https://www.xda-developers.com/microsoft-killing-off-app-october-2026/"
+    },
+    {
       "name": "Azure Blueprints",
       "birthDate": "2018-09-01",
       "deathDate": "2026-07-11",
