@@ -1,7 +1,7 @@
 'use client';
 
 import { Divider, Image, Link, Text, makeStyles, shorthands, tokens } from "@fluentui/react-components";
-import SocialButtons from "@microsoft-graveyard/components/shared/socialButtons";
+import Socials from "@microsoft-graveyard/components/shared/socials";
 
 const useStyles = makeStyles({
     footer: {
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Text as="h2" weight="bold" align="center" block className={styles.title}>Microsoft Graveyard</Text>
             </div>
 
-            <SocialButtons />
+            <Socials />
 
             <Text as="p" align="center">
                 Microsoft Graveyard is the virtual graveyard for all products killed by Microsoft;

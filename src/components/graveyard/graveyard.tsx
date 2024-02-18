@@ -5,6 +5,45 @@ import { Button, Card, CardFooter, CardHeader, Image, Text, makeStyles, shorthan
 import { News16Regular } from "@fluentui/react-icons";
 import { Corpse, getExpectedDeathDate, getFullName, getLifeDates, getObituary, isDead } from "@microsoft-graveyard/models/corpse";
 
+const useStyles = makeStyles({
+    list: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        listStyleType: 'none',
+        ...shorthands.padding('0')
+    },
+    container: {
+        display: 'flex',
+        '@media screen and (max-width: 768px)': {
+            width: '75%',
+        },
+        '@media screen and (min-width: 1200px)': {
+            width: '25%',
+        },
+        width: '41.66666667%',
+        ...shorthands.flex(0, 0, 'auto'),
+        ...shorthands.margin(tokens.spacingVerticalL, tokens.spacingHorizontalL),
+        ...shorthands.borderRadius(tokens.borderRadiusMedium),
+    },
+    card: {
+        backgroundColor: tokens.colorNeutralBackground2,
+    },
+    title: { 
+        fontSize: tokens.lineHeightBase400,
+        lineHeight: tokens.lineHeightBase500,
+        ...shorthands.margin(tokens.spacingVerticalXS, tokens.spacingHorizontalNone),
+    },
+    lifeDates: {
+        color: tokens.colorBrandForeground2,
+        lineHeight: tokens.lineHeightBase200,
+        ...shorthands.margin(tokens.spacingVerticalXS, tokens.spacingHorizontalNone),
+    },
+    footer: {
+        marginTop: 'auto',
+    },
+});
+
 interface ICorpse {
     name: string;
     qualifier: string | undefined;
@@ -17,25 +56,6 @@ interface ICorpse {
 interface ICorpsesData {
     corpses: ICorpse[];
 }
-
-const useStyles = makeStyles({
-    graveItem: {
-
-    },
-    graveItemHeader: {
-        fontSize: tokens.lineHeightBase400,
-        lineHeight: tokens.lineHeightBase500,
-    },
-    graveList: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        ...shorthands.padding('0')
-    },
-    graveCard: {
-        backgroundColor: tokens.colorNeutralBackground2,
-    }
-});
 
 const Graveyard = (): JSX.Element => {
     let [corpses, setCorpses] = useState<Corpse[]>([]);
@@ -67,8 +87,8 @@ const Graveyard = (): JSX.Element => {
 
     const renderGraves = (): JSX.Element[] => {
         return corpses.map((corpse, index) =>
-            <li className='col-8 col-md-5 col-xl-3 d-flex my-3 mx-md-4 rounded text-light m-3' key={index}>
-                <Card key={index} className={styles.graveCard}>
+            <li className={styles.container} key={index}>
+                <Card key={index} className={styles.card}>
                     <CardHeader
                         image={
                             <Image
@@ -78,14 +98,14 @@ const Graveyard = (): JSX.Element => {
                                 width={72}
                             />
                         }
-                        header={<Text as="h2" weight="bold" block className={styles.graveItemHeader}>{getFullName(corpse)}</Text>}
+                        header={<Text as="h2" weight="bold" block className={styles.title}>{getFullName(corpse)}</Text>}
                         description={
-                            <Text as="p" >{isDead(corpse, today) ? getLifeDates(corpse) : getExpectedDeathDate(corpse)}</Text>
+                            <Text as="p" className={styles.lifeDates}>{isDead(corpse, today) ? getLifeDates(corpse) : getExpectedDeathDate(corpse)}</Text>
                         }
                     />
                     <Text as="p">{getObituary(corpse, today)}</Text>
-                    <CardFooter className="mt-auto">
-                        <Button as="a" appearance="primary" icon={<News16Regular />} href={corpse.link} target="_blank" rel="noreferrer noopener" className="">
+                    <CardFooter className={styles.footer}>
+                        <Button as="a" appearance="primary" icon={<News16Regular />} href={corpse.link} target="_blank" rel="noreferrer noopener" >
                             Read the news
                         </Button>
                     </CardFooter>
@@ -96,7 +116,7 @@ const Graveyard = (): JSX.Element => {
 
     return (
         <section id="graveyard">
-            <ul className={styles.graveList}>
+            <ul className={styles.list}>
                 {renderGraves()}
             </ul>
         </section>

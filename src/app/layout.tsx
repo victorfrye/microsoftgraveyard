@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import "@microsoft-graveyard/styles/globals.css";
 import ThemeProvider from "@microsoft-graveyard/components/providers/theme";
 import Footer from "@microsoft-graveyard/components/shared/footer";
 import Header from "@microsoft-graveyard/components/shared/header";
+import "@microsoft-graveyard/styles/globals.css";
 
 const metadata: Metadata = {
   metadataBase: new URL('https://microsoftgraveyard.com'),

@@ -13,18 +13,18 @@ const useStyles = makeStyles({
     headline: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'start',
-        alignItems: 'start',
         '@media screen and (max-width: 444px)': {
             justifyContent: 'center',
             alignItems: 'center',
         },
+        justifyContent: 'start',
+        alignItems: 'start',
         ...shorthands.padding(tokens.spacingVerticalS),
         ...shorthands.gap(tokens.spacingVerticalS)
     },
     title: {
-        ...shorthands.margin(tokens.spacingVerticalS, tokens.spacingHorizontalNone),
         fontSize: tokens.fontSizeHero800,
+        ...shorthands.margin(tokens.spacingVerticalS, tokens.spacingHorizontalNone),
     },
     tagline: {
         fontSize: tokens.fontSizeBase300,
