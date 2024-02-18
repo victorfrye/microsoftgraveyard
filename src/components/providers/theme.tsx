@@ -3,10 +3,13 @@
 import {
     BrandVariants,
     FluentProvider,
-    PartialTheme,
     Theme,
     createDarkTheme,
-    createLightTheme
+    createLightTheme,
+    makeStaticStyles,
+    shorthands,
+    tokens,
+    webDarkTheme
 } from "@fluentui/react-components";
 
 import '@microsoft-graveyard/styles/globals.css';
@@ -30,26 +33,54 @@ const myBrand: BrandVariants = {
     160: "#D7D7D7"
 };
 
+const platinumTheme: BrandVariants = {
+    10: "#030303",
+    20: "#161819",
+    30: "#242829",
+    40: "#2E3436",
+    50: "#394043",
+    60: "#444D50",
+    70: "#4F5B5E",
+    80: "#5B686C",
+    90: "#67767B",
+    100: "#758489",
+    110: "#859296",
+    120: "#94A0A4",
+    130: "#A4AEB1",
+    140: "#B5BDBF",
+    150: "#C5CCCE",
+    160: "#D6DBDC"
+};
+
 const lightTheme: Theme = {
-    ...createLightTheme(myBrand),
+    ...createLightTheme(platinumTheme),
 };
 
 const darkTheme: Theme = {
-    ...createDarkTheme(myBrand),
+    ...createDarkTheme(platinumTheme),
 };
 
+const useStaticStyles = makeStaticStyles({
+    html: {
+        backgroundColor: tokens.colorNeutralBackground1,
+    },
+    body: {
+        backgroundColor: tokens.colorNeutralBackground1,
+    }
+})
 
-darkTheme.colorBrandForeground1 = myBrand[110];
-darkTheme.colorBrandForeground2 = myBrand[120];
 
-export default function ThemeProvider({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+darkTheme.colorBrandForeground1 = platinumTheme[110];
+darkTheme.colorBrandForeground2 = platinumTheme[120];
+
+const ThemeProvider = ({ children, }: Readonly<{ children: React.ReactNode; }>) => {
+    useStaticStyles();
+
     return (
         <FluentProvider theme={darkTheme}>
             {children}
         </FluentProvider>
     );
 };
+
+export default ThemeProvider;
