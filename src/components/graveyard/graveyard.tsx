@@ -85,7 +85,7 @@ const Graveyard = (): JSX.Element => {
     const renderGraves = (): JSX.Element[] => {
         return corpses.map((corpse, index) =>
             <li className={styles.container} key={index}>
-                <Card appearance="filled-alternative" key={index} className={styles.card}>
+                <Card appearance="filled-alternative" key={index}>
                     <CardHeader
                         image={
                             <Image
