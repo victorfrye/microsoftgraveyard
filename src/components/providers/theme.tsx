@@ -10,21 +10,6 @@ import {
     tokens,
 } from "@fluentui/react-components";
 
-const useStaticStyles = makeStaticStyles({
-    body: {
-        width: '100%',
-        height: '100%',
-        marginTop: tokens.spacingVerticalNone,
-        marginBottom: tokens.spacingVerticalNone,
-        marginLeft: tokens.spacingHorizontalNone,
-        marginRight: tokens.spacingHorizontalNone,
-        paddingTop: tokens.spacingVerticalNone,
-        paddingBottom: tokens.spacingVerticalNone,
-        paddingLeft: tokens.spacingHorizontalNone,
-        paddingRight: tokens.spacingHorizontalNone,
-    }
-});
-
 const platinumTheme: BrandVariants = {
     10: "#030303",
     20: "#161819",
@@ -54,6 +39,23 @@ const darkTheme: Theme = {
 
 darkTheme.colorBrandForeground1 = platinumTheme[110];
 darkTheme.colorBrandForeground2 = platinumTheme[120];
+
+const useStaticStyles = makeStaticStyles({
+    p: {
+        marginBlockStart: tokens.spacingVerticalXS,
+        marginBlockEnd: tokens.spacingVerticalXS,
+        marginInlineStart: 0,
+        marginInlineEnd: 0,
+    },
+    ul: {
+        listStyleType: 'none',
+        marginBlockStart: tokens.spacingVerticalXS,
+        marginBlockEnd: tokens.spacingVerticalXS,
+        marginInlineStart: 0,
+        marginInlineEnd: 0,
+        paddingInlineStart: 0,
+    }
+});
 
 const ThemeProvider = ({ children, }: Readonly<{ children: React.ReactNode; }>) => {
     useStaticStyles();

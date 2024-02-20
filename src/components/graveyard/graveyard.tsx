@@ -10,8 +10,8 @@ const useStyles = makeStyles({
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        listStyleType: 'none',
-        ...shorthands.padding('0')
+        ...shorthands.gap(tokens.spacingVerticalXL),
+        ...shorthands.margin(tokens.spacingVerticalNone)
     },
     container: {
         display: 'flex',
@@ -23,11 +23,8 @@ const useStyles = makeStyles({
         },
         width: '41.66666667%',
         ...shorthands.flex(0, 0, 'auto'),
-        ...shorthands.margin(tokens.spacingVerticalL, tokens.spacingHorizontalL),
+        ...shorthands.margin(tokens.spacingVerticalL, tokens.spacingHorizontalXL),
         ...shorthands.borderRadius(tokens.borderRadiusMedium),
-    },
-    card: {
-        backgroundColor: tokens.colorNeutralBackground2,
     },
     title: { 
         fontSize: tokens.lineHeightBase400,
@@ -88,7 +85,7 @@ const Graveyard = (): JSX.Element => {
     const renderGraves = (): JSX.Element[] => {
         return corpses.map((corpse, index) =>
             <li className={styles.container} key={index}>
-                <Card key={index} className={styles.card}>
+                <Card appearance="filled-alternative" key={index} className={styles.card}>
                     <CardHeader
                         image={
                             <Image

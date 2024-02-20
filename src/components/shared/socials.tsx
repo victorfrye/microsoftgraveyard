@@ -1,5 +1,4 @@
 import { Image, Link, makeStyles, shorthands, tokens } from "@fluentui/react-components";
-import { useTransition } from "react";
 
 interface ISocial {
     href: string;
