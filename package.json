@@ -16,7 +16,6 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@azure/static-web-apps-cli": "^1.1.6",
     "@griffel/next-extraction-plugin": "^0.1.1",
     "@griffel/webpack-loader": "^2.2.8",
     "@types/node": "^20",
