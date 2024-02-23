@@ -135,9 +135,6 @@ _ReSharper*/
 # TeamCity is a build add-in
 _TeamCity*
 
-# Generic coverage output directory
-coverage/
-
 # DotCover is a Code Coverage Tool
 *.dotCover
 
