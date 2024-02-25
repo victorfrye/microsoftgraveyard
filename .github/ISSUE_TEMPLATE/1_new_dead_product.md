@@ -1,8 +1,8 @@
 ---
 name: New dead product
 about: Request adding a new dead product to the graveyard
-title: "[NEW CORPSE] "
-labels: new dead product
+title: "[CORPSES] "
+labels: corpses
 assignees: ''
 
 ---
