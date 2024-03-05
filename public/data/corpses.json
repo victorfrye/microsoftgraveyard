@@ -869,6 +869,13 @@
       "deathDate": "1996-01-01",
       "description": "a Microsoft project intended to provide a personalized alternative interface for the Windows operating system",
       "link": "https://www.youtube.com/watch?v=rXHu9OmLd8Y"
+    },
+    {
+      "name": "Windows Subsystem for Android",
+      "birthDate": "2022-02-15",
+      "deathDate": "2025-03-05",
+      "description": "a system that enables your Windows 11 device to run Android applications that are available in the Amazon Appstore",
+      "link": "https://learn.microsoft.com/en-gb/windows/android/wsa/"
     }
   ]
 }
