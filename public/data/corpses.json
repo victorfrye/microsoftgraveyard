@@ -404,6 +404,13 @@
       "link": "https://en.wikipedia.org/wiki/Microsoft_Reader"
     },
     {
+      "name": "PerformancePoint Server",
+      "birthDate": "2007-12-20",
+      "deathDate": "2018-01-09",
+      "description": "a business intelligence software that allowed users to monitor, analyze, and plan business activities, later integrated into SharePoint Server before discontinuation",
+      "link": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/pps-2007-end-of-support"
+    },
+    {
       "name": "Groove Music Pass",
       "qualifier": "fka Zune Music Pass",
       "birthDate": "2006-11-14",
@@ -445,6 +452,13 @@
       "deathDate": "2017-08-31",
       "description": "a cloud-based service that allowed administrators to publish individual applications to end user virtual desktops for installation and use",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-security-and/application-remoting-and-the-cloud/ba-p/249927"
+    },
+    {
+      "name": "ProClarity",
+      "birthDate": "1995-01-01",
+      "deathDate": "2017-07-11",
+      "description": "a business intelligence solution that allowed users to analyze data and create graphical visualizations, acquired by Microsoft in 2006",
+      "link": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/pps-2007-end-of-support"
     },
     {
       "name": "Visual SourceSafe",
