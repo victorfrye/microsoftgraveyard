@@ -44,6 +44,13 @@
       "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
     },
     {
+      "name": "Windows Subsystem for Android",
+      "birthDate": "2022-02-15",
+      "deathDate": "2025-03-05",
+      "description": "a system that enables your Windows 11 device to run Android applications that are available in the Amazon Appstore",
+      "link": "https://www.theverge.com/2024/3/5/24091370/microsoft-windows-11-android-apps-end-of-support"
+    },
+    {
       "name": "Teams Live Events",
       "birthDate": "2019-03-26",
       "deathDate": "2024-09-30",
@@ -91,6 +98,13 @@
       "deathDate": "2023-12-21",
       "description": "an augmented and virtual reality platform for compatible Windows headsets",
       "link": "https://www.theverge.com/2023/12/21/24010787/microsoft-windows-mixed-reality-deprecated"
+    },
+    {
+      "name": "Tips",
+      "birthDate": "1995-08-24",
+      "deathDate": "2023-11-08",
+      "description": "an introductory system application that provided a welcome experience, feature updates, and general usage tips for Windows users",
+      "link": "https://www.windowscentral.com/software-apps/windows-11/microsoft-is-killing-the-windows-11-tips-app-will-be-removed-in-a-future-os-update"
     },
     {
       "name": "VBScript",
@@ -658,6 +672,13 @@
       "link": "https://finance.yahoo.com/news/microsofts-very-first-surface-largely-184340037.html"
     },
     {
+      "name": "Works",
+      "birthDate": "1987-09-14",
+      "deathDate": "2013-01-08",
+      "description": "a lightweight, low-cost productivity software suite that included a word processor, spreadsheet, and a database management system",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Works"
+    },
+    {
       "name": "SQL Server English Query",
       "birthDate": "2000-01-01",
       "deathDate": "2013-01-01",
@@ -720,6 +741,13 @@
       "deathDate": "2009-10-22",
       "description": "a software technology that utilized animated characters, text-to-speech engines, and speech recognition to interact with users",
       "link": "https://en.wikipedia.org/wiki/Microsoft_Agent"
+    },
+    {
+      "name": "TrueSpace",
+      "birthDate": "1994-01-01",
+      "deathDate": "2009-05-19",
+      "description": "a freeware 3D modeling and animation software that created by Caligari Corporation and later acquired by Microsoft in 2008",
+      "link": "https://en.wikipedia.org/wiki/TrueSpace"
     },
     {
       "name": "Ensemble Studios",
@@ -862,13 +890,6 @@
       "deathDate": "1996-01-01",
       "description": "a Microsoft project intended to provide a personalized alternative interface for the Windows operating system",
       "link": "https://www.youtube.com/watch?v=rXHu9OmLd8Y"
-    },
-    {
-      "name": "Windows Subsystem for Android",
-      "birthDate": "2022-02-15",
-      "deathDate": "2025-03-05",
-      "description": "a system that enables your Windows 11 device to run Android applications that are available in the Amazon Appstore",
-      "link": "https://learn.microsoft.com/en-gb/windows/android/wsa/"
     }
   ]
 }
