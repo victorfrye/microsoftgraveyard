@@ -1,13 +1,16 @@
 'use client';
 
-import { Divider, Image, Link, Text, makeStyles, shorthands, tokens } from "@fluentui/react-components";
+import { Divider, Image, Link, Switch, SwitchOnChangeData, Text, makeStyles, shorthands, tokens } from "@fluentui/react-components";
 import Socials from "@microsoft-graveyard/components/shared/socials";
+import { useDarkMode } from "@microsoft-graveyard/components/providers/darkMode";
 
 const useStyles = makeStyles({
     footer: {
         display: 'flex',
         flexDirection: 'column',
         marginTop: 'auto',
+        justifyContent: 'center',
+        alignItems: 'center',
         ...shorthands.padding(tokens.spacingVerticalXXL, tokens.spacingHorizontalL),
     },
     divider: {
@@ -24,12 +27,20 @@ const useStyles = makeStyles({
         fontSize: tokens.fontSizeBase600,
         ...shorthands.margin(tokens.spacingVerticalL),
     },
-
+    switch: {
+        ...shorthands.padding(tokens.spacingVerticalXS, tokens.spacingHorizontalNone, tokens.spacingVerticalMNudge),
+    }
 });
 
 const Footer = () => {
     const styles = useStyles();
     const _today: Date = new Date();
+
+    const { isDark, onDarkModeToggled } = useDarkMode();
+
+    const handleDarkModeToggled = (event: React.ChangeEvent<HTMLInputElement>, data: SwitchOnChangeData) => {
+        onDarkModeToggled(data.checked);;
+    };
 
     return (
         <footer className={styles.footer}>
@@ -41,6 +52,8 @@ const Footer = () => {
             </div>
 
             <Socials />
+
+            <Switch checked={isDark} onChange={handleDarkModeToggled} label={isDark ? "Dark Mode" : "Light Mode"} className={styles.switch} />
 
             <Text as="p" align="center">
                 Microsoft Graveyard is the virtual graveyard for all products killed by Microsoft;
