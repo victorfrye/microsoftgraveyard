@@ -3,6 +3,7 @@ import ThemeProvider from "@microsoft-graveyard/components/providers/theme";
 import Footer from "@microsoft-graveyard/components/shared/footer";
 import Header from "@microsoft-graveyard/components/shared/header";
 import "@microsoft-graveyard/styles/globals.css";
+import DarkModeProvider from "@microsoft-graveyard/components/providers/darkMode";
 
 const metadata: Metadata = {
   metadataBase: new URL('https://microsoftgraveyard.com'),
@@ -34,11 +35,13 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider>
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <DarkModeProvider>
+          <ThemeProvider>
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </DarkModeProvider>
       </body>
     </html>
   );

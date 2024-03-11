@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import { Button, Card, CardFooter, CardHeader, Image, Text, makeStyles, shorthands, tokens } from "@fluentui/react-components";
+import { Button, Card, CardHeader, Image, Text, makeStyles, shorthands, tokens } from "@fluentui/react-components";
 import { News16Regular } from "@fluentui/react-icons";
 import { Corpse, getExpectedDeathDate, getFullName, getLifeDates, getObituary, isDead } from "@microsoft-graveyard/models/corpse";
 
@@ -35,9 +35,6 @@ const useStyles = makeStyles({
         color: tokens.colorBrandForeground2,
         lineHeight: tokens.lineHeightBase200,
         ...shorthands.margin(tokens.spacingVerticalXS, tokens.spacingHorizontalNone),
-    },
-    footer: {
-        marginTop: 'auto',
     },
 });
 
@@ -99,13 +96,9 @@ const Graveyard = (): JSX.Element => {
                         description={
                             <Text as="p" className={styles.lifeDates}>{isDead(corpse, today) ? getLifeDates(corpse) : getExpectedDeathDate(corpse)}</Text>
                         }
+                        action={<Button as="a" icon={<News16Regular />} appearance="subtle" href={corpse.link} target="_blank" rel="noreferrer noopener" />}
                     />
                     <Text as="p">{getObituary(corpse, today)}</Text>
-                    <CardFooter className={styles.footer}>
-                        <Button as="a" appearance="primary" icon={<News16Regular />} href={corpse.link} target="_blank" rel="noreferrer noopener" >
-                            Read the news
-                        </Button>
-                    </CardFooter>
                 </Card>
             </li >
         );

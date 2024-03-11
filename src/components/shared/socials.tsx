@@ -1,4 +1,5 @@
 import { Image, Link, makeStyles, shorthands, tokens } from "@fluentui/react-components";
+import { useDarkMode } from "@microsoft-graveyard/components/providers/darkMode";
 
 interface ISocial {
     href: string;
@@ -25,38 +26,40 @@ const useStyles = makeStyles({
         ...shorthands.border('none'),
         ...shorthands.borderRadius(tokens.borderRadiusCircular),
         ...shorthands.outline(tokens.strokeWidthThick, 'solid', tokens.colorNeutralForeground1),
-        ...shorthands.transition('all', tokens.durationSlow),
+        ...shorthands.transition('all', tokens.durationFaster),
         ':hover': {
             outlineOffset: tokens.strokeWidthThicker,
-            ...shorthands.transition('all', tokens.durationSlow),
+            ...shorthands.transition('all', tokens.durationFaster),
         },
-        ' img': {
-            ...shorthands.transition('all', tokens.durationSlow),
+        ':focus': {
+            outlineOffset: tokens.strokeWidthThicker,
+            ...shorthands.transition('all', tokens.durationFaster),
+        },
+        '& img': {
+            ...shorthands.transition('all', tokens.durationFaster),
         },
         ':hover img': {
             transform: 'scale(1.15)',
-            ...shorthands.transition('all', tokens.durationSlow),
+            ...shorthands.transition('all', tokens.durationFaster),
         },
-        ':hover:nth-child(1)': {
-            backgroundColor: '#000000',
-        },
-        ':hover:nth-child(2)': {
-            backgroundColor: '#333333',
+        ':focus img': {
+            transform: 'scale(1.5)',
         },
     },
 });
 
 const Socials = () => {
     const styles = useStyles();
+    const { isDark } = useDarkMode();
 
     const socialDetails: ISocial[] = [
         {
             href: "https://threads.net/@microsoftgraveyard",
-            image: <Image src="/images/threads.svg" alt="Threads" height={20} width={20} />
+            image: <Image src={isDark ? "/images/threads.svg" : "/images/threads_dark.svg"} alt="Threads" height={20} width={20} />
         },
         {
             href: "https://github.com/victorfrye/microsoftgraveyard",
-            image: <Image src="/images/github.svg" alt="GitHub" height={20} width={20} />
+            image: <Image src={isDark ? "/images/github.svg" : "/images/github_dark.svg"} alt="GitHub" height={20} width={20} />
         }
     ];
 
