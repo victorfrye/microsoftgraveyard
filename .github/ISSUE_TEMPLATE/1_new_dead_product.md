@@ -1,9 +1,10 @@
 ---
 name: New dead product
-about: Request adding a new dead product to the graveyard
-title: "[CORPSES] "
-labels: corpses
-assignees: ''
+about: Request a new dead product be added to the graveyard
+title: "[Corpse] "
+labels: ["🪦 corpse"]
+assignees: 
+- victorfrye
 
 ---
 
