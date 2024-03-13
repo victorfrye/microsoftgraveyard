@@ -1,8 +1,8 @@
 ---
 name: New dead product
 about: Request a new dead product be added to the graveyard
-title: "[Corpse] "
-labels: ["🪦 corpse"]
+title: ""
+labels: ["💀 Issue-Corpse", "🪦 Area-Graveyard"]
 assignees: 
 - victorfrye
 
