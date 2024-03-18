@@ -44,6 +44,13 @@
       "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
     },
     {
+      "name": "Visual Studio App Center",
+      "birthDate": "2017-11-15",
+      "deathDate": "2025-03-31",
+      "description": "a set of cloud services for managing the lifecycle of mobile and desktop applications, including automated builds, device testing, and distribution",
+      "link": "https://www.neowin.net/news/microsoft-discontinues-visual-studio-app-center/"
+    },
+    {
       "name": "Windows Subsystem for Android",
       "birthDate": "2022-02-15",
       "deathDate": "2025-03-05",
@@ -98,6 +105,13 @@
       "deathDate": "2023-12-21",
       "description": "an augmented and virtual reality platform for compatible Windows headsets",
       "link": "https://www.theverge.com/2023/12/21/24010787/microsoft-windows-mixed-reality-deprecated"
+    },
+    {
+      "name": "LinkedIn Skill Assessments",
+      "birthDate": "2019-09-17",
+      "deathDate": "2023-12-21",
+      "description": "a feature that allowed users to validate their skills via standardized quizzes and then showcase proficiency with a profile badge",
+      "link": "https://medium.com/@Neelesh-Janga/linkedin-skill-assessments-no-longer-available-0598ccef1464"
     },
     {
       "name": "Tips",
@@ -231,6 +245,13 @@
       "deathDate": "2022-02-15",
       "description": "a cloud-based job scheduling service that allowed administrators configure and automatically run scheduled logic",
       "link": "https://azure.microsoft.com/en-us/updates/azure-scheduler-will-be-retired-on-31-january-2022/"
+    },
+    {
+      "name": "LinkedIn Salary",
+      "birthDate": "2016-11-02",
+      "deathDate": "2022-01-21",
+      "description": "a feature that allowed individual users to discover earning potential and salary insights based on factors such as job title and location",
+      "link": "https://www.youtube.com/watch?v=1H75GEYxXd0&t=2s"
     },
     {
       "name": "Channel 9",
