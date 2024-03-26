@@ -3,7 +3,7 @@
 import { Button, Divider, Image, Link, Switch, SwitchOnChangeData, Text, makeStyles, shorthands, tokens } from "@fluentui/react-components";
 import Socials from "@microsoft-graveyard/components/shared/socials";
 import { useDarkMode } from "@microsoft-graveyard/components/providers/darkMode";
-import { ArrowDown32Filled } from "@fluentui/react-icons";
+import { ArrowDown32Regular } from "@fluentui/react-icons";
 
 const useStyles = makeStyles({
     footer: {
@@ -51,7 +51,14 @@ const Footer = () => {
 
     return (
         <footer id="footer" className={styles.footer}>
-            <Button icon={<ArrowDown32Filled />} as="a" href="#footer" shape="circular" appearance="outline" className={styles.floatingActionButton} size="large" />
+            <Button
+                icon={<ArrowDown32Regular />}
+                as="a" href="#footer"
+                shape="circular"
+                appearance="outline"
+                size="large"
+                className={styles.floatingActionButton}
+            />
 
             <Divider appearance="strong" inset className={styles.divider} />
 
