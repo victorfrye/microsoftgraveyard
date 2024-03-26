@@ -1,4 +1,27 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!--!Fluent UI Emoji by Microsoft
+    
+    MIT License
+
+    Copyright (c) Microsoft Corporation.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE-->
     <path
         d="M4.89377 16.4041L3.72084 11.8034C3.66423 11.5813 3.64695 11.3547 3.66663 11.1328L3.66187 11.1329L3.92114 7.83606H6.1698L8.25565 5.60695C8.79268 5.03304 9.61607 4.82688 10.3602 5.08003L15.7723 6.92128C16.3849 7.1297 16.9138 7.53061 17.2799 8.06421L26.6401 21.7072H28.7577V25.1095C28.7562 25.3596 28.661 25.6077 28.477 25.7983L24.501 29.9154C24.0754 30.3561 23.3931 30.4234 22.8896 30.0743L6.49049 18.703C5.69876 18.154 5.13178 17.3376 4.89377 16.4041Z"
         fill="url(#paint0_linear_18_26539)" />
