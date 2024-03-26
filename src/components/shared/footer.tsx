@@ -3,7 +3,7 @@
 import { Button, Divider, Image, Link, Switch, SwitchOnChangeData, Text, makeStyles, shorthands, tokens } from "@fluentui/react-components";
 import Socials from "@microsoft-graveyard/components/shared/socials";
 import { useDarkMode } from "@microsoft-graveyard/components/providers/darkMode";
-import { ArrowCircleDown48Filled, ArrowDown16Regular, ArrowDown32Filled } from "@fluentui/react-icons";
+import { ArrowDown32Filled } from "@fluentui/react-icons";
 
 const useStyles = makeStyles({
     footer: {
