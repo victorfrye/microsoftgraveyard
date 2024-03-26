@@ -1895,17 +1895,17 @@
   dependencies:
     "@swc/helpers" "^0.5.1"
 
-"@griffel/babel-preset@^1.5.6":
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/@griffel/babel-preset/-/babel-preset-1.5.6.tgz#4540c789db621c5e993b9eb51fb9561631fa991b"
-  integrity sha512-f8axVjTT4nceAX3yhUdqREiD7yYAOLvdCgVKqVSib2kW2UdmYuGs+04AnGJk2tS8dJ1LUdN+1bF09wasGP1Sdg==
+"@griffel/babel-preset@^1.5.7":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@griffel/babel-preset/-/babel-preset-1.5.7.tgz#385f9b85693ca44e194773493d7026162f76932b"
+  integrity sha512-9XA5MOiJtbk4ew5isQ3xkMO0w68B+4hdUqd/Lv0LN6gHSpxmlWXeES8iCi2ChzLUQjlqyA4XP8gFzzPyLxtpXg==
   dependencies:
     "@babel/core" "^7.23.2"
     "@babel/generator" "^7.23.0"
     "@babel/helper-plugin-utils" "^7.22.5"
     "@babel/template" "^7.22.15"
     "@babel/traverse" "^7.23.2"
-    "@griffel/core" "^1.15.2"
+    "@griffel/core" "^1.15.3"
     "@linaria/babel-preset" "^3.0.0-beta.24"
     "@linaria/shaker" "^3.0.0-beta.22"
     ajv "^8.4.0"
@@ -1919,6 +1919,18 @@
   dependencies:
     "@emotion/hash" "^0.9.0"
     "@griffel/style-types" "^1.0.3"
+    csstype "^3.1.3"
+    rtl-css-js "^1.16.1"
+    stylis "^4.2.0"
+    tslib "^2.1.0"
+
+"@griffel/core@^1.15.3":
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/@griffel/core/-/core-1.15.3.tgz#b20890560e414e803de4e2247fea01dea16cee37"
+  integrity sha512-5ksBpOjFJ75HijGehQ06Ri9cQjhd/rqQ0N/jJzXDDXQFYdOOzib/QL7BXNwhkLtTyHvN391cD4/BqcTdynfLUg==
+  dependencies:
+    "@emotion/hash" "^0.9.0"
+    "@griffel/style-types" "^1.0.4"
     csstype "^3.1.3"
     rtl-css-js "^1.16.1"
     stylis "^4.2.0"
@@ -1948,6 +1960,13 @@
   dependencies:
     csstype "^3.1.3"
 
+"@griffel/style-types@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@griffel/style-types/-/style-types-1.0.4.tgz#df73bfc108fd9023b3d416aca760887fc6cb924d"
+  integrity sha512-geZomjQTIHXoQZFFB811PUMXYAr8LuBNOMPcR2YJAl1pslbHYYiZKCa2FgZCw00hnQFP4uB4JIJ2CiPJqKZYmw==
+  dependencies:
+    csstype "^3.1.3"
+
 "@griffel/webpack-extraction-plugin@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@griffel/webpack-extraction-plugin/-/webpack-extraction-plugin-0.5.0.tgz#460f65bc4201f071f8ad3b41f9edd9359a853817"
@@ -1960,13 +1979,13 @@
     stylis "^4.2.0"
     tslib "^2.1.0"
 
-"@griffel/webpack-loader@^2.2.8":
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/@griffel/webpack-loader/-/webpack-loader-2.2.8.tgz#bb366c377cc8cc1be4d08a6ae32b50969b56a985"
-  integrity sha512-YJTsR44NM7bQglrD2J4sxkrx7vXHEvY0n0890SFrMIF7IQgKhiVNJqbkkvqHOZ8r9iszQ9SLYP/PQSp05DcR9A==
+"@griffel/webpack-loader@^2.2.9":
+  version "2.2.9"
+  resolved "https://registry.yarnpkg.com/@griffel/webpack-loader/-/webpack-loader-2.2.9.tgz#fa56b03e719edc8d9562dbc48b0528edc42162ed"
+  integrity sha512-U7WADU03Mj69AmmxVt3dFIlCSohQONAInK+mJDDzPU1NO1Kq/Qq3t9/K7Rsqh7m/v0Yt3aDPw+imk+3qoy1jOg==
   dependencies:
     "@babel/core" "^7.23.2"
-    "@griffel/babel-preset" "^1.5.6"
+    "@griffel/babel-preset" "^1.5.7"
     enhanced-resolve "^5.15.0"
     tslib "^2.1.0"
 
