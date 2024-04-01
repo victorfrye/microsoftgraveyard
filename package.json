@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fluentui/react-components": "^9.47.1",
+    "@fluentui/react-components": "^9.47.2",
     "@fluentui/react-icons": "^2.0.233",
     "next": "14.1.4",
     "react": "^18",
