@@ -2,10 +2,10 @@ name: Azure Static Web Apps CI/CD
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
   pull_request:
     types: [opened, synchronize, reopened, closed]
-    branches: ["main"]
+    branches: ['main']
 
 permissions:
   contents: read
@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
       - name: Verify formatting
-        run: yarn lint
+        run: yarn format:check
       - name: Build sources
         run: yarn build
       - name: Deploy static web app

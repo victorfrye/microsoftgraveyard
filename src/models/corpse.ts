@@ -6,7 +6,14 @@ class Corpse {
   description: string;
   link: string;
 
-  public constructor(name: string, qualifier: string | undefined, birthDate: Date | undefined, deathDate: Date, description: string, link: string) {
+  public constructor(
+    name: string,
+    qualifier: string | undefined,
+    birthDate: Date | undefined,
+    deathDate: Date,
+    description: string,
+    link: string,
+  ) {
     this.name = name;
     this.qualifier = qualifier;
     this.birthDate = birthDate && new Date(birthDate);
@@ -26,7 +33,7 @@ const getAge = (start: Date, end: Date): { age: number; period: string } => {
   }
 
   if (years >= 1) {
-    return { age: years, period: years === 1 ? "year" : "years" };
+    return { age: years, period: years === 1 ? 'year' : 'years' };
   }
 
   let months =
@@ -34,15 +41,18 @@ const getAge = (start: Date, end: Date): { age: number; period: string } => {
     start.getMonth() +
     12 * (end.getFullYear() - start.getFullYear());
   if (months >= 1) {
-    return { age: months, period: months === 1 ? "month" : "months" };
+    return { age: months, period: months === 1 ? 'month' : 'months' };
   }
 
   let days = end.getDate() - start.getDate();
-  return { age: days, period: days === 1 ? "day" : "days" };
+  return { age: days, period: days === 1 ? 'day' : 'days' };
 };
 
 const getExpectedDeathDate = (corpse: Corpse): string =>
-  corpse.deathDate.toLocaleDateString(undefined, { month: "long", year: "numeric" });
+  corpse.deathDate.toLocaleDateString(undefined, {
+    month: 'long',
+    year: 'numeric',
+  });
 
 const getFullName = (corpse: Corpse): string =>
   corpse.qualifier ? `${corpse.name} (${corpse.qualifier})` : corpse.name;
@@ -53,19 +63,19 @@ const getLifeDates = (corpse: Corpse): string =>
     : `${corpse.deathDate.getFullYear()}`;
 
 const getObituary = (corpse: Corpse, today: Date): string => {
-  let obituary = "";
+  let obituary = '';
 
   const dead = isDead(corpse, today);
   if (dead) {
     const { age, period } = getAge(corpse.deathDate, today);
-    const message = age === 0 ? "today" : `${age} ${period} ago`;
+    const message = age === 0 ? 'today' : `${age} ${period} ago`;
     obituary += `Killed by Microsoft ${message}, `;
   } else {
     const { age, period } = getAge(today, corpse.deathDate);
     obituary += `To be killed by Microsoft in ${age} ${period}, `;
   }
 
-  obituary += `${corpse.name} ${dead ? "was" : "is"} ${corpse.description}.`;
+  obituary += `${corpse.name} ${dead ? 'was' : 'is'} ${corpse.description}.`;
 
   if (dead && corpse.birthDate) {
     const { age, period } = getAge(corpse.birthDate, corpse.deathDate);

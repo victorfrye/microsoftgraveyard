@@ -1,14 +1,14 @@
 'use client';
 
-import { makeStyles } from "@fluentui/react-components";
-import Graveyard from "@microsoft-graveyard/components/graveyard/graveyard";
+import { makeStyles } from '@fluentui/react-components';
+import Graveyard from '@microsoft-graveyard/components/graveyard/graveyard';
 
 const useStyles = makeStyles({
   main: {
-    display: "flex",
-    flexDirection: "column",
-    minHeight: "100vh",
-    marginBottom: "auto",
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+    marginBottom: 'auto',
   },
 });
 
@@ -19,7 +19,7 @@ const Home = () => {
     <main className={styles.main}>
       <Graveyard />
     </main>
-  )
+  );
 };
 
 export default Home;

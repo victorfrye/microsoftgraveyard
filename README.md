@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/headstone.svg" alt="headstone" height="64" width="64" />
     <h1>Microsoft Graveyard</h1>
-    <p>The virtual graveyard for all products killed by Microsoft</p>
+    <p>The virtual graveyard for remembering those killed by Microsoft</p>
 </div>
 
 <div align="center">
@@ -12,6 +12,14 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
 </div>
+
+Microsoft Graveyard is a web app that serves as a virtual graveyard for remembering those killed by Microsoft.
+
+📚 Learn about the history of Microsoft's products and services
+
+🌐 Explore the graveyard and discover products you may have forgotten
+
+🪦 Help maintain the collection by contributing to the project
 
 ## Technology Stack
 
