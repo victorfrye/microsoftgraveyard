@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
       - name: Verify formatting
-        run: yarn lint
+        run: yarn format:check
       - name: Build sources
         run: yarn build
       - name: Deploy static web app

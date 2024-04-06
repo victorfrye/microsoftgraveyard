@@ -10,7 +10,7 @@ Contributions are welcome and key to maintaining this project! For general featu
 
 ### Running the project locally
 
-Microsoft Graveyard is a static web application built utilizing TypeScript, React.js, and Next.js static export, and Node.js. The application is hosted on Azure as a Static Web App. To run the project locally, you will need to have [Node.js](https://nodejs.org/en/download) and [Yarn](https://yarnpkg.com/getting-started/install) installed.
+Microsoft Graveyard is a static web application built utilizing TypeScript, React.js, Next.js static export, and Node.js. The application is hosted on Azure as a Static Web App. To run the project locally, you will need to have [Node.js](https://nodejs.org/en/download) and [Yarn](https://yarnpkg.com/getting-started/install) installed.
 
 1. Once installed and the repository cloned, you can run the following command from the root of the project to install dependencies:
 
