@@ -1,10 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-labels: ["🐞 Issue-Bug", "🔍 Needs-Triage" ]
-assignees: 
+labels: ['🐞 Issue-Bug', '🔍 Needs-Triage']
+assignees:
   - victorfrye
-
 ---
 
 **Describe the bug**

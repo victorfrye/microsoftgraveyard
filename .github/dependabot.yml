@@ -5,23 +5,23 @@
 
 version: 2
 updates:
-    # Maintain dependencies for npm
-  - package-ecosystem: "npm"
-    directory: "/"
+  # Maintain dependencies for npm
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-    labels: ["📦 Issue-Dependencies", "🌐 Area-WebApp"]
+      interval: 'weekly'
+    labels: ['📦 Issue-Dependencies', '🌐 Area-WebApp']
 
     # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
-    labels: ["📦 Issue-Dependencies", "♾️ Area-Workflow"]
+      interval: 'weekly'
+    labels: ['📦 Issue-Dependencies', '♾️ Area-Workflow']
 
     # Maintain dependencies for Dev Containers
-  - package-ecosystem: "devcontainers"
-    directory: "/"
+  - package-ecosystem: 'devcontainers'
+    directory: '/'
     schedule:
-      interval: "weekly"
-    labels: ["📦 Issue-Dependencies", "♾️ Area-Workflow"]
+      interval: 'weekly'
+    labels: ['📦 Issue-Dependencies', '♾️ Area-Workflow']

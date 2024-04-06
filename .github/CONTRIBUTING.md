@@ -1,7 +1,7 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/headstone.svg" alt="headstone" style="height: 64px; width: 64px; padding: 0 20px;"/>
+    <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/headstone.svg" alt="headstone" height="64" width="64" />
     <h1>Microsoft Graveyard</h1>
-    <p>The virtual graveyard for all products killed by Microsoft.</p>
+    <p>The virtual graveyard for remembering those killed by Microsoft</p>
 </div>
 
 ## Contributing Guide
@@ -10,11 +10,21 @@ Contributions are welcome and key to maintaining this project! For general featu
 
 ### Running the project locally
 
-Microsoft Graveyard is a static web application built utilizing .NET Blazor WASM and Bootstrap. The application is hosted on Azure as a Static Web App. To run the project locally, you will need to have the [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed. Once installed and the repository cloned, you can run the following command from the root of the project to start the application:
+Microsoft Graveyard is a static web application built utilizing TypeScript, React.js, and Next.js static export, and Node.js. The application is hosted on Azure as a Static Web App. To run the project locally, you will need to have [Node.js](https://nodejs.org/en/download) and [Yarn](https://yarnpkg.com/getting-started/install) installed.
 
-```pwsh
-dotnet watch --project src/Client/Client.csproj
-```
+1. Once installed and the repository cloned, you can run the following command from the root of the project to install dependencies:
+
+   ```pwsh
+   yarn install
+   ```
+
+2. And then you can run the following command to start the development server:
+
+   ```pwsh
+   yarn dev
+   ```
+
+3. The application will be available at [http://localhost:3000](http://localhost:3000).
 
 ### Before opening a pull request
 
@@ -22,15 +32,9 @@ Before opening a pull request, please note the following are required and checke
 
 1. Ensure your code is formatted by running the following command from the root of the project:
 
-    ```pwsh
-    dotnet format
-    ```
-
-2. Ensure all tests pass by running the following command from the root of the project:
-
-    ```pwsh
-    dotnet test
-    ```
+   ```pwsh
+   yarn format
+   ```
 
 ### Adding a new corpse to the graveyard
 
