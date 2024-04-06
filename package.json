@@ -17,7 +17,7 @@
     "react-responsive": "^10.0.0"
   },
   "devDependencies": {
-    "@griffel/next-extraction-plugin": "^0.1.1",
+    "@griffel/next-extraction-plugin": "^0.1.2",
     "@griffel/webpack-loader": "^2.2.9",
     "@types/node": "^20",
     "@types/react": "^18",
