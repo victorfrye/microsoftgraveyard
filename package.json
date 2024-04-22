@@ -10,7 +10,7 @@
     "format:check": "prettier --check --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@fluentui/react-components": "^9.47.5",
+    "@fluentui/react-components": "^9.48.0",
     "@fluentui/react-icons": "^2.0.235",
     "next": "14.2.1",
     "react": "^18",
