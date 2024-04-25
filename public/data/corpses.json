@@ -86,6 +86,13 @@
       "link": "https://diversido.io/blog/xamarin-is-being-discontinued-what-does-it-mean-for-developers"
     },
     {
+      "name": "Teams Wiki",
+      "birthDate": "2017-03-14",
+      "deathDate": "2024-01-31",
+      "description": "an in-app feature of Teams that allowed users to create and edit wiki pages within a channel",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-teams-public-preview/now-in-public-preview-future-of-wiki-and-notes-in-teams/m-p/3780747"
+    },
+    {
       "name": "Odyssey",
       "deathDate": "2024-01-25",
       "description": "an unreleased survival game that was in development by Blizzard and cancelled after the acquisition of Activision Blizzard by Microsoft",
