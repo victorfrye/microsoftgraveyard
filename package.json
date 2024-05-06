@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@fluentui/react-components": "^9.49.0",
-    "@fluentui/react-icons": "^2.0.237",
+    "@fluentui/react-icons": "^2.0.239",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
