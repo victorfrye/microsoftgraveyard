@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@griffel/next-extraction-plugin": "^0.1.2",
-    "@griffel/webpack-loader": "^2.2.9",
+    "@griffel/webpack-loader": "^2.2.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
