@@ -1958,18 +1958,6 @@
     stylis "^4.2.0"
     tslib "^2.1.0"
 
-"@griffel/core@^1.15.3":
-  version "1.15.3"
-  resolved "https://registry.yarnpkg.com/@griffel/core/-/core-1.15.3.tgz#b20890560e414e803de4e2247fea01dea16cee37"
-  integrity sha512-5ksBpOjFJ75HijGehQ06Ri9cQjhd/rqQ0N/jJzXDDXQFYdOOzib/QL7BXNwhkLtTyHvN391cD4/BqcTdynfLUg==
-  dependencies:
-    "@emotion/hash" "^0.9.0"
-    "@griffel/style-types" "^1.0.4"
-    csstype "^3.1.3"
-    rtl-css-js "^1.16.1"
-    stylis "^4.2.0"
-    tslib "^2.1.0"
-
 "@griffel/core@^1.16.0":
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/@griffel/core/-/core-1.16.0.tgz#b022756dd35b88f612cd67e366005acbde8dd555"
@@ -1982,12 +1970,12 @@
     stylis "^4.2.0"
     tslib "^2.1.0"
 
-"@griffel/next-extraction-plugin@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@griffel/next-extraction-plugin/-/next-extraction-plugin-0.1.2.tgz#14d7888a1316048c51a3268f1642d682e6292e9f"
-  integrity sha512-0kEyn1GEKVxnex6PbkPq0n2lmv6FgINLm6a5jvlQGcT9bQNJcFwInyLcNSjF/tfZ3/5dXDFSK6HKvoquF6pITw==
+"@griffel/next-extraction-plugin@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@griffel/next-extraction-plugin/-/next-extraction-plugin-0.1.3.tgz#f8062be89389c97f456cd606c294978d1e3c3f20"
+  integrity sha512-tqMC32voZDXzXIBk+f0XEMb+q9w/ZZOCtremmY2plvdTvcR/6RLtHV4qoR/Uxl6n3hGuIhP92wMhXgaSZBRk+A==
   dependencies:
-    "@griffel/webpack-extraction-plugin" "^0.5.1"
+    "@griffel/webpack-extraction-plugin" "^0.5.2"
     browserslist "^4.19.1"
     tslib "^2.1.0"
 
@@ -2006,13 +1994,6 @@
   dependencies:
     csstype "^3.1.3"
 
-"@griffel/style-types@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@griffel/style-types/-/style-types-1.0.4.tgz#df73bfc108fd9023b3d416aca760887fc6cb924d"
-  integrity sha512-geZomjQTIHXoQZFFB811PUMXYAr8LuBNOMPcR2YJAl1pslbHYYiZKCa2FgZCw00hnQFP4uB4JIJ2CiPJqKZYmw==
-  dependencies:
-    csstype "^3.1.3"
-
 "@griffel/style-types@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@griffel/style-types/-/style-types-1.1.0.tgz#b7e8d8f03d32162c81ab539fe59886ea0aa1dea2"
@@ -2020,15 +2001,15 @@
   dependencies:
     csstype "^3.1.3"
 
-"@griffel/webpack-extraction-plugin@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@griffel/webpack-extraction-plugin/-/webpack-extraction-plugin-0.5.1.tgz#3fc064ed60a349018dd476605846d4aa0f2c9bb2"
-  integrity sha512-4OF6VBM4QOe11DIvaAAsz56gyyI6XA3HIUkLdw9bk8KUrD9jsWk4iCIZAU3fpBQ49+A0VIT45uP1xgVhkhXIzg==
+"@griffel/webpack-extraction-plugin@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@griffel/webpack-extraction-plugin/-/webpack-extraction-plugin-0.5.2.tgz#e019b9b7620f4368ed18a6e94971e339eae3dab5"
+  integrity sha512-TLXy8X5WI4iSmTy6szbLYpul4op0mEcjDlaN3ZLes/JH+94D9Gtcr0d+Y7FWXBDTjGNf+v0GeUHL08JJIDQwSw==
   dependencies:
     "@babel/core" "^7.23.2"
     "@babel/helper-module-imports" "^7.22.15"
     "@babel/helper-plugin-utils" "^7.22.5"
-    "@griffel/core" "^1.15.3"
+    "@griffel/core" "^1.16.0"
     stylis "^4.2.0"
     tslib "^2.1.0"
 
