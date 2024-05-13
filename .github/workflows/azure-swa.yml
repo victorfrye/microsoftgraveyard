@@ -34,11 +34,11 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install dependencies
-        run: yarn install --immutable --immutable-cache --check-cache
+        run: npm ci
       - name: Verify formatting
-        run: yarn format:check
+        run: npm run format:check
       - name: Build sources
-        run: yarn build
+        run: npm run build
       - name: Deploy static web app
         id: deploy
         uses: Azure/static-web-apps-deploy@v1

@@ -79,6 +79,20 @@
       "link": "https://support.xbox.com/en-US/help/xbox-360/store/xbox-360-marketplace-update"
     },
     {
+      "name": "Alpha Dog Games",
+      "birthDate": "2012-01-01",
+      "deathDate": "2024-05-07",
+      "description": "a game development studio that was acquired by Microsoft with the acquisition of ZeniMax Media and known for mobile games Mighty DOOM and Wraithborne",
+      "link": "https://www.theverge.com/24151047/xbox-shuts-down-arkane-austin-tango-gameworks-microsoft"
+    },
+    {
+      "name": "Tango Gameworks",
+      "birthDate": "2010-03-01",
+      "deathDate": "2024-05-07",
+      "description": "a Japanese game development studio that was acquired by Microsoft with the acquisition of ZeniMax Media and known for creating The Evil Within and Hi-Fi Rush",
+      "link": "https://www.theverge.com/24151047/xbox-shuts-down-arkane-austin-tango-gameworks-microsoft"
+    },
+    {
       "name": "Xamarin",
       "birthDate": "2011-05-16",
       "deathDate": "2024-05-01",
