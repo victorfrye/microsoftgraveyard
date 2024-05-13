@@ -12,6 +12,7 @@ import {
   tokens,
 } from '@fluentui/react-components';
 import { News16Regular } from '@fluentui/react-icons';
+import corpseData from '@microsoft-graveyard/data/corpses.json';
 import {
   Corpse,
   getExpectedDeathDate,
@@ -70,6 +71,7 @@ interface ICorpse {
 }
 
 interface ICorpsesData {
+  $schema: string;
   corpses: ICorpse[];
 }
 
@@ -83,8 +85,7 @@ const Graveyard = (): JSX.Element => {
   }, []);
 
   const fetchCorpses = async () => {
-    const response = await fetch('./data/corpses.json');
-    const data: ICorpsesData = await response.json();
+    const data: ICorpsesData = corpseData as ICorpsesData;
 
     setCorpses(
       data.corpses
