@@ -11,6 +11,7 @@ updates:
     schedule:
       interval: 'weekly'
     labels: ['📦 Issue-Dependencies', '🌐 Area-WebApp']
+    open-pull-requests-limit: 0 # working on a larger migration
 
     # Maintain dependencies for GitHub Actions
   - package-ecosystem: 'github-actions'
