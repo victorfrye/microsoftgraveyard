@@ -24,20 +24,11 @@ Microsoft Graveyard is a web app that serves as a virtual graveyard for remember
 ## Technology Stack
 
 <p align="left">
-    <a href="https://developer.mozilla.org/en-us/docs/web/javascript" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
-        <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/javascript.svg" width="36" height="36" alt="JavaScript" />
+    <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
+        <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/csharp.svg" width="36" height="36" alt="C#" />
     </a>
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
-        <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/typescript.svg" width="36" height="36" alt="TypeScript" />
-    </a>
-    <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
-        <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/nodejs.svg" width="36" height="36" alt="Node.js" />
-    </a>
-    <a href="https://react.dev/" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
-        <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/reactjs.svg" width="36" height="36" alt="React.js" />
-    </a>
-    <a href="https://nextjs.org/" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
-        <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/nextjs.svg" width="36" height="36" alt="Next.js" />
+    <a href="https://dotnet.microsoft.com/en-us/" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
+        <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/dotnet.svg" width="36" height="36" alt=".NET" />
     </a>
     <a href="https://azure.microsoft.com/en-us/" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
         <img src="https://raw.githubusercontent.com/victorfrye/victorfrye/main/images/azure.svg" width="36" height="36" alt="Azure" />
@@ -47,13 +38,12 @@ Microsoft Graveyard is a web app that serves as a virtual graveyard for remember
     </a>
 </p>
 
-Microsoft Graveyard is a static web application. The primary technologies attributed to this project are:
+Microsoft Graveyard is a Blazor web application. The primary technologies attributed to this project are:
 
-- **JavaScript/TypeScript**: The primary programming language used to build the application.
-- **Next.js**: The React framework used to build the static application.
-- **Fluent UI**: The React component library used to build the user interface.
-- **Azure Static Web Apps**: The cloud platform used to host the application.
-- **GitHub Actions**: The CI/CD tool used to automate the integration and deployment workflows.
+- **C#/.NET**: The programming language and framework used to build the application.
+- **Fluent UI**: The web component library used to build the user interface.
+- **Azure App Service**: The cloud platform used to host the application.
+- **GitHub Actions**: The CI/CD tool used to automate workflows.
 
 ## Contributing
 
