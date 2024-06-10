@@ -5,27 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "SWA: Run Microsoft Graveyard",
-      "type": "msedge",
+      "name": "C#: MS Graveyard Web App Debug",
+      "type": "dotnet",
       "request": "launch",
-      "url": "http://localhost:3000",
-      "preLaunchTask": "swa: start Microsoft Graveyard",
-      "webRoot": "${workspaceFolder}/",
-      "timeout": 30000
-    },
-    {
-      "name": "Launch Edge against localhost",
-      "type": "msedge",
-      "request": "launch",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "name": "Launch Chrome against localhost",
-      "type": "chrome",
-      "request": "launch",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
+      "projectPath": "${workspaceFolder}/src/App/VictorFrye.Graveyard.csproj"
     }
   ]
 }
