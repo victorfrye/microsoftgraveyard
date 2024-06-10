@@ -10,21 +10,15 @@ Contributions are welcome and key to maintaining this project! For general featu
 
 ### Running the project locally
 
-Microsoft Graveyard is a static web application built utilizing TypeScript, React.js, Next.js static export, and Node.js. The application is hosted on Azure as a Static Web App. To run the project locally, you will need to have [Node.js](https://nodejs.org/en/download) and [Yarn](https://yarnpkg.com/getting-started/install) installed.
+Microsoft Graveyard is a Blazor web application built utilizing .NET 8. The application is hosted on Azure with App Service. To run the project locally, you will need to have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed.
 
-1. Once installed and the repository cloned, you can run the following command from the root of the project to install dependencies:
-
-   ```pwsh
-   npm install
-   ```
-
-2. And then you can run the following command to start the development server:
+1. Once installed and the repository cloned, you can run the following command from the root of the project:
 
    ```pwsh
-   npm run dev
+   dotnet watch --project ./src/App/VictorFrye.Graveyard.csproj
    ```
 
-3. The application will be available at [http://localhost:3000](http://localhost:3000).
+2. The application will be available at [http://localhost:5089](http://localhost:5089).
 
 ### Before opening a pull request
 
@@ -33,12 +27,12 @@ Before opening a pull request, please note the following are required and checke
 1. Ensure your code is formatted by running the following command from the root of the project:
 
    ```pwsh
-   npm run format
+   dotnet format
    ```
 
 ### Adding a new corpse to the graveyard
 
-The core list of dead products is maintained in the [corpses.json](/src/data/corpses.json) file within the `src/data` directory. This file is a JSON array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
+The core list of dead products is maintained in the [corpses.json](src/App/wwwroot/data/corpses.json) file within the `src/App/wwwroot/data/` directory. This file is a JSON array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
 
 - `name` - The name of the product. This should NOT include Microsoft unless absolutely necessary as all products in this list are Microsoft products and could be prepended with the company's name.
 
