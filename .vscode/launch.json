@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C#: MS Graveyard Web App Debug",
+      "name": "C#: Web App Debug",
       "type": "dotnet",
       "request": "launch",
       "projectPath": "${workspaceFolder}/src/App/VictorFrye.Graveyard.csproj"
