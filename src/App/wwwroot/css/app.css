@@ -52,6 +52,8 @@ body {
 }
 
 .corpse-title {
+    font-size: var(--type-ramp-plus-2-font-size) !important;
+    line-height: var(--type-ramp-plus-2-line-height) !important;
     margin-block-start: 0;
     margin-block-end: var(--design-unit);
 }

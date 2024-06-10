@@ -5,19 +5,39 @@
 
 <PageTitle>Microsoft Graveyard | In remembrance of those killed by Microsoft</PageTitle>
 
-<Graveyard Corpses=@_corpses/>
+@if (isInitialized)
+{
+    <Graveyard Corpses=@_corpses />
+}
+else
+{
+    <GraveyardSkeleton />
+}
 
 @code {
-    private List<Corpse> _corpses = [];
+    private bool isInitialized = false;
+    private IList<Corpse> _corpses = [];
 
     protected override async Task OnInitializedAsync()
+    {
+        if (isInitialized)
+        {
+            return;
+        }
+
+        _corpses = await FetchCorpses();
+
+        isInitialized = true;
+    }
+
+    internal async Task<IList<Corpse>> FetchCorpses()
     {
         var client = ClientFactory.CreateClient();
         client.BaseAddress = new Uri(NavigationManager.BaseUri);
 
         var response = await client.GetFromJsonAsync<CorpsesJson>("./data/corpses.json");
 
-        _corpses = response?.Corpses.OrderByDescending(c => c.DeathDate).ToList() ?? [];
+        return response?.Corpses.OrderByDescending(c => c.DeathDate).ToList() ?? [];
     }
 
     internal record CorpsesJson

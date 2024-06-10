@@ -11,7 +11,7 @@
 
 @code {
     [Parameter]
-    public IList<Corpse> Corpses { get; init; } = [];
+    public required IList<Corpse> Corpses { get; init; }
     private static DateOnly _today = DateOnly.FromDateTime(TimeProvider.System.GetLocalNow().DateTime);
 
     private RenderFragment<Corpse> CorpseTemplate = (corpse) =>
@@ -19,7 +19,7 @@
             <FluentStack class="corpse-header" HorizontalAlignment="HorizontalAlignment.Start">
                 <FluentEmoji Value=@corpse.GetEmoji(_today) Width="88" class="corpse-img" />
                 <FluentStack Orientation="Orientation.Vertical">
-                    <h4 class="corpse-title">@corpse.GetFullName()</h4>
+                    <h2 class="corpse-title">@corpse.GetFullName()</h2>
                     <em class="corpse-dates">@corpse.GetHeadstoneDates(_today)</em>
                 </FluentStack>
                 <FluentSpacer />
