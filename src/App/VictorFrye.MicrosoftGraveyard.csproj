@@ -10,8 +10,8 @@
     <Authors>VictorFrye</Authors>
     <RepositoryUrl>https://github.com/victorfrye/dotcom</RepositoryUrl>
 
-    <AssemblyName>VictorFrye.Graveyard</AssemblyName>
-    <RootNamespace>VictorFrye.Graveyard</RootNamespace>
+    <AssemblyName>VictorFrye.MicrosoftGraveyard</AssemblyName>
+    <RootNamespace>VictorFrye.MicrosoftGraveyard</RootNamespace>
 
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -29,8 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.7.2" />
-    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.8.0" />
+	<PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.9.3" />
+    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.9.3" />
     <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Emoji" Version="4.6.0" />
   </ItemGroup>
 

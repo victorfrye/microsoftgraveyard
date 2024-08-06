@@ -1,11 +1,12 @@
 using Microsoft.FluentUI.AspNetCore.Components;
 
-using VictorFrye.Graveyard.Components;
+using VictorFrye.MicrosoftGraveyard.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+                .AddInteractiveServerComponents();
+
 builder.Services.AddFluentUIComponents();
 
 builder.Services.AddHttpClient();
@@ -25,6 +26,6 @@ app.UseStaticFiles();
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+   .AddInteractiveServerRenderMode();
 
-app.Run();
+await app.RunAsync();

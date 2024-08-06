@@ -32,9 +32,9 @@
     {
       "name": "Windows 10",
       "birthDate": "2015-07-15",
-      "deathDate": "2025-11-14",
+      "deathDate": "2025-10-14",
       "description": "a major release of the Windows NT operating system succeeding Windows 8.1",
-      "link": "https://en.wikipedia.org/wiki/Windows_10"
+      "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
     },
     {
       "name": "Visual Studio LightSwitch",

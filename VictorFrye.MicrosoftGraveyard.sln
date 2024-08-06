@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0FB1F1F9-FB7D-435E-BEDA-F059E1D7C04A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VictorFrye.Graveyard", "src\App\VictorFrye.Graveyard.csproj", "{03EDC175-F966-49FC-A3F8-09B8CC7236E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VictorFrye.MicrosoftGraveyard", "src\App\VictorFrye.MicrosoftGraveyard.csproj", "{03EDC175-F966-49FC-A3F8-09B8CC7236E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D08289A0-11E5-4317-A7FD-F8D64266E2E4}"
 EndProject
