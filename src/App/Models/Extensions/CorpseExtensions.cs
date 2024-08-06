@@ -1,6 +1,6 @@
 using Microsoft.FluentUI.AspNetCore.Components;
 
-namespace VictorFrye.Graveyard.Models.Extensions;
+namespace VictorFrye.MicrosoftGraveyard.Models.Extensions;
 
 public static class CorpseExtensions
 {

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -9,19 +9,12 @@
 		<IsPublishable>false</IsPublishable>
 		<IsPackable>false</IsPackable>
 
-		<AssemblyName>VictorFrye.Graveyard.Tests</AssemblyName>
-		<RootNamespace>VictorFrye.Graveyard.Tests</RootNamespace>
+		<AssemblyName>VictorFrye.MicrosoftGraveyard.Tests</AssemblyName>
+		<RootNamespace>VictorFrye.MicrosoftGraveyard.Tests</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\src\App\VictorFrye.Graveyard.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Using Include="Bunit" />
-		<Using Include="Bunit.TestDoubles" />
-		<Using Include="Microsoft.Extensions.DependencyInjection" />
-		<Using Include="Xunit"/>
+		<ProjectReference Include="..\..\src\App\VictorFrye.MicrosoftGraveyard.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -32,11 +25,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="8.6.0" />
+		<PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="8.7.0" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
-		<PackageReference Include="bunit" Version="1.28.9" />
-		<PackageReference Include="xunit" Version="2.8.1" />
-		<PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
+		<PackageReference Include="bunit" Version="1.30.3" />
+		<PackageReference Include="xunit" Version="2.9.0" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>

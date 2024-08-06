@@ -14,7 +14,7 @@ permissions:
 
 env:
   DOTNET_VERSION: '8.x'
-  APP_PROJECT_FILE: './src/App/VictorFrye.Graveyard.csproj'
+  APP_PROJECT_FILE: './src/App/VictorFrye.MicrosoftGraveyard.csproj'
   APP_OUTPUT_LOCATION: './publish'
   APP_ARTIFACT_NAME: 'app-${{ github.sha }}'
 

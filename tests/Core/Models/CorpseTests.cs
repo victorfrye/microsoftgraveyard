@@ -1,6 +1,6 @@
-using System.Runtime.Serialization;
+using Microsoft.Extensions.Time.Testing;
 
-using VictorFrye.Graveyard.Models;
+using VictorFrye.MicrosoftGraveyard.Models;
 
 namespace VictorFrye.MicrosoftGraveyard.Tests.Unit.Models;
 
@@ -120,6 +120,32 @@ public class CorpseTests
 
         // Act
         var actual = NewMockCorpse(name: "Skype", birthDate: null, deathDate: GivenDate.AddDays(-1), description: "a video calling service").GetObituary(GivenDate);
+
+        // Assert
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void ShouldReturnObituaryWhenKilledEightDaysAgo()
+    {
+        // Arrange
+        var expected = "Killed by Microsoft 8 days ago, Xbox 360 Store was a game marketplace.";
+
+        // Act
+        var actual = NewMockCorpse(name: "Xbox 360 Store", birthDate: null, deathDate: GivenDate.AddDays(-8), description: "a game marketplace").GetObituary(GivenDate);
+
+        // Assert
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void ShouldReturnObituaryWhenKilledTwentySixDaysAgoAcrossMonthBoundary()
+    {
+        // Arrange
+        var expected = "Killed by Microsoft 1 month ago, Xbox 360 Store was a game marketplace.";
+
+        // Act
+        var actual = NewMockCorpse(name: "Xbox 360 Store", birthDate: null, deathDate: GivenDate.AddDays(-26), description: "a game marketplace").GetObituary(GivenDate);
 
         // Assert
         Assert.Equal(expected, actual);

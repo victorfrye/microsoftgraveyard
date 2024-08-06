@@ -1,7 +1,6 @@
-using Microsoft.AspNetCore.Components;
 using Microsoft.FluentUI.AspNetCore.Components;
 
-namespace VictorFrye.Graveyard.Models;
+namespace VictorFrye.MicrosoftGraveyard.Models;
 
 public class Social(string name, Icon icon, string userHref)
 {

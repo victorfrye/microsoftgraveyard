@@ -1,8 +1,6 @@
-namespace VictorFrye.Graveyard.Models;
-
 using System.Text;
 
-using Microsoft.FluentUI.AspNetCore.Components;
+namespace VictorFrye.MicrosoftGraveyard.Models;
 
 public class Corpse(string name, string? qualifier, DateOnly? birthDate, DateOnly deathDate, string description, string link)
 {

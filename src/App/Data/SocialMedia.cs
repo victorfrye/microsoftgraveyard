@@ -1,8 +1,8 @@
-using VictorFrye.Graveyard.Models;
+using VictorFrye.MicrosoftGraveyard.Models;
 
 using FluentIcons = Microsoft.FluentUI.AspNetCore.Components.Icons;
 
-namespace VictorFrye.Graveyard.Data;
+namespace VictorFrye.MicrosoftGraveyard.Data;
 
 public static class SocialMedia
 {
