@@ -94,3 +94,4 @@ jobs:
           app-name: 'app-graveyard'
           slot-name: 'Production'
           package: .
+          clean: true
