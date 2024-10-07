@@ -2,7 +2,8 @@
 
 The virtual graveyard for remembering those killed by Microsoft
 
-[![Azure CI/CD](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/azure-webapp.yml/badge.svg)](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/azure-webapp.yml)
+[![Azure Static Web Apps CI/CD](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/azure-swa.yml/badge.svg)](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/azure-swa.yml)
+[![CodeQL](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/codeql.yml/badge.svg)](https://github.com/victorfrye/microsoftgraveyard/actions/workflows/codeql.yml)
 [![GitHub Issues](https://img.shields.io/github/issues/victorfrye/microsoftgraveyard)](https://github.com/victorfrye/microsoftgraveyard/issues)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](/.github/CODE_OF_CONDUCT.md)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
