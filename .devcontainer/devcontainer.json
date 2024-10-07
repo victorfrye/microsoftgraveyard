@@ -3,15 +3,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.base.schema.json",
   "name": "MicrosoftGraveyard",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node",
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers/features/powershell": "latest",
     "ghcr.io/devcontainers/features/azure-cli": "latest",
     "ghcr.io/devcontainers/features/github-cli": "latest"
   },
-  "forwardPorts": [5123],
-  "postCreateCommand": "dotnet restore;",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install",
   "shutdownAction": "stopContainer",
   "remoteUser": "root"
 }
