@@ -1,0 +1,76 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches: ['main']
+
+permissions:
+  contents: read
+  pull-requests: write
+
+env:
+  NODE_VERSION: '22.x'
+
+jobs:
+  build_and_deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    name: Build and Deploy
+    environment:
+      name: ${{ github.event_name == 'push' && 'Production' || 'Staging' }}
+      url: ${{ steps.deploy.outputs.static_web_app_url }}
+    concurrency:
+      group: ${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          lfs: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify formatting
+        run: npm run lint:check
+
+      - name: Build sources
+        run: npm run build
+
+      - name: Deploy static web app
+        id: deploy
+        uses: Azure/static-web-apps-deploy@v1
+        env:
+          SKIP_DEPLOY_ON_MISSING_SECRETS: ${{ github.event_name == 'pull_request' }}
+          IS_STATIC_EXPORT: true
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: 'upload'
+          app_location: 'out'
+          skip_app_build: true
+          skip_api_build: true
+
+  close_pr:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request
+    steps:
+      - name: Close pull request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        env:
+          SKIP_DEPLOY_ON_MISSING_SECRETS: ${{ github.event_name == 'pull_request' }}
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN }}
+          action: 'close'
+          app_location: ''

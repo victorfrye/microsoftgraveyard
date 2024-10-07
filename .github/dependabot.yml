@@ -5,11 +5,11 @@
 
 version: 2
 updates:
-  # Maintain dependencies for NuGet
-  - package-ecosystem: 'nuget'
+  # Maintain dependencies for npm
+  - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
     labels: ['📦 Issue-Dependencies', '🌐 Area-WebApp']
 
     # Maintain dependencies for GitHub Actions

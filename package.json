@@ -1,0 +1,33 @@
+{
+  "name": "microsoftgraveyard",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve ./out",
+    "lint": "prettier --write --ignore-path .gitignore .",
+    "lint:check": "prettier --check --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@fluentui/react-components": "^9.54.17",
+    "@fluentui/react-icons": "^2.0.260",
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-responsive": "^10.0.0"
+  },
+  "devDependencies": {
+    "@griffel/next-extraction-plugin": "^0.1.6",
+    "@griffel/react": "^1.5.25",
+    "@griffel/webpack-loader": "^2.2.14",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3",
+    "typescript": "^5"
+  }
+}

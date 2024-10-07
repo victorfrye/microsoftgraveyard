@@ -10,15 +10,21 @@ Contributions are welcome and key to maintaining this project! For general featu
 
 ### Running the project locally
 
-Microsoft Graveyard is a Blazor web application built utilizing .NET 8. The application is hosted on Azure with App Service. To run the project locally, you will need to have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed.
+Microsoft Graveyard is a static web application built utilizing TypeScript, React.js, Next.js static export, and Node.js. The application is hosted on Azure as a Static Web App. To run the project locally, you will need to have [Node.js](https://nodejs.org/en/download) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.
 
-1. Once installed and the repository cloned, you can run the following command from the root of the project:
+1. Once installed and the repository cloned, you can run the following command from the root of the project to install dependencies:
 
    ```pwsh
-   dotnet watch --project ./src/App/VictorFrye.Graveyard.csproj
+   npm install
    ```
 
-2. The application will be available at [http://localhost:5089](http://localhost:5089).
+2. And then you can run the following command to start the development server:
+
+   ```pwsh
+   npm run dev
+   ```
+
+3. The application will be available at [http://localhost:3000](http://localhost:3000).
 
 ### Before opening a pull request
 
@@ -27,7 +33,7 @@ Before opening a pull request, please note the following are required and checke
 1. Ensure your code is formatted by running the following command from the root of the project:
 
    ```pwsh
-   dotnet format
+   npm run lint
    ```
 
 ### Adding a new corpse to the graveyard
