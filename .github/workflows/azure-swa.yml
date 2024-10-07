@@ -15,11 +15,13 @@ env:
   NODE_VERSION: '22.x'
 
 jobs:
-  build_and_deploy_job:
+  build_and_deploy:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
-    environment: ${{ github.event_name == 'push' && 'Production' || 'Staging' }}
+    name: Build and Deploy
+    environment:
+      name: ${{ github.event_name == 'push' && 'Production' || 'Staging' }}
+      url: ${{ steps.deploy.outputs.static_web_app_url }}
     concurrency:
       group: ${{ github.ref }}
       cancel-in-progress: true
@@ -58,10 +60,10 @@ jobs:
           skip_app_build: true
           skip_api_build: true
 
-  close_pull_request_job:
+  close_pr:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Close Pull Request Job
+    name: Close Pull Request
     steps:
       - name: Close pull request
         id: closepullrequest
