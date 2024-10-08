@@ -2,6 +2,13 @@
   "$schema": "https://raw.githubusercontent.com/victorfrye/microsoftgraveyard/main/files/corpses.schema.json",
   "corpses": [
     {
+      "name": "Jon Trotter",
+      "birthDate": "2000-01-01",
+      "deathDate": "2080-01-09",
+      "description": "a software engineer whom I am demoing this too",
+      "link": "https://victorfrye.com"
+    },
+    {
       "name": "Hyper-V Server",
       "birthDate": "2008-12-30",
       "deathDate": "2029-01-09",
