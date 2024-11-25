@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "@fluentui/react-components": "^9.54.17",
-    "@fluentui/react-icons": "^2.0.260",
+    "@fluentui/react-icons": "^2.0.264",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18",
     "react-responsive": "^10.0.0"
   },
   "devDependencies": {
-    "@griffel/next-extraction-plugin": "^0.1.6",
+    "@griffel/next-extraction-plugin": "^0.1.7",
     "@griffel/react": "^1.5.25",
     "@griffel/webpack-loader": "^2.2.14",
     "@types/node": "^22",
@@ -28,7 +28,7 @@
     "eslint-config-next": "14.2.14",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.3.3",
-    "serve": "^14.2.3",
+    "serve": "^14.2.4",
     "typescript": "^5"
   }
 }
