@@ -5,6 +5,7 @@ const nextConfig = withGriffelCSSExtraction()({
   output: 'export',
   webpack: (
     config,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack },
   ) => {
     config.module.rules.unshift(

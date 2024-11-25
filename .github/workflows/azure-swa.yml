@@ -41,7 +41,7 @@ jobs:
         run: npm ci
 
       - name: Verify formatting
-        run: npm run lint:check
+        run: npm run lint
 
       - name: Build sources
         run: npm run build

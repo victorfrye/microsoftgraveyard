@@ -9,6 +9,13 @@
       "link": "https://4sysops.com/archives/microsoft-will-not-release-a-free-hyper-v-server-2022/"
     },
     {
+      "name": "HoloLens",
+      "birthDate": "2016-03-30",
+      "deathDate": "2027-12-31",
+      "description": "a mixed reality headset that allowed users to interact with holograms in the real world",
+      "link": "https://www.uploadvr.com/microsoft-discontinuing-hololens-2/"
+    },
+    {
       "name": "Publisher",
       "birthDate": "1991-09-16",
       "deathDate": "2026-10-13",
@@ -30,18 +37,18 @@
       "link": "https://www.pluralsight.com/resources/blog/cloud/azure-blueprints-shelved"
     },
     {
-      "name": "Windows 10",
-      "birthDate": "2015-07-15",
-      "deathDate": "2025-10-14",
-      "description": "a major release of the Windows NT operating system succeeding Windows 8.1",
-      "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
-    },
-    {
       "name": "Visual Studio LightSwitch",
       "birthDate": "2010-08-23",
       "deathDate": "2025-10-14",
       "description": "a low-code development tool that enabled users to create business applications for the desktop, cloud, and mobile devices",
       "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
+    },
+    {
+      "name": "Windows 10",
+      "birthDate": "2015-07-15",
+      "deathDate": "2025-10-14",
+      "description": "a major release of the Windows NT operating system succeeding Windows 8.1",
+      "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
     },
     {
       "name": "Visual Studio App Center",
@@ -58,8 +65,50 @@
       "link": "https://www.theverge.com/2024/3/5/24091370/microsoft-windows-11-android-apps-end-of-support"
     },
     {
+      "name": "Windows Calendar",
+      "birthDate": "2007-01-25",
+      "deathDate": "2024-12-31",
+      "description": "a simple calendar application that allowed users to manage events, appointments, and reminders",
+      "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
+    },
+    {
+      "name": "Windows People",
+      "birthDate": "2010-10-21",
+      "deathDate": "2024-12-31",
+      "description": "a simple contact management application that allowed users to store and organize contact information",
+      "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
+    },
+    {
+      "name": "Delve",
+      "birthDate": "2015-03-16",
+      "deathDate": "2024-12-31",
+      "description": "a search and discovery experience for Microsoft 365 users to find and organize content powered by the Microsoft Graph",
+      "link": "https://www.hubsite365.com/en-ww/crm-pages/goodbye-to-delve.htm"
+    },
+    {
+      "name": "Windows Mail",
+      "birthDate": "2006-11-30",
+      "deathDate": "2024-12-31",
+      "description": "a simple mail client that allowed users to send, receive, and manage email messages",
+      "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
+    },
+    {
+      "name": "Paint 3D",
+      "birthDate": "2017-04-05",
+      "deathDate": "2024-11-04",
+      "description": "a 3D modeling and computer graphics editor that allowed users to create and manipulate 3D objects",
+      "link": "https://www.xda-developers.com/microsoft-to-remove-paint-3d-from-store-across-windows-devices/"
+    },
+    {
+      "name": "Flip",
+      "birthDate": "2014-01-01",
+      "deathDate": "2024-09-30",
+      "description": "a video discussion platform for classrooms that allowed teachers to post topics and students to respond with short videos",
+      "link": "https://www.windowscentral.com/software-apps/from-flipgrid-to-flip-to-a-foot-in-the-grave-say-farewell-to-microsofts-standalone-education-focused-video-app"
+    },
+    {
       "name": "Visual Studio for Mac",
-      "birthDate": "1905-07-08",
+      "birthDate": "2018-09-21",
       "deathDate": "2024-08-31",
       "description": "a Mac-specific integrated development environment for projects using Mono or the .NET cross-platform framework",
       "link": "https://www.bleepingcomputer.com/news/software/microsoft-retires-visual-studio-for-mac-support-ends-in-a-year/"
@@ -70,6 +119,13 @@
       "deathDate": "2024-07-29",
       "description": "a marketplace for digital games released on the Xbox 360 console",
       "link": "https://support.xbox.com/en-US/help/xbox-360/store/xbox-360-marketplace-update"
+    },
+    {
+      "name": "World of Warcraft Companion App",
+      "birthDate": "2018-08-13",
+      "deathDate": "2024-07-23",
+      "description": "a mobile application that allowed WoW players to manage their characters, track missions, and chat with guild members",
+      "link": "https://blizzardwatch.com/2024/07/25/warcraft-companion-app-logged-off-final-time/"
     },
     {
       "name": "Alpha Dog Games",
@@ -100,7 +156,6 @@
     },
     {
       "name": "Dynamics 365 Human Resources",
-      "qualifier": "Stand-alone",
       "birthDate": "2017-09-01",
       "deathDate": "2023-12-31",
       "description": "a stand-alone offering of the Dynamics 365 HR module that runs independently from Finance and Operations",
@@ -156,18 +211,18 @@
       "link": "https://www.msn.com/en-us/news/technology/microsoft-is-saying-goodbye-to-wordpad-forever/ar-AA1muYal"
     },
     {
-      "name": "Cortana",
-      "birthDate": "2014-04-02",
-      "deathDate": "2023-08-31",
-      "description": "a virtual assistant that used Bing search engine to perform tasks",
-      "link": "https://www.theverge.com/2023/8/11/23828311/microsoft-shuts-down-cortana-windows-11"
-    },
-    {
       "name": "Kaizala",
       "birthDate": "2019-06-29",
       "deathDate": "2023-08-31",
       "description": "a secure messaging and workplace productivity application for collaboration",
       "link": "https://www.zdnet.com/article/microsoft-to-drop-its-kaizala-group-messaging-service-in-2023/"
+    },
+    {
+      "name": "Cortana",
+      "birthDate": "2014-04-02",
+      "deathDate": "2023-08-31",
+      "description": "a virtual assistant that used Bing search engine to perform tasks",
+      "link": "https://www.theverge.com/2023/8/11/23828311/microsoft-shuts-down-cortana-windows-11"
     },
     {
       "name": "Soundscape",
@@ -198,6 +253,14 @@
       "link": "https://www.theverge.com/2023/1/21/23565188/altspace-vr-shutting-down-microsoft-layoffs"
     },
     {
+      "name": "Interix",
+      "qualifier": "aka Subsystem for Unix-based Applications",
+      "birthDate": "1996-03-29",
+      "deathDate": "2023-01-10",
+      "description": "an optional Unix subsystem for Windows NT-based operating systems",
+      "link": "https://en.wikipedia.org/wiki/Interix"
+    },
+    {
       "name": "Windows 8.1",
       "birthDate": "2013-11-13",
       "deathDate": "2023-01-10",
@@ -219,11 +282,11 @@
       "link": "https://learn.microsoft.com/en-us/analysis-services/data-mining/data-mining-ssas"
     },
     {
-      "name": "Internet Explorer",
+      "name": "Trident",
       "birthDate": "1995-08-24",
       "deathDate": "2022-06-15",
-      "description": "a web browser that once attained a peak 95% usage share",
-      "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date"
+      "description": "a proprietary browser engine (aka MSHTML) for Internet Explorer and IE mode of Edge",
+      "link": "https://en.wikipedia.org/wiki/Trident_(software)"
     },
     {
       "name": "JScript",
@@ -233,11 +296,11 @@
       "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date"
     },
     {
-      "name": "Trident",
+      "name": "Internet Explorer",
       "birthDate": "1995-08-24",
       "deathDate": "2022-06-15",
-      "description": "a proprietary browser engine (aka MSHTML) for Internet Explorer and IE mode of Edge",
-      "link": "https://en.wikipedia.org/wiki/Trident_(software)"
+      "description": "a web browser that once attained a peak 95% usage share",
+      "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date"
     },
     {
       "name": "Forza Street",
@@ -424,11 +487,11 @@
       "link": "https://web.archive.org/web/20190811123337/https://www.zo.ai/"
     },
     {
-      "name": "Excel Viewer",
-      "birthDate": "1997-02-27",
-      "deathDate": "2018-04-30",
-      "description": "a freeware program for Windows that can display and print Microsoft Excel spreadsheets",
-      "link": "https://en.wikipedia.org/wiki/Microsoft_Excel#Microsoft_Excel_Viewer"
+      "name": "Age of Empires: Castle Siege",
+      "birthDate": "2014-09-17",
+      "deathDate": "2019-05-13",
+      "description": "an on-the-go version of the classic real-time strategy game that allowed players to build, maintain, and defend their castle",
+      "link": "https://www.trueachievements.com/n35216/age-of-empires-castle-siege-shuts-down-in-may-2019"
     },
     {
       "name": "PowerPoint Viewer",
@@ -436,6 +499,13 @@
       "deathDate": "2018-04-30",
       "description": "a freeware program for Windows that can display and print Microsoft PowerPoint presentations",
       "link": "https://en.wikipedia.org/wiki/Microsoft_PowerPoint#PowerPoint_Viewer"
+    },
+    {
+      "name": "Excel Viewer",
+      "birthDate": "1997-02-27",
+      "deathDate": "2018-04-30",
+      "description": "a freeware program for Windows that can display and print Microsoft Excel spreadsheets",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Excel#Microsoft_Excel_Viewer"
     },
     {
       "name": "Reader",
@@ -496,18 +566,18 @@
       "link": "https://techcommunity.microsoft.com/t5/microsoft-security-and/application-remoting-and-the-cloud/ba-p/249927"
     },
     {
-      "name": "ProClarity",
-      "birthDate": "1995-01-01",
-      "deathDate": "2017-07-11",
-      "description": "a business intelligence solution that allowed users to analyze data and create graphical visualizations, acquired by Microsoft in 2006",
-      "link": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/pps-2007-end-of-support"
-    },
-    {
       "name": "Visual SourceSafe",
       "birthDate": "1994-01-01",
       "deathDate": "2017-07-11",
       "description": "a source control software, originally created by One Tree Software before being acquired by Microsoft",
       "link": "https://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe"
+    },
+    {
+      "name": "ProClarity",
+      "birthDate": "1995-01-01",
+      "deathDate": "2017-07-11",
+      "description": "a business intelligence solution that allowed users to analyze data and create graphical visualizations, acquired by Microsoft in 2006",
+      "link": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/pps-2007-end-of-support"
     },
     {
       "name": "Xbox Fitness",
@@ -678,18 +748,18 @@
       "link": "https://www.ign.com/articles/2014/10/30/xbox-entertainment-studios-reportedly-shuttered-as-heads-leave"
     },
     {
-      "name": "FrontPage",
-      "birthDate": "1995-11-01",
-      "deathDate": "2014-04-08",
-      "description": "a WYSIWYG HTML editor and website administration tool that allowed users to create and manage web pages",
-      "link": "https://en.wikipedia.org/wiki/Microsoft_FrontPage"
-    },
-    {
       "name": "Windows XP",
       "birthDate": "2001-08-24",
       "deathDate": "2014-04-08",
       "description": "a major release of the Windows operating system built on Windows NT kernel explicitly for consumer use",
       "link": "https://en.wikipedia.org/wiki/Windows_XP"
+    },
+    {
+      "name": "FrontPage",
+      "birthDate": "1995-11-01",
+      "deathDate": "2014-04-08",
+      "description": "a WYSIWYG HTML editor and website administration tool that allowed users to create and manage web pages",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_FrontPage"
     },
     {
       "name": "XNA",

@@ -36,7 +36,7 @@ const getAge = (start: Date, end: Date): { age: number; period: string } => {
     return { age: years, period: years === 1 ? 'year' : 'years' };
   }
 
-  let months =
+  const months =
     end.getMonth() -
     start.getMonth() +
     12 * (end.getFullYear() - start.getFullYear());
@@ -44,7 +44,7 @@ const getAge = (start: Date, end: Date): { age: number; period: string } => {
     return { age: months, period: months === 1 ? 'month' : 'months' };
   }
 
-  let days = end.getDate() - start.getDate();
+  const days = end.getDate() - start.getDate();
   return { age: days, period: days === 1 ? 'day' : 'days' };
 };
 
