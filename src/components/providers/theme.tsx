@@ -1,11 +1,7 @@
 'use client';
 
 import {
-  BrandVariants,
   FluentProvider,
-  Theme,
-  createDarkTheme,
-  createLightTheme,
   makeStaticStyles,
   tokens,
   webDarkTheme,

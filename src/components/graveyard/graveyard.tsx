@@ -76,7 +76,7 @@ interface ICorpsesData {
 }
 
 const Graveyard = (): JSX.Element => {
-  let [corpses, setCorpses] = useState<Corpse[]>([]);
+  const [corpses, setCorpses] = useState<Corpse[]>([]);
   const today: Date = new Date();
   const styles = useStyles();
 

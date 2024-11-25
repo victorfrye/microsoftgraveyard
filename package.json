@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve ./out",
-    "lint": "prettier --write --ignore-path .gitignore .",
-    "lint:check": "prettier --check --ignore-path .gitignore ."
+    "serve": "serve ./out",
+    "lint": "next lint --ignore-path .gitignore .",
+    "lint:fix": "next lint --fix --ignore-path .gitignore ."
   },
   "dependencies": {
     "@fluentui/react-components": "^9.54.17",
@@ -26,6 +26,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.14",
+    "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.3.3",
     "serve": "^14.2.4",
     "typescript": "^5"
