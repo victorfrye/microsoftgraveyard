@@ -51,6 +51,13 @@
       "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
     },
     {
+      "name": "Dev Home",
+      "birthDate": "2023-05-30",
+      "deathDate": "2025-05-31",
+      "description": "a Windows application that offered a centralized location for simplified machine configuration, system monitoring, and widget extensions for developers",
+      "link": "https://www.windowslatest.com/2025/01/29/windows-11-will-abandon-another-system-app-remove-dev-home-in-a-future-release/"
+    },
+    {
       "name": "Visual Studio App Center",
       "birthDate": "2017-11-15",
       "deathDate": "2025-03-31",
