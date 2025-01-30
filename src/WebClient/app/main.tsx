@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import '@mockingmirror/index.css';
-import App from '@mockingmirror/App';
+import '@microsoftgraveyard/index.css';
+import App from '@microsoftgraveyard/App';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

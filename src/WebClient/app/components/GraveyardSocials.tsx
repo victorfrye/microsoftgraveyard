@@ -1,9 +1,4 @@
-import {
-  Button,
-  Image,
-  makeStyles,
-  tokens,
-} from '@fluentui/react-components';
+import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
 import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
 
 interface ISocial {
@@ -31,7 +26,7 @@ const Socials = () => {
       image: (
         <Image
           src={isDark ? '/images/threads.svg' : '/images/threads_dark.svg'}
-          alt='Threads'
+          alt="Threads"
           height={20}
           width={20}
         />
@@ -42,7 +37,7 @@ const Socials = () => {
       image: (
         <Image
           src={isDark ? '/images/github.svg' : '/images/github_dark.svg'}
-          alt='GitHub'
+          alt="GitHub"
           height={20}
           width={20}
         />
@@ -54,13 +49,13 @@ const Socials = () => {
     return socialDetails.map((social, index) => (
       <Button
         icon={social.image}
-        as='a'
-        appearance='subtle'
-        shape='circular'
-        size='large'
+        as="a"
+        appearance="subtle"
+        shape="circular"
+        size="large"
         href={social.href}
-        target='_blank'
-        rel='noreferrer noopener'
+        target="_blank"
+        rel="noreferrer noopener"
         key={index}
       />
     ));

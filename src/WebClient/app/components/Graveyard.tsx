@@ -18,8 +18,8 @@ import {
   getObituary,
   isDead,
 } from '@microsoftgraveyard/types';
-import GraveyardHeader from './GraveyardHeader';
-import GraveyardFooter from './GraveyardFooter';
+import GraveyardHeader from '@microsoftgraveyard/components/GraveyardHeader';
+import GraveyardFooter from '@microsoftgraveyard/components/GraveyardFooter';
 
 const useStyles = makeStyles({
   main: {
@@ -91,22 +91,21 @@ const Graveyard = () => {
             corpse.birthDate ? new Date(corpse.birthDate) : undefined,
             new Date(corpse.deathDate),
             corpse.description,
-            corpse.link,
+            corpse.link
           );
         })
         .sort(
           (a, b) =>
             b.deathDate[Symbol.toPrimitive]('number') -
-            a.deathDate[Symbol.toPrimitive]('number'),
-        ),
+            a.deathDate[Symbol.toPrimitive]('number')
+        )
     );
   }, []);
 
   const renderGraves = (): JSX.Element[] => {
     return corpses.map((corpse, index) => (
-
       <li className={styles.container} key={index}>
-        <Card appearance='filled-alternative' key={index}>
+        <Card appearance="filled-alternative" key={index}>
           <CardHeader
             image={
               <Image
@@ -115,18 +114,18 @@ const Graveyard = () => {
                     ? '/images/headstone.svg'
                     : '/images/coffin.svg'
                 }
-                alt='a headstone for that which is dead'
+                alt="a headstone for that which is dead"
                 height={72}
                 width={72}
               />
             }
             header={
-              <Text as='h2' weight='bold' block className={styles.title}>
+              <Text as="h2" weight="bold" block className={styles.title}>
                 {getFullName(corpse)}
               </Text>
             }
             description={
-              <Text as='p' className={styles.lifeDates}>
+              <Text as="p" className={styles.lifeDates}>
                 {isDead(corpse, today)
                   ? getLifeDates(corpse)
                   : getExpectedDeathDate(corpse)}
@@ -134,16 +133,16 @@ const Graveyard = () => {
             }
             action={
               <Button
-                as='a'
+                as="a"
                 icon={<News16Regular />}
-                appearance='subtle'
+                appearance="subtle"
                 href={corpse.link}
-                target='_blank'
-                rel='noreferrer noopener'
+                target="_blank"
+                rel="noreferrer noopener"
               />
             }
           />
-          <Text as='p'>{getObituary(corpse, today)}</Text>
+          <Text as="p">{getObituary(corpse, today)}</Text>
         </Card>
       </li>
     ));
@@ -151,12 +150,12 @@ const Graveyard = () => {
 
   useEffect(() => {
     fetchCorpses();
-  }, []);
+  }, [fetchCorpses]);
 
   return (
     <main className={styles.main}>
       <GraveyardHeader />
-      <section id='graveyard'>
+      <section id="graveyard">
         <ul className={styles.list}>{renderGraves()}</ul>
       </section>
       <GraveyardFooter />

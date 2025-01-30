@@ -12,7 +12,7 @@ class Corpse {
     birthDate: Date | undefined,
     deathDate: Date,
     description: string,
-    link: string,
+    link: string
   ) {
     this.name = name;
     this.qualifier = qualifier;

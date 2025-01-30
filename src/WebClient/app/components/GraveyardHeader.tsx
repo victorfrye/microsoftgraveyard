@@ -1,9 +1,4 @@
-import {
-  Image,
-  Text,
-  makeStyles,
-  tokens,
-} from '@fluentui/react-components';
+import { Image, Text, makeStyles, tokens } from '@fluentui/react-components';
 
 const useStyles = makeStyles({
   header: {
@@ -39,19 +34,19 @@ const Header = () => {
   const styles = useStyles();
 
   return (
-    <header id='header' className={styles.header}>
+    <header id="header" className={styles.header}>
       <Image
-        src='/images/headstone.svg'
-        alt='a headstone icon of Microsoft Graveyard'
+        src="/images/headstone.svg"
+        alt="a headstone icon of Microsoft Graveyard"
         height={72}
         width={72}
       />
 
       <div className={styles.headline}>
-        <Text as='h1' weight='bold' className={styles.title}>
+        <Text as="h1" weight="bold" className={styles.title}>
           Microsoft Graveyard
         </Text>
-        <Text as='em' className={styles.tagline}>
+        <Text as="em" className={styles.tagline}>
           In remembrance of those killed by Microsoft
         </Text>
       </div>
