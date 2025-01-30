@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsAspireHost>true</IsAspireHost>
+
+    <AssemblyName>VictorFrye.MicrosoftGraveyard.AppHost</AssemblyName>
+    <RootNamespace>VictorFrye.MicrosoftGraveyard.AppHost</RootNamespace>
+
+    <UserSecretsId>afe9eff4-59b5-420b-a96e-d369866f37f0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
