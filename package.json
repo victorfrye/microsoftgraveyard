@@ -10,8 +10,8 @@
     "lint:fix": "next lint --fix --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@fluentui/react-components": "^9.54.17",
-    "@fluentui/react-icons": "^2.0.264",
+    "@fluentui/react-components": "^9.58.1",
+    "@fluentui/react-icons": "^2.0.271",
     "next": "14.2.14",
     "react": "^18",
     "react-dom": "^18",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@griffel/next-extraction-plugin": "^0.1.7",
-    "@griffel/react": "^1.5.25",
+    "@griffel/react": "^1.5.29",
     "@griffel/webpack-loader": "^2.2.14",
     "@types/node": "^22",
     "@types/react": "^18",
