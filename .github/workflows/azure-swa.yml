@@ -41,8 +41,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODEJS_VERSION }}
-          # cache: npm
-          # cache-dependency-path: ./src/WebClient/package-lock.json
+          cache: npm
+          cache-dependency-path: ./src/WebClient/package-lock.json
 
       - name: Install dependencies
         run: npm ci
