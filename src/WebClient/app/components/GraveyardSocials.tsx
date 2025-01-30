@@ -1,5 +1,6 @@
 import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
 import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
+import { JSX } from 'react';
 
 interface ISocial {
   href: string;

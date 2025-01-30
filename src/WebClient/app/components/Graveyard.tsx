@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, JSX } from 'react';
 import {
   Button,
   Card,
@@ -10,14 +10,6 @@ import {
 } from '@fluentui/react-components';
 import { News16Regular } from '@fluentui/react-icons';
 import corpsesDocument from '@microsoftgraveyard/data/corpses.json';
-import {
-  Corpse,
-  getExpectedDeathDate,
-  getFullName,
-  getLifeDates,
-  getObituary,
-  isDead,
-} from '@microsoftgraveyard/types';
 import GraveyardHeader from '@microsoftgraveyard/components/GraveyardHeader';
 import GraveyardFooter from '@microsoftgraveyard/components/GraveyardFooter';
 
@@ -60,19 +52,93 @@ const useStyles = makeStyles({
   },
 });
 
-interface ICorpse {
+interface Corpse {
   name: string;
-  qualifier: string | undefined;
-  birthDate: string | undefined;
+  qualifier: string | null;
+  birthDate: Date | null;
+  deathDate: Date;
+  description: string;
+  link: string;
+}
+
+interface CorpseRecord {
+  name: string;
+  qualifier: string | null;
+  birthDate: string | null;
   deathDate: string;
   description: string;
   link: string;
 }
 
-interface ICorpsesDocument {
+interface CorpsesDocument {
   $schema: string;
-  corpses: ICorpse[];
+  corpses: CorpseRecord[];
 }
+
+const getAge = (start: Date, end: Date): { age: number; period: string } => {
+  let years = end.getFullYear() - start.getFullYear();
+  if (
+    end.getMonth() < start.getMonth() ||
+    (end.getMonth() === start.getMonth() && end.getDate() < start.getDate())
+  ) {
+    years--;
+  }
+
+  if (years >= 1) {
+    return { age: years, period: years === 1 ? 'year' : 'years' };
+  }
+
+  const months =
+    end.getMonth() -
+    start.getMonth() +
+    12 * (end.getFullYear() - start.getFullYear());
+  if (months >= 1) {
+    return { age: months, period: months === 1 ? 'month' : 'months' };
+  }
+
+  const days = end.getDate() - start.getDate();
+  return { age: days, period: days === 1 ? 'day' : 'days' };
+};
+
+const getExpectedDeathDate = (corpse: Corpse): string =>
+  corpse.deathDate.toLocaleDateString(undefined, {
+    month: 'long',
+    year: 'numeric',
+  });
+
+const getFullName = (corpse: Corpse): string =>
+  corpse.qualifier ? `${corpse.name} (${corpse.qualifier})` : corpse.name;
+
+const getLifeDates = (corpse: Corpse): string =>
+  corpse.birthDate
+    ? `${corpse.birthDate.getFullYear()} - ${corpse.deathDate.getFullYear()}`
+    : `${corpse.deathDate.getFullYear()}`;
+
+const getObituary = (corpse: Corpse, today: Date): string => {
+  let obituary = '';
+
+  const dead = isDead(corpse, today);
+  if (dead) {
+    const { age, period } = getAge(corpse.deathDate, today);
+    const message = age === 0 ? 'today' : `${age} ${period} ago`;
+    obituary += `Killed by Microsoft ${message}, `;
+  } else {
+    const { age, period } = getAge(today, corpse.deathDate);
+    obituary += `To be killed by Microsoft in ${age} ${period}, `;
+  }
+
+  obituary += `${corpse.name} ${dead ? 'was' : 'is'} ${corpse.description}.`;
+
+  if (dead && corpse.birthDate) {
+    const { age, period } = getAge(corpse.birthDate, corpse.deathDate);
+    obituary += ` It was ${age} ${period} old.`;
+  }
+
+  return obituary;
+};
+
+const isDead = (corpse: Corpse, today: Date): boolean =>
+  corpse.deathDate <= today;
 
 const Graveyard = () => {
   const [corpses, setCorpses] = useState<Corpse[]>([]);
@@ -80,19 +146,19 @@ const Graveyard = () => {
   const styles = useStyles();
 
   const fetchCorpses = useCallback(() => {
-    const data: ICorpsesDocument = corpsesDocument as ICorpsesDocument;
+    const data: CorpsesDocument = corpsesDocument as CorpsesDocument;
 
     setCorpses(
       data.corpses
-        ?.map((corpse: ICorpse) => {
-          return new Corpse(
-            corpse.name,
-            corpse.qualifier,
-            corpse.birthDate ? new Date(corpse.birthDate) : undefined,
-            new Date(corpse.deathDate),
-            corpse.description,
-            corpse.link
-          );
+        ?.map((corpse: CorpseRecord) => {
+          return {
+            name: corpse.name,
+            qualifier: corpse.qualifier,
+            birthDate: corpse.birthDate && new Date(corpse.birthDate),
+            deathDate: new Date(corpse.deathDate),
+            description: corpse.description,
+            link: corpse.link,
+          } as Corpse;
         })
         .sort(
           (a, b) =>
