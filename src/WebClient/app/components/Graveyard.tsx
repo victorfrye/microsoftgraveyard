@@ -1,6 +1,4 @@
-'use client';
-
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import {
   Button,
   Card,
@@ -8,11 +6,10 @@ import {
   Image,
   Text,
   makeStyles,
-  shorthands,
   tokens,
 } from '@fluentui/react-components';
 import { News16Regular } from '@fluentui/react-icons';
-import corpseData from '@microsoft-graveyard/data/corpses.json';
+import corpsesDocument from '@microsoftgraveyard/data/corpses.json';
 import {
   Corpse,
   getExpectedDeathDate,
@@ -20,15 +17,23 @@ import {
   getLifeDates,
   getObituary,
   isDead,
-} from '@microsoft-graveyard/types';
+} from '@microsoftgraveyard/types';
+import GraveyardHeader from './GraveyardHeader';
+import GraveyardFooter from './GraveyardFooter';
 
 const useStyles = makeStyles({
+  main: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+    marginBottom: 'auto',
+  },
   list: {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    ...shorthands.gap(tokens.spacingVerticalXL),
-    ...shorthands.margin(tokens.spacingVerticalNone),
+    gap: tokens.spacingVerticalXL,
+    margin: tokens.spacingVerticalNone,
   },
   container: {
     display: 'flex',
@@ -39,25 +44,19 @@ const useStyles = makeStyles({
       width: '25%',
     },
     width: '41.66666667%',
-    ...shorthands.flex(0, 0, 'auto'),
-    ...shorthands.margin(tokens.spacingVerticalL, tokens.spacingHorizontalXL),
-    ...shorthands.borderRadius(tokens.borderRadiusMedium),
+    flex: '0 0 auto',
+    margin: `${tokens.spacingVerticalL} ${tokens.spacingHorizontalXL}`,
+    borderRadius: tokens.borderRadiusMedium,
   },
   title: {
     fontSize: tokens.lineHeightBase400,
     lineHeight: tokens.lineHeightBase500,
-    ...shorthands.margin(
-      tokens.spacingVerticalXS,
-      tokens.spacingHorizontalNone,
-    ),
+    margin: `${tokens.spacingVerticalXS} ${tokens.spacingHorizontalNone}`,
   },
   lifeDates: {
     color: tokens.colorBrandForeground2,
     lineHeight: tokens.lineHeightBase200,
-    ...shorthands.margin(
-      tokens.spacingVerticalXS,
-      tokens.spacingHorizontalNone,
-    ),
+    margin: `${tokens.spacingVerticalXS} ${tokens.spacingHorizontalNone}`,
   },
 });
 
@@ -70,22 +69,18 @@ interface ICorpse {
   link: string;
 }
 
-interface ICorpsesData {
+interface ICorpsesDocument {
   $schema: string;
   corpses: ICorpse[];
 }
 
-const Graveyard = (): JSX.Element => {
+const Graveyard = () => {
   const [corpses, setCorpses] = useState<Corpse[]>([]);
   const today: Date = new Date();
   const styles = useStyles();
 
-  useEffect(() => {
-    fetchCorpses();
-  }, []);
-
-  const fetchCorpses = async () => {
-    const data: ICorpsesData = corpseData as ICorpsesData;
+  const fetchCorpses = useCallback(() => {
+    const data: ICorpsesDocument = corpsesDocument as ICorpsesDocument;
 
     setCorpses(
       data.corpses
@@ -105,10 +100,11 @@ const Graveyard = (): JSX.Element => {
             a.deathDate[Symbol.toPrimitive]('number'),
         ),
     );
-  };
+  }, []);
 
   const renderGraves = (): JSX.Element[] => {
     return corpses.map((corpse, index) => (
+
       <li className={styles.container} key={index}>
         <Card appearance='filled-alternative' key={index}>
           <CardHeader
@@ -153,10 +149,18 @@ const Graveyard = (): JSX.Element => {
     ));
   };
 
+  useEffect(() => {
+    fetchCorpses();
+  }, []);
+
   return (
-    <section id='graveyard'>
-      <ul className={styles.list}>{renderGraves()}</ul>
-    </section>
+    <main className={styles.main}>
+      <GraveyardHeader />
+      <section id='graveyard'>
+        <ul className={styles.list}>{renderGraves()}</ul>
+      </section>
+      <GraveyardFooter />
+    </main>
   );
 };
 

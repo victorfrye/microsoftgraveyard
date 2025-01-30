@@ -1,10 +1,7 @@
-'use client';
-
 import {
   Image,
   Text,
   makeStyles,
-  shorthands,
   tokens,
 } from '@fluentui/react-components';
 
@@ -14,7 +11,7 @@ const useStyles = makeStyles({
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center',
-    ...shorthands.padding(tokens.spacingVerticalXXL, tokens.spacingHorizontalL),
+    padding: `${tokens.spacingVerticalXXL} ${tokens.spacingHorizontalL}`,
   },
   headline: {
     display: 'flex',
@@ -25,12 +22,12 @@ const useStyles = makeStyles({
     },
     justifyContent: 'start',
     alignItems: 'start',
-    ...shorthands.padding(tokens.spacingVerticalS),
-    ...shorthands.gap(tokens.spacingVerticalS),
+    padding: tokens.spacingVerticalS,
+    gap: tokens.spacingVerticalS,
   },
   title: {
     fontSize: tokens.fontSizeHero800,
-    ...shorthands.margin(tokens.spacingVerticalS, tokens.spacingHorizontalNone),
+    margin: `${tokens.spacingVerticalS} ${tokens.spacingHorizontalNone}`,
   },
   tagline: {
     fontSize: tokens.fontSizeBase300,

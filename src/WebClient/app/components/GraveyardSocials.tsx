@@ -2,10 +2,9 @@ import {
   Button,
   Image,
   makeStyles,
-  shorthands,
   tokens,
 } from '@fluentui/react-components';
-import { useDarkMode } from '@microsoft-graveyard/components/providers/darkMode';
+import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
 
 interface ISocial {
   href: string;
@@ -18,7 +17,7 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    ...shorthands.gap(tokens.spacingVerticalSNudge),
+    gap: tokens.spacingVerticalSNudge,
   },
 });
 

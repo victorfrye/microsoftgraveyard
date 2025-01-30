@@ -1,5 +1,3 @@
-'use client';
-
 import {
   FluentProvider,
   makeStaticStyles,
@@ -7,7 +5,8 @@ import {
   webDarkTheme,
   webLightTheme,
 } from '@fluentui/react-components';
-import { useDarkMode } from '@microsoft-graveyard/components/providers/darkMode';
+import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
+import * as React from 'react';
 
 const useStaticStyles = makeStaticStyles({
   html: {

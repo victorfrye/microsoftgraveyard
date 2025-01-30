@@ -1,9 +1,6 @@
-'use client';
-
 import {
   createContext,
   useCallback,
-  useContext,
   useEffect,
   useMemo,
   useState,
@@ -12,8 +9,8 @@ import { useMediaQuery } from 'react-responsive';
 
 const DarkModeContext = createContext({
   isDark: true,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  onDarkModeToggled: (isDark: boolean) => {},
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
+  onDarkModeToggled: (_isDark: boolean) => {},
 });
 DarkModeContext.displayName = 'DarkModeContext';
 
@@ -27,7 +24,7 @@ const DarkModeProvider = ({
       query: '(prefers-color-scheme: light)',
     },
     undefined,
-    (isSystemLight) => setIsDark(!isSystemLight),
+    (isSystemLight) => setIsDark(!isSystemLight)
   );
 
   const onDarkModeToggled = useCallback((isDark: boolean) => {
@@ -39,7 +36,7 @@ const DarkModeProvider = ({
       isDark,
       onDarkModeToggled,
     }),
-    [isDark, onDarkModeToggled],
+    [isDark, onDarkModeToggled]
   );
 
   useEffect(() => {
@@ -55,8 +52,6 @@ const DarkModeProvider = ({
   );
 };
 
-const useDarkMode = () => useContext(DarkModeContext);
-
 export default DarkModeProvider;
 
-export { DarkModeProvider, useDarkMode };
+export { DarkModeProvider, DarkModeContext };

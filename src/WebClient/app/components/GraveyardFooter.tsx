@@ -1,5 +1,3 @@
-'use client';
-
 import {
   Button,
   Divider,
@@ -9,11 +7,10 @@ import {
   SwitchOnChangeData,
   Text,
   makeStyles,
-  shorthands,
   tokens,
 } from '@fluentui/react-components';
-import Socials from '@microsoft-graveyard/components/shared/socials';
-import { useDarkMode } from '@microsoft-graveyard/components/providers/darkMode';
+import Socials from '@microsoftgraveyard/components/GraveyardSocials';
+import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
 import { ArrowDown32Regular } from '@fluentui/react-icons';
 
 const useStyles = makeStyles({
@@ -23,7 +20,7 @@ const useStyles = makeStyles({
     marginTop: 'auto',
     justifyContent: 'center',
     alignItems: 'center',
-    ...shorthands.padding(tokens.spacingVerticalXXL, tokens.spacingHorizontalL),
+    padding: `${tokens.spacingVerticalXXL} ${tokens.spacingHorizontalL}`,
   },
   floatingActionButton: {
     position: 'fixed',
@@ -32,29 +29,22 @@ const useStyles = makeStyles({
     zIndex: 1000,
   },
   divider: {
-    ...shorthands.margin(0, 0, tokens.spacingVerticalL, 0),
+    margin: `0 0 ${tokens.spacingVerticalL} 0`,
   },
   headline: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    ...shorthands.margin(tokens.spacingVerticalL),
+    margin: tokens.spacingVerticalL,
   },
   title: {
     fontSize: tokens.fontSizeBase600,
-    ...shorthands.margin(
-      tokens.spacingVerticalM,
-      tokens.spacingHorizontalM,
-      tokens.spacingVerticalNone,
-    ),
+    margin: `${tokens.spacingVerticalM} ${tokens.spacingHorizontalM} ${tokens.spacingVerticalNone}`,
   },
   switch: {
-    ...shorthands.padding(
-      tokens.spacingVerticalXS,
-      tokens.spacingHorizontalNone,
-      tokens.spacingVerticalMNudge,
-    ),
+    padding: `${tokens.spacingVerticalXS} ${tokens.spacingHorizontalNone} ${tokens.spacingVerticalMNudge}`,
+
   },
 });
 
