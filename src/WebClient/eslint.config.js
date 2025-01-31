@@ -9,17 +9,11 @@ import prettier from 'eslint-plugin-prettier';
 const config = tseslint.config(
   { ignores: ['dist', 'node_modules'] },
   {
-    settings: {
-      react: {
-        version: 'detect',
-      },
-    },
+    files: ['**/*.{ts,tsx}'],
     extends: [
-      js.configs.recommended,
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylisticTypeChecked,
     ],
-    files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -32,7 +26,6 @@ const config = tseslint.config(
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
-      prettier,
     },
     rules: {
       ...react.configs.recommended.rules,
@@ -42,17 +35,20 @@ const config = tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
-      ...prettier.configs.recommended.rules,
     },
   },
   {
+    files: ['**/*.js'],
+    extends: [tseslint.configs.disableTypeChecked],
+  },
+  {
+    ...js.configs.recommended,
     settings: {
       react: {
         version: 'detect',
       },
     },
-    files: ['**/*.js'],
-    extends: [js.configs.recommended, tseslint.configs.disableTypeChecked],
+    files: ['**/*.{js,ts,tsx}'],
     plugins: {
       prettier,
     },

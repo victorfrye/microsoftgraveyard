@@ -37,16 +37,6 @@ const useStyles = makeStyles({
     margin: `${tokens.spacingVerticalL} ${tokens.spacingHorizontalXL}`,
     borderRadius: tokens.borderRadiusMedium,
   },
-  title: {
-    fontSize: tokens.lineHeightBase400,
-    lineHeight: tokens.lineHeightBase500,
-    margin: `${tokens.spacingVerticalXS} ${tokens.spacingHorizontalNone}`,
-  },
-  lifeDates: {
-    color: tokens.colorBrandForeground2,
-    lineHeight: tokens.lineHeightBase200,
-    margin: `${tokens.spacingVerticalXS} ${tokens.spacingHorizontalNone}`,
-  },
 });
 
 const Graveyard = () => {
