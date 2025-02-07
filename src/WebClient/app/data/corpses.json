@@ -38,10 +38,10 @@
     },
     {
       "name": "Azure Data Studio",
-      "birthDate": "2018-09-24",
+      "birthDate": "2017-11-15",
       "deathDate": "2026-02-28",
-      "description": "a lightweight, cross-platform data management and development tool for data professionals, based on Visual Studio Code",
-      "link": "https://learn.microsoft.com/en-us/azure-data-studio/whats-happening-azure-data-studio"
+      "description": "a lightweight, cross-platform data management and development tool for data professionals using the Microsoft family of on-premises and cloud data platforms",
+      "link": "https://techcommunity.microsoft.com/blog/azuresqlblog/azure-data-studio-retirement/4371009"
     },
     {
       "name": "Visual Studio LightSwitch",
