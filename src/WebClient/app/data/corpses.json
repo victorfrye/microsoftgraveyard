@@ -37,6 +37,13 @@
       "link": "https://www.pluralsight.com/resources/blog/cloud/azure-blueprints-shelved"
     },
     {
+      "name": "Azure Data Studio",
+      "birthDate": "2017-11-15",
+      "deathDate": "2026-02-28",
+      "description": "a light-weight database tool for SQL developers using the Microsoft family of on-premises and cloud data platforms",
+      "link": "https://techcommunity.microsoft.com/blog/azuresqlblog/azure-data-studio-retirement/4371009"
+    },
+    {
       "name": "Visual Studio LightSwitch",
       "birthDate": "2010-08-23",
       "deathDate": "2025-10-14",
