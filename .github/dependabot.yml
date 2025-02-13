@@ -5,22 +5,22 @@
 
 version: 2
 updates:
+  # Maintain dependencies for NuGet
+  - package-ecosystem: 'nuget'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels: ['📦 Issue-Dependencies', '🛠️ Area-AppHost']
+
   # Maintain dependencies for npm
   - package-ecosystem: 'npm'
-    directory: '/'
+    directory: '/src/WebClient'
     schedule:
       interval: 'monthly'
     labels: ['📦 Issue-Dependencies', '🌐 Area-WebApp']
 
     # Maintain dependencies for GitHub Actions
   - package-ecosystem: 'github-actions'
-    directory: '/'
-    schedule:
-      interval: 'weekly'
-    labels: ['📦 Issue-Dependencies', '♾️ Area-Workflow']
-
-    # Maintain dependencies for Dev Containers
-  - package-ecosystem: 'devcontainers'
     directory: '/'
     schedule:
       interval: 'weekly'
