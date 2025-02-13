@@ -23,7 +23,7 @@ const Socials = () => {
 
   const socialDetails: ISocial[] = [
     {
-      href: 'https://threads.net/@microsoftgraveyard',
+      href: 'https://www.threads.net/@microsoftgraveyard',
       image: (
         <Image
           src={isDark ? '/images/threads.svg' : '/images/threads_dark.svg'}
