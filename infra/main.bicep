@@ -13,12 +13,12 @@ param location string = resourceGroup().location
 resource swaApp 'Microsoft.Web/staticSites@2024-04-01' = {
   name: 'stapp-${appName}'
   location: location
+  sku: {
+    name: 'Free'
+    tier: 'Free'
+  }
   tags: {
     Project: projectName
-  }
-  sku: {
-    tier: 'Free'
-    name: 'Free'
   }
   properties: {
     repositoryUrl: 'https://github.com/${appRepo}'
@@ -41,6 +41,9 @@ resource swaBasicAuth 'Microsoft.Web/staticSites/basicAuth@2024-04-01' = {
 resource swaApexDomain 'Microsoft.Web/staticSites/customDomains@2024-04-01' = {
   parent: swaApp
   name: domainName
+  properties: {
+    expiresOn: true
+  }
 }
 
 resource swaWwwDomain 'Microsoft.Web/staticSites/customDomains@2024-04-01' = {
