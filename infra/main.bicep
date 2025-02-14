@@ -41,11 +41,17 @@ resource swaBasicAuth 'Microsoft.Web/staticSites/basicAuth@2024-04-01' = {
 resource swaApexDomain 'Microsoft.Web/staticSites/customDomains@2024-04-01' = {
   parent: swaApp
   name: domainName
+  properties: {
+    isDefault: true
+  }
 }
 
 resource swaWwwDomain 'Microsoft.Web/staticSites/customDomains@2024-04-01' = {
   parent: swaApp
   name: 'www.${domainName}'
+  properties: {
+    isDefault: false
+  }
 }
 
 // MARK: Domain Name System
