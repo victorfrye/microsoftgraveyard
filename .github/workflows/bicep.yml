@@ -7,7 +7,7 @@ on:
       - 'infra/**'
       - '.github/workflows/bicep.yml'
   pull_request:
-    types: [opened, synchronize, reopened, closed]
+    types: [opened, synchronize, reopened]
     branches: ['main']
     paths:
       - 'infra/**'
@@ -31,14 +31,14 @@ jobs:
     environment: Production
 
     concurrency:
-      group: ${{ github.ref }}
-      cancel-in-progress: true
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Login
+      - name: Login to Azure
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
@@ -65,11 +65,15 @@ jobs:
 
     environment: Production
 
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Login
+      - name: Login to Azure
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
