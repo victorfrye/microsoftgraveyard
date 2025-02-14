@@ -3,15 +3,9 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches: ['main']
-    paths:
-      - 'src/WebClient/**'
-      - '.github/workflows/azure-swa.yml'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches: ['main']
-    paths:
-      - 'src/WebClient/**'
-      - '.github/workflows/azure-swa.yml'
 
 permissions:
   contents: read
