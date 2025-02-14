@@ -6,17 +6,19 @@ param appRepo string
 param googleVerificationCode string
 param bingVerificationCode string
 
+param location string = resourceGroup().location
+
 // MARK: Static Web App
 
 resource swaApp 'Microsoft.Web/staticSites@2024-04-01' = {
   name: 'stapp-${appName}'
-  location: resourceGroup().location
+  location: location
   tags: {
     Project: projectName
   }
   sku: {
-    name: 'Free'
     tier: 'Free'
+    name: 'Free'
   }
   properties: {
     repositoryUrl: 'https://github.com/${appRepo}'
@@ -39,13 +41,11 @@ resource swaBasicAuth 'Microsoft.Web/staticSites/basicAuth@2024-04-01' = {
 resource swaApexDomain 'Microsoft.Web/staticSites/customDomains@2024-04-01' = {
   parent: swaApp
   name: domainName
-  properties: {}
 }
 
 resource swaWwwDomain 'Microsoft.Web/staticSites/customDomains@2024-04-01' = {
   parent: swaApp
   name: 'www.${domainName}'
-  properties: {}
 }
 
 // MARK: Domain Name System
@@ -80,8 +80,6 @@ resource dnsNameServers 'Microsoft.Network/dnszones/NS@2023-07-01-preview' = {
         nsdname: 'ns4-33.azure-dns.info.'
       }
     ]
-    targetResource: {}
-    trafficManagementProfile: {}
   }
 }
 
@@ -99,8 +97,6 @@ resource dnsStartOfAuthority 'Microsoft.Network/dnszones/SOA@2023-07-01-preview'
       retryTime: 300
       serialNumber: 1
     }
-    targetResource: {}
-    trafficManagementProfile: {}
   }
 }
 
@@ -112,7 +108,6 @@ resource dnsAddress 'Microsoft.Network/dnszones/A@2023-07-01-preview' = {
     targetResource: {
       id: swaApp.id
     }
-    trafficManagementProfile: {}
   }
 }
 
@@ -128,8 +123,6 @@ resource dnsText 'Microsoft.Network/dnszones/TXT@2023-07-01-preview' = {
         ]
       }
     ]
-    targetResource: {}
-    trafficManagementProfile: {}
   }
 }
 
@@ -141,8 +134,6 @@ resource dnsWwwCname 'Microsoft.Network/dnszones/CNAME@2023-07-01-preview' = {
     CNAMERecord: {
       cname: swaApp.properties.defaultHostname
     }
-    targetResource: {}
-    trafficManagementProfile: {}
   }
 }
 
@@ -154,7 +145,5 @@ resource dnsBingVerification 'Microsoft.Network/dnszones/CNAME@2023-07-01-previe
     CNAMERecord: {
       cname: 'verify.bing.com'
     }
-    targetResource: {}
-    trafficManagementProfile: {}
   }
 }
