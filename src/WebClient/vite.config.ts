@@ -6,7 +6,7 @@ import { resolve } from 'path';
 const config = defineConfig(({ command }) => ({
   plugins: [plugin(), command === 'build' && griffel()],
   server: {
-    port: 5173,
+    port: (process.env.VITE_PORT as unknown as number) || 5173,
   },
   resolve: {
     alias: {
