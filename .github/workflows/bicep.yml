@@ -31,8 +31,8 @@ jobs:
     environment: Production
 
     concurrency:
-      group: ${{ github.ref }}
-      cancel-in-progress: true
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
 
     steps:
       - name: Checkout repository
@@ -66,8 +66,8 @@ jobs:
     environment: Production
 
     concurrency:
-      group: ${{ github.ref }}
-      cancel-in-progress: true
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
 
     steps:
       - name: Checkout repository
