@@ -7,7 +7,7 @@ on:
       - 'infra/**'
       - '.github/workflows/bicep.yml'
   pull_request:
-    types: [opened, synchronize, reopened, closed]
+    types: [opened, synchronize, reopened]
     branches: ['main']
     paths:
       - 'infra/**'
