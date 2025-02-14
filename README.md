@@ -80,7 +80,13 @@ git clone https://github.com/victorfrye/microsoftgraveyard.git
 To run the application, simply run the following commands in the root of the project:
 
 ```pwsh
-Set-Location .\src\WebClient; npm install; npm run dev
+Set-Location ./src/WebClient && npm install && npm run dev
+```
+
+OR if you have .NET installed and want to use Aspire app host:
+
+```pwsh
+dotnet run --project ./src/AppHost/AppHost.csproj
 ```
 
 ## Corpse Document
