@@ -3,9 +3,15 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches: ['main']
+    paths:
+      - 'src/WebClient/**'
+      - '.github/workflows/azure-swa.yml'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches: ['main']
+    paths:
+      - 'src/WebClient/**'
+      - '.github/workflows/azure-swa.yml'
 
 permissions:
   contents: read
@@ -55,7 +61,7 @@ jobs:
 
       - name: Deploy static web app
         id: deploy
-        uses: Azure/static-web-apps-deploy@v1
+        uses: azure/static-web-apps-deploy@v1
         env:
           SKIP_DEPLOY_ON_MISSING_SECRETS: ${{ github.event_name == 'pull_request' }}
           IS_STATIC_EXPORT: true
@@ -76,7 +82,7 @@ jobs:
 
       - name: Close pull request
         id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
+        uses: azure/static-web-apps-deploy@v1
         env:
           SKIP_DEPLOY_ON_MISSING_SECRETS: ${{ github.event_name == 'pull_request' }}
         with:
