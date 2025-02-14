@@ -50,7 +50,7 @@ jobs:
         with:
           type: deployment
           operation: create
-          name: ${{ github.workflow }}-${{ github.sha }}
+          name: BicepCICD-${{ github.sha }}
           scope: resourceGroup
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resource-group-name: ${{ vars.AZURE_RG }}
@@ -85,7 +85,7 @@ jobs:
         with:
           type: deployment
           operation: validate
-          name: ${{ github.workflow }}-${{ github.sha }}
+          name: BicepCICD-${{ github.sha }}
           scope: resourceGroup
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resource-group-name: ${{ vars.AZURE_RG }}
@@ -98,7 +98,7 @@ jobs:
         with:
           type: deployment
           operation: whatIf
-          name: ${{ github.workflow }}-${{ github.sha }}
+          name: BicepCICD-${{ github.sha }}
           scope: resourceGroup
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resource-group-name: ${{ vars.AZURE_RG }}
