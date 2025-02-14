@@ -1,0 +1,102 @@
+name: Bicep CI/CD
+
+on:
+  push:
+    branches: ['main']
+    paths:
+      - 'infra/**'
+      - '.github/workflows/bicep.yml'
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches: ['main']
+    paths:
+      - 'infra/**'
+      - '.github/workflows/bicep.yml'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  deploy:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    name: Deploy
+    
+    environment: Production
+
+    concurrency:
+      group: ${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Create deployment
+        uses: azure/bicep-deploy@v2
+        with:
+          type: deployment
+          operation: create
+          name: Development
+          scope: resourceGroup
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          resource-group-name: ${{ vars.AZURE_RG }}
+          template-file: ./infra/main.bicep
+          parameters-file: ./infra/main.bicepparam
+          action-on-unmanage-resources: delete
+
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    name: Validate
+
+    environment: Production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Validate deployment
+        uses: azure/bicep-deploy@v2
+        with:
+          type: deployment
+          operation: validate
+          name: Development
+          scope: resourceGroup
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          resource-group-name: ${{ vars.AZURE_RG }}
+          template-file: ./infra/main.bicep
+          parameters-file: ./infra/main.bicepparam
+          action-on-unmanage-resources: delete
+
+      - name: Preview deployment
+        uses: azure/bicep-deploy@v2
+        with:
+          type: deployment
+          operation: whatIf
+          name: Development
+          scope: resourceGroup
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          resource-group-name: ${{ vars.AZURE_RG }}
+          template-file: ./infra/main.bicep
+          parameters-file: ./infra/main.bicepparam
+          action-on-unmanage-resources: delete
