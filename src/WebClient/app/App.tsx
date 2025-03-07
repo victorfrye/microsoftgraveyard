@@ -1,12 +1,31 @@
-import DarkModeProvider from '@microsoftgraveyard/providers/DarkMode';
-import ThemeProvider from '@microsoftgraveyard/providers/Theme';
-import Graveyard from '@microsoftgraveyard/components/Graveyard';
+import { makeStyles } from '@fluentui/react-components';
+
+import { Graveyard } from '@microsoftgraveyard/graveyard';
+import { Footer, Header } from '@microsoftgraveyard/layout';
+import { DarkModeProvider, ThemeProvider } from '@microsoftgraveyard/theme';
+
+const useStyles = makeStyles({
+  main: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+    marginBottom: 'auto',
+  },
+});
 
 const App = () => {
+  const styles = useStyles();
+
   return (
     <DarkModeProvider>
       <ThemeProvider>
-        <Graveyard />
+        <Header />
+
+        <main className={styles.main}>
+          <Graveyard />
+        </main>
+
+        <Footer />
       </ThemeProvider>
     </DarkModeProvider>
   );

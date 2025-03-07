@@ -36,7 +36,7 @@ Microsoft Graveyard is an open-source static web application that serves as a vi
 
 ## Contributing
 
-Contributions are welcome and key to maintaining this project! Please read the [contributing guide](/.github/CONTRIBUTING.md) for opening issues or pull requests. If you are simply looking to request a new product be added, continuing reading for how to [add a new dead product](#add-a-new-dead-product).
+Contributions are welcome and key to maintaining this project! Please read the [contributing guide](/.github/CONTRIBUTING.md) for opening issues or pull requests. If you are simply looking to request a new product be added, continuing reading for how to [request a headstone](#request-a-headstone).
 
 ### Request a headstone
 
@@ -91,7 +91,7 @@ dotnet run --project ./src/AppHost/AppHost.csproj
 
 ## Corpse Document
 
-The core list of dead products is maintained in the [corpses.json](./src/WebClient/app/data/corpses.json) file within the `src/WebClient/app/data/` directory. The document contains an array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
+The core list of dead products is maintained in the [corpses.json](./src/WebClient/app/graveyard/corpses.json) file within the `src/WebClient/app/graveyard/` directory. The document contains an array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
 
 - `name` - The name of the product. This should NOT include Microsoft unless absolutely necessary as all products in this list are Microsoft products and could be prepended with the company's name.
 
