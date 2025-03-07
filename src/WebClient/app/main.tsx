@@ -1,7 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import '@microsoftgraveyard/index.css';
+
 import App from '@microsoftgraveyard/App';
+import '@microsoftgraveyard/index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

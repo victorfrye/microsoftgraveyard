@@ -1,5 +1,6 @@
-import { Corpse } from '@microsoftgraveyard/types/corpse';
 import { useCallback, useEffect, useState } from 'react';
+
+import { Corpse } from '@microsoftgraveyard/types';
 
 const useCorpse = (corpse: Corpse, today: Date) => {
   const name = corpse.qualifier

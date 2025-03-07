@@ -5,14 +5,19 @@ import {
   useMemo,
   useState,
 } from 'react';
+
 import { useMediaQuery } from 'react-responsive';
 
-const DarkModeContext = createContext({
+interface DarkModeContextProps {
+  isDark: boolean;
+  onDarkModeToggled: (isDark: boolean) => void;
+}
+
+const DarkModeContext = createContext<DarkModeContextProps>({
   isDark: true,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
   onDarkModeToggled: (_isDark: boolean) => {},
 });
-DarkModeContext.displayName = 'DarkModeContext';
 
 const DarkModeProvider = ({
   children,

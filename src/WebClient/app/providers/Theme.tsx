@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import {
   FluentProvider,
   makeStaticStyles,
@@ -5,8 +7,8 @@ import {
   webDarkTheme,
   webLightTheme,
 } from '@fluentui/react-components';
+
 import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
-import * as React from 'react';
 
 const useStaticStyles = makeStaticStyles({
   html: {
@@ -59,5 +61,3 @@ const ThemeProvider = ({
 };
 
 export default ThemeProvider;
-
-export { ThemeProvider };

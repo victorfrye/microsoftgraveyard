@@ -1,3 +1,5 @@
+import { ChangeEvent } from 'react';
+
 import {
   Button,
   Divider,
@@ -9,10 +11,10 @@ import {
   makeStyles,
   tokens,
 } from '@fluentui/react-components';
-import Socials from '@microsoftgraveyard/components/GraveyardSocials';
-import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
 import { ArrowDown32Regular } from '@fluentui/react-icons';
-import { ChangeEvent } from 'react';
+
+import Socials from '@microsoftgraveyard/components/layout/Socials';
+import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
 
 const useStyles = makeStyles({
   footer: {
