@@ -1,8 +1,8 @@
 import { makeStyles } from '@fluentui/react-components';
 
-import { Graveyard } from '@microsoftgraveyard/components/graveyard';
-import { Footer, Header } from '@microsoftgraveyard/components/layout';
-import { DarkModeProvider, ThemeProvider } from '@microsoftgraveyard/providers';
+import { Graveyard } from '@microsoftgraveyard/graveyard';
+import { Footer, Header } from '@microsoftgraveyard/layout';
+import { DarkModeProvider, ThemeProvider } from '@microsoftgraveyard/theme';
 
 const useStyles = makeStyles({
   main: {

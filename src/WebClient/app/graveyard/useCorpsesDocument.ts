@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import corpsesDocument from '@microsoftgraveyard/data/corpses.json';
+import corpsesDocument from '@microsoftgraveyard/graveyard/corpses.json';
 import { Corpse } from '@microsoftgraveyard/types';
 
 interface CorpseRecord {
   name: string;
-  qualifier: string | null;
-  birthDate: string | null;
+  qualifier?: string;
+  birthDate?: string;
   deathDate: string;
   description: string;
   link: string;

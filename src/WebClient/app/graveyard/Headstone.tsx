@@ -14,7 +14,7 @@ import {
 } from '@fluentui/react-components';
 import { News16Regular } from '@fluentui/react-icons';
 
-import useCorpse from '@microsoftgraveyard/hooks/useCorpse';
+import useCorpse from '@microsoftgraveyard/graveyard/useCorpse';
 import { Corpse } from '@microsoftgraveyard/types';
 
 const useStyles = makeStyles({

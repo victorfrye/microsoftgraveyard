@@ -1,7 +1,7 @@
 interface Corpse {
   name: string;
-  qualifier: string | null;
-  birthDate: Date | null;
+  qualifier?: string;
+  birthDate?: Date;
   deathDate: Date;
   description: string;
   link: string;

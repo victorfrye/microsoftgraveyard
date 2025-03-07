@@ -8,7 +8,7 @@ import {
   webLightTheme,
 } from '@fluentui/react-components';
 
-import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
+import useDarkMode from '@microsoftgraveyard/theme/useDarkMode';
 
 const useStaticStyles = makeStaticStyles({
   html: {
