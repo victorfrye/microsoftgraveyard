@@ -1,8 +1,9 @@
+import { JSX } from 'react';
+
 import { makeStyles, tokens } from '@fluentui/react-components';
 
-import { Graveyard } from '@microsoftgraveyard/components/graveyard';
-import { Footer, Header } from '@microsoftgraveyard/components/layout';
-import { DarkModeProvider, ThemeProvider } from '@microsoftgraveyard/providers';
+import { Headstone } from '@microsoftgraveyard/components/graveyard/Headstone';
+import { useCorpsesDocument } from '@microsoftgraveyard/hooks';
 
 const useStyles = makeStyles({
   main: {
@@ -33,22 +34,24 @@ const useStyles = makeStyles({
   },
 });
 
-const App = () => {
+const Graveyard = () => {
   const styles = useStyles();
+  const corpses = useCorpsesDocument();
+  const today: Date = new Date();
+
+  const renderHeadstones = (): JSX.Element[] => {
+    return corpses.map((corpse, index) => (
+      <li className={styles.container} key={index}>
+        <Headstone corpse={corpse} today={today} />
+      </li>
+    ));
+  };
 
   return (
-    <DarkModeProvider>
-      <ThemeProvider>
-        <Header />
-
-        <main className={styles.main}>
-          <Graveyard />
-        </main>
-
-        <Footer />
-      </ThemeProvider>
-    </DarkModeProvider>
+    <section id="graveyard">
+      <ul className={styles.list}>{renderHeadstones()}</ul>
+    </section>
   );
 };
 
-export default App;
+export { Graveyard };

@@ -1,6 +1,8 @@
-import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
-import useDarkMode from '@microsoftgraveyard/hooks/useDarkMode';
 import { JSX } from 'react';
+
+import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
+
+import { useDarkMode } from '@microsoftgraveyard/hooks';
 
 interface ISocial {
   href: string;
@@ -65,4 +67,4 @@ const Socials = () => {
   return <div className={styles.container}>{renderButtons()}</div>;
 };
 
-export default Socials;
+export { Socials };
