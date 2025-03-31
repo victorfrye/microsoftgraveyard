@@ -11,4 +11,5 @@
     <Build />
     <Deploy />
   </Project>
+  <Project Path="src/CommandLine/CommandLine.csproj" Id="014bd3e2-b531-4828-bba3-582cdd1c6123" />
 </Solution>

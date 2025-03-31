@@ -21,4 +21,8 @@
     <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CommandLine\CommandLine.csproj" />
+  </ItemGroup>
+
 </Project>
