@@ -4,38 +4,40 @@
   "version": "3.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "lint": "eslint --fix .",
-    "lint:check": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "serve out",
+    "lint": "next lint --fix ",
+    "lint:check": "next lint"
   },
   "dependencies": {
-    "@fluentui/react-components": "^9.60.0",
-    "@fluentui/react-icons": "^2.0.279",
+    "@fluentui/react-components": "^9.61.6",
+    "@fluentui/react-icons": "^2.0.294",
     "@griffel/react": "^1.5.29",
+    "next": "^15.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-responsive": "^10.0.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.21.0",
-    "@griffel/tag-processor": "^1.0.12",
-    "@griffel/vite-plugin": "^0.1.12",
+    "@griffel/next-extraction-plugin": "^0.1.10",
+    "@griffel/webpack-loader": "^2.2.18",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/node": "^22.13.9",
+    "@types/node": "^22.14.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.21.0",
-    "eslint-plugin-prettier": "^5.2.3",
-    "eslint-plugin-react": "^7.37.4",
+    "eslint": "^9.23.0",
+    "eslint-config-next": "^15.2.4",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
+    "serve": "^14.2.4",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.25.0",
-    "vite": "^6.2.3"
+    "typescript-eslint": "^8.25.0"
   }
 }

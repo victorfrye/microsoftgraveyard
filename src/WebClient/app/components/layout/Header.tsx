@@ -1,3 +1,5 @@
+'use client';
+
 import { Image, Text, makeStyles, tokens } from '@fluentui/react-components';
 
 const useStyles = makeStyles({

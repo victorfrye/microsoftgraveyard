@@ -5,8 +5,8 @@
     <ShouldRunBuildScript>false</ShouldRunBuildScript>
 	  
     <JavaScriptTestRoot>app\</JavaScriptTestRoot>
-    <JavaScriptTestFramework>Vitest</JavaScriptTestFramework>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
 	  
-    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist</BuildOutputFolder>
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\out</BuildOutputFolder>
   </PropertyGroup>
 </Project>
