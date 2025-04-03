@@ -49,7 +49,7 @@ const Socials = () => {
   ];
 
   const renderButtons = (): JSX.Element[] => {
-    return socialDetails.map((social, index) => (
+    return socialDetails.map((social) => (
       <Button
         icon={social.image}
         as="a"
@@ -59,7 +59,7 @@ const Socials = () => {
         href={social.href}
         target="_blank"
         rel="me noreferrer noopener"
-        key={index}
+        key={social.href}
       />
     ));
   };

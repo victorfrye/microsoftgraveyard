@@ -45,8 +45,8 @@ const HomePage = () => {
   const today: Date = new Date();
 
   const renderHeadstones = (): JSX.Element[] => {
-    return corpses.map((corpse: Corpse, index: number) => (
-      <li className={styles.container} key={index}>
+    return corpses.map((corpse: Corpse) => (
+      <li className={styles.container} key={corpse.name}>
         <Headstone corpse={corpse} today={today} />
       </li>
     ));

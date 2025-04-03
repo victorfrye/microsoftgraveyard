@@ -6,7 +6,7 @@ const nextConfig = withGriffelCSSExtraction()({
   experimental: {
     turbo: { }
   },
-  webpack: (config, {}) => {
+  webpack: (config) => {
     config.module.rules.unshift(
       {
         test: /\.(js|jsx)$/,
