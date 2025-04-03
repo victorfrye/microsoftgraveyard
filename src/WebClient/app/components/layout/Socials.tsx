@@ -2,9 +2,9 @@ import { JSX } from 'react';
 
 import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
 
-import { useDarkMode } from '@microsoftgraveyard/theme';
+import { useDarkMode } from '@microsoftgraveyard/components/theme';
 
-interface ISocial {
+interface Social {
   href: string;
   image: JSX.Element;
 }
@@ -23,7 +23,7 @@ const Socials = () => {
   const styles = useStyles();
   const { isDark } = useDarkMode();
 
-  const socialDetails: ISocial[] = [
+  const socialDetails: Social[] = [
     {
       href: 'https://www.threads.net/@microsoftgraveyard',
       image: (

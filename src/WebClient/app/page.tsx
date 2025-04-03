@@ -1,11 +1,22 @@
+'use client';
+
 import { JSX } from 'react';
 
 import { makeStyles, tokens } from '@fluentui/react-components';
 
-import Headstone from '@microsoftgraveyard/graveyard/Headstone';
-import useCorpsesDocument from '@microsoftgraveyard/graveyard/useCorpsesDocument';
+import {
+  Headstone,
+  useCorpsesDocument,
+} from '@microsoftgraveyard/components/graveyard';
+import { Corpse } from '@microsoftgraveyard/types';
 
 const useStyles = makeStyles({
+  main: {
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh',
+    marginBottom: 'auto',
+  },
   list: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -28,13 +39,13 @@ const useStyles = makeStyles({
   },
 });
 
-const Graveyard = () => {
+const HomePage = () => {
   const styles = useStyles();
   const corpses = useCorpsesDocument();
   const today: Date = new Date();
 
   const renderHeadstones = (): JSX.Element[] => {
-    return corpses.map((corpse, index) => (
+    return corpses.map((corpse: Corpse, index: number) => (
       <li className={styles.container} key={index}>
         <Headstone corpse={corpse} today={today} />
       </li>
@@ -42,10 +53,10 @@ const Graveyard = () => {
   };
 
   return (
-    <section id="graveyard">
+    <main id="graveyard" className={styles.main}>
       <ul className={styles.list}>{renderHeadstones()}</ul>
-    </section>
+    </main>
   );
 };
 
-export default Graveyard;
+export default HomePage;

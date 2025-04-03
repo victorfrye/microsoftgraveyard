@@ -1,3 +1,5 @@
+'use client';
+
 import { ChangeEvent } from 'react';
 
 import {
@@ -13,8 +15,8 @@ import {
 } from '@fluentui/react-components';
 import { ArrowDown32Regular } from '@fluentui/react-icons';
 
-import Socials from '@microsoftgraveyard/layout/Socials';
-import { useDarkMode } from '@microsoftgraveyard/theme';
+import Socials from '@microsoftgraveyard/components/layout/Socials';
+import { useDarkMode } from '@microsoftgraveyard/components/theme';
 
 const useStyles = makeStyles({
   footer: {
