@@ -1,7 +1,7 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 builder.AddNpmApp("client", "../WebClient", "dev")
-    .WithHttpEndpoint(env: "VITE_PORT")
+    .WithHttpEndpoint(env: "PORT")
     .WithExternalHttpEndpoints();
 
 await builder.Build().RunAsync();

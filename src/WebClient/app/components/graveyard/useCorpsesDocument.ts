@@ -1,6 +1,8 @@
+'use client';
+
 import { useCallback, useEffect, useState } from 'react';
 
-import corpsesDocument from '@microsoftgraveyard/graveyard/corpses.json';
+import corpsesDocument from '@microsoftgraveyard/components/graveyard/corpses.json';
 import { Corpse } from '@microsoftgraveyard/types';
 
 interface CorpseRecord {
