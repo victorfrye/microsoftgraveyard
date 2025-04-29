@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import { JSX, useCallback } from 'react';
 
 import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
 
@@ -23,33 +23,35 @@ const Socials = () => {
   const styles = useStyles();
   const { isDark } = useDarkMode();
 
-  const socialDetails: Social[] = [
-    {
-      href: 'https://www.threads.net/@microsoftgraveyard',
-      image: (
-        <Image
-          src={isDark ? '/images/threads.svg' : '/images/threads_dark.svg'}
-          alt="Threads"
-          height={20}
-          width={20}
-        />
-      ),
-    },
-    {
-      href: 'https://github.com/victorfrye/microsoftgraveyard',
-      image: (
-        <Image
-          src={isDark ? '/images/github.svg' : '/images/github_dark.svg'}
-          alt="GitHub"
-          height={20}
-          width={20}
-        />
-      ),
-    },
-  ];
+  const getSocials = useCallback((): Social[] => {
+    return [
+      {
+        href: 'https://www.threads.net/@microsoftgraveyard',
+        image: (
+          <Image
+            src={isDark ? '/images/threads.svg' : '/images/threads_dark.svg'}
+            alt="Threads"
+            height={20}
+            width={20}
+          />
+        ),
+      },
+      {
+        href: 'https://github.com/victorfrye/microsoftgraveyard',
+        image: (
+          <Image
+            src={isDark ? '/images/github.svg' : '/images/github_dark.svg'}
+            alt="GitHub"
+            height={20}
+            width={20}
+          />
+        ),
+      },
+    ];
+  }, [isDark]);
 
   const renderButtons = (): JSX.Element[] => {
-    return socialDetails.map((social) => (
+    return getSocials().map((social) => (
       <Button
         icon={social.image}
         as="a"
