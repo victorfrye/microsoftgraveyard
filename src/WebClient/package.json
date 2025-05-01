@@ -38,6 +38,6 @@
     "prettier": "^3.5.3",
     "serve": "^14.2.4",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.25.0"
+    "typescript-eslint": "^8.31.1"
   }
 }
