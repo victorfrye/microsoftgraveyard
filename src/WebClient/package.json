@@ -22,7 +22,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.21.0",
-    "@griffel/next-extraction-plugin": "^0.1.10",
+    "@griffel/next-extraction-plugin": "^0.1.11",
     "@griffel/webpack-loader": "^2.2.18",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^22.14.0",
