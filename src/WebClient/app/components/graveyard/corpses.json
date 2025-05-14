@@ -65,6 +65,13 @@
       "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
     },
     {
+      "name": "Windows Maps",
+      "birthDate": "2014-11-20",
+      "deathDate": "2025-07-31",
+      "description": "a mapping application that provided users with navigation, traffic conditions, and local business listings",
+      "link": "https://www.howtogeek.com/windows-maps-end-of-life/"
+    },
+    {
       "name": "Dev Home",
       "birthDate": "2023-05-30",
       "deathDate": "2025-05-31",
