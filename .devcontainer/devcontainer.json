@@ -9,33 +9,6 @@
     }
   },
 
-  // "hostRequirements": {
-  //   "cpus": 8,
-  //   "memory": "32gb",
-  //   "storage": "64gb"
-  // },
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [5000, 5001],
-  // "portsAttributes": {
-  //		"5001": {
-  //			"protocol": "https"
-  //		}
-  // }
-
-  // "mounts": [
-  //     {
-  //       "source": "${env:HOME}${env:USERPROFILE}/.aspnet/https",
-  //       "target": "/home/vscode/.aspnet/https",
-  //       "type": "bind"
-  //     }
-  // ],
-
-  "remoteUser": "root",
-  // "remoteEnv": {
-  //   "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx"
-  // },
-
   "postCreateCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/install.sh",
   "postStartCommand": "dotnet dev-certs https --trust",
   "customizations": {
@@ -53,5 +26,7 @@
         "editor.formatOnSave": true
       }
     }
-  }
+  },
+
+  "remoteUser": "root"
 }

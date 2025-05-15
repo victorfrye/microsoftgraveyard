@@ -10,7 +10,7 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
-    labels: ['📦 Issue-Dependencies', '🛠️ Area-AppHost']
+    labels: ['📦 Issue-Dependencies', '🏛️ Area-AppModel']
 
   # Maintain dependencies for npm
   - package-ecosystem: 'npm'
