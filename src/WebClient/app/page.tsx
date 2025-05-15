@@ -4,11 +4,9 @@ import { JSX } from 'react';
 
 import { makeStyles, tokens } from '@fluentui/react-components';
 
-import {
-  Headstone,
-  useCorpsesDocument,
-} from '@microsoftgraveyard/components/graveyard';
+import Headstone from '@microsoftgraveyard/headstone';
 import { Corpse } from '@microsoftgraveyard/types';
+import useCorpsesDocument from '@microsoftgraveyard/use-corpses-document';
 
 const useStyles = makeStyles({
   main: {
@@ -39,7 +37,7 @@ const useStyles = makeStyles({
   },
 });
 
-const HomePage = () => {
+export default function HomePage() {
   const styles = useStyles();
   const corpses = useCorpsesDocument();
   const today: Date = new Date();
@@ -57,6 +55,4 @@ const HomePage = () => {
       <ul className={styles.list}>{renderHeadstones()}</ul>
     </main>
   );
-};
-
-export default HomePage;
+}

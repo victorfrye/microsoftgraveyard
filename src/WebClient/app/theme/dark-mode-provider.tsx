@@ -15,15 +15,15 @@ interface DarkModeContextProps {
   onDarkModeToggled: (isDark: boolean) => void;
 }
 
-const DarkModeContext = createContext<DarkModeContextProps>({
+export const DarkModeContext = createContext<DarkModeContextProps>({
   isDark: true,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
   onDarkModeToggled: (_isDark: boolean) => {},
 });
 
-const DarkModeProvider = ({
+export default function DarkModeProvider({
   children,
-}: Readonly<{ children: React.ReactNode }>) => {
+}: Readonly<{ children: React.ReactNode }>) {
   const [isDark, setIsDark] = useState(true);
 
   const systemPrefersLight = useMediaQuery(
@@ -57,8 +57,4 @@ const DarkModeProvider = ({
       {children}
     </DarkModeContext.Provider>
   );
-};
-
-export default DarkModeProvider;
-
-export { DarkModeProvider, DarkModeContext };
+}

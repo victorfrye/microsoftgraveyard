@@ -10,7 +10,7 @@ import {
   webLightTheme,
 } from '@fluentui/react-components';
 
-import useDarkMode from '@microsoftgraveyard/components/theme/useDarkMode';
+import useDarkMode from '@microsoftgraveyard/theme/use-dark-mode';
 
 const useStaticStyles = makeStaticStyles({
   html: {
@@ -49,9 +49,9 @@ const useStaticStyles = makeStaticStyles({
   },
 });
 
-const ThemeProvider = ({
+export default function ThemeProvider({
   children,
-}: Readonly<{ children: React.ReactNode }>) => {
+}: Readonly<{ children: React.ReactNode }>) {
   useStaticStyles();
   const { isDark } = useDarkMode();
 
@@ -60,6 +60,4 @@ const ThemeProvider = ({
       {children}
     </FluentProvider>
   );
-};
-
-export default ThemeProvider;
+}

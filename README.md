@@ -91,7 +91,7 @@ dotnet run --project ./src/AppHost/AppHost.csproj
 
 ## Corpse Document
 
-The core list of dead products is maintained in the [corpses.json](src/WebClient/app/components/graveyard/corpses.json) file within the `src/WebClient/app/graveyard/` directory. The document contains an array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
+The core list of dead products is maintained in the [corpses.json](src/WebClient/app/corpses.json) file within the `src/WebClient/app/` directory. The document contains an array of objects using a custom JSON schema. The schema is defined in the [corpses.schema.json](/files/corpses.schema.json) file but can be summarized as the following properties:
 
 - `name` - The name of the product. This should NOT include Microsoft unless absolutely necessary as all products in this list are Microsoft products and could be prepended with the company's name.
 

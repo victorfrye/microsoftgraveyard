@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 
-import corpsesDocument from '@microsoftgraveyard/components/graveyard/corpses.json';
+import corpsesDocument from '@microsoftgraveyard/corpses.json';
 import { Corpse } from '@microsoftgraveyard/types';
 
 interface CorpseRecord {
@@ -19,7 +19,7 @@ interface CorpsesDocument {
   corpses: CorpseRecord[];
 }
 
-const useCorpsesDocument = () => {
+export default function useCorpsesDocument() {
   const [corpses, setCorpses] = useState<Corpse[]>([]);
 
   const fetchCorpses = useCallback(() => {
@@ -50,6 +50,4 @@ const useCorpsesDocument = () => {
   }, [fetchCorpses]);
 
   return corpses;
-};
-
-export default useCorpsesDocument;
+}

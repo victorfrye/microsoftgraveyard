@@ -2,7 +2,7 @@ import { JSX } from 'react';
 
 import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
 
-import { useDarkMode } from '@microsoftgraveyard/components/theme';
+import { useDarkMode } from '@microsoftgraveyard/theme';
 
 interface Social {
   href: string;
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Socials = () => {
+export default function Socials() {
   const styles = useStyles();
   const { isDark } = useDarkMode();
 
@@ -65,6 +65,4 @@ const Socials = () => {
   };
 
   return <div className={styles.container}>{renderButtons()}</div>;
-};
-
-export default Socials;
+}
