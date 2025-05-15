@@ -15,7 +15,7 @@
     "@fluentui/react-icons": "^2.0.300",
     "@griffel/react": "^1.5.30",
     "next": "^15.3.2",
-    "react": "^18.3.1",
+    "react": "^19.1.0",
     "react-dom": "^18.3.1",
     "react-responsive": "^10.0.1"
   },
@@ -26,7 +26,7 @@
     "@griffel/webpack-loader": "^2.2.19",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^22.15.18",
-    "@types/react": "^18.3.18",
+    "@types/react": "^19.1.4",
     "@types/react-dom": "^18.3.5",
     "eslint": "^9.26.0",
     "eslint-config-next": "^15.3.2",
