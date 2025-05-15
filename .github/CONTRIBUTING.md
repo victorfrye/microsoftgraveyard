@@ -4,6 +4,17 @@ Welcome and thank you for your interest in contributing to Microsoft Graveyard!
 
 This document outlines the guidelines for contributing to the project. By following these guidelines, you can help ensure a smooth and efficient collaboration process.
 
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Code of Conduct](#code-of-conduct)
+- [Issues](#issues)
+- [Code](#code)
+  - [Corpses Document](#corpses-document)
+  - [Get Started](#get-started)
+  - [Clone Repository](#clone-repository)
+  - [Run Application](#run-application)
+
 ## Code of Conduct
 
 Microsoft Graveyard has adopted the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/), and we expect project participants to adhere to it. Please read [the full text](./CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
@@ -18,7 +29,7 @@ The current issue templates are:
 - [Bug Report](./ISSUE_TEMPLATE/2_bug_report.md): Report a bug in the project.
 - [Feature Request](./ISSUE_TEMPLATE/3_feature_request.md): Request a new feature for the project.
 
-## Development
+## Code
 
 The core of the project is a static web application built using [Next.js](https://nextjs.org/). The project also uses [.NET Aspire](https://dotnet.microsoft.com/apps/cloud) for developer environment orchestration and Bicep for infrastructure as code.
 
@@ -60,7 +71,7 @@ To clone the repository, run the following command in your terminal:
 git clone https://github.com/victorfrye/microsoftgraveyard.git
 ```
 
-### Run the app
+### Run Application
 
 To run the application, simply run the following commands in the root of the project:
 

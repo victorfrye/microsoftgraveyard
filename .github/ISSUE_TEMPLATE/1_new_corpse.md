@@ -1,6 +1,6 @@
 ---
-name: New dead product
-about: Request a new dead product be added to the graveyard
+name: New corpse
+about: Request a new corpse be added to the graveyard
 labels: ['💀 Issue-Corpse', '🌐 Area-WebApp', '🪦 Area-Graveyard']
 assignees:
   - victorfrye

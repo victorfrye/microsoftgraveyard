@@ -25,6 +25,7 @@ Microsoft Graveyard is an open-source static web application that serves as a vi
 - [Table of Contents](#table-of-contents)
 - [Contributing](#contributing)
   - [Request a headstone](#request-a-headstone)
+- [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
 ## Contributing
@@ -33,7 +34,7 @@ Contributions are welcome and key to maintaining this project! Please read the [
 
 ### Request a headstone
 
-To request a headstone be added to the graveyard for a missing product killed by Microsoft, please open a [new corpse issue](https://github.com/victorfrye/microsoftgraveyard/issues/new?assignees=victorfrye&labels=%F0%9F%92%80+Issue-Corpse%2C%F0%9F%AA%A6+Area-Graveyard&projects=&template=1_new_corpse.md) and add the relevant information. You may update the [corpses document](./src/WebClient/app/corpses.json) yourself if you are comfortable modifying JSON.
+To request a headstone be added to the graveyard for a missing product killed by Microsoft, please open a [new corpse issue](https://github.com/victorfrye/microsoftgraveyard/issues/new?template=1_new_corpse.md) and add the relevant information. You may update the [corpses document](./src/WebClient/app/corpses.json) yourself if you are comfortable modifying JSON.
 
 ## Code of Conduct
 
