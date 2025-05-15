@@ -15,8 +15,8 @@ import {
 } from '@fluentui/react-components';
 import { ArrowDown32Regular } from '@fluentui/react-icons';
 
-import Socials from '@microsoftgraveyard/components/layout/Socials';
-import { useDarkMode } from '@microsoftgraveyard/components/theme';
+import Socials from '@microsoftgraveyard/socials';
+import { useDarkMode } from '@microsoftgraveyard/theme';
 
 const useStyles = makeStyles({
   footer: {
@@ -52,7 +52,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Footer = () => {
+export default function Footer() {
   const styles = useStyles();
   const _today: Date = new Date();
 
@@ -156,6 +156,4 @@ const Footer = () => {
       </Text>
     </footer>
   );
-};
-
-export default Footer;
+}

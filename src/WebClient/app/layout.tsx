@@ -2,12 +2,10 @@ import { ReactNode } from 'react';
 
 import type { Metadata } from 'next';
 
-import { Footer, Header } from '@microsoftgraveyard/components/layout';
-import {
-  DarkModeProvider,
-  ThemeProvider,
-} from '@microsoftgraveyard/components/theme';
+import Footer from '@microsoftgraveyard/footer';
 import '@microsoftgraveyard/globals.css';
+import Header from '@microsoftgraveyard/header';
+import { DarkModeProvider, ThemeProvider } from '@microsoftgraveyard/theme';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://microsoftgraveyard.com'),

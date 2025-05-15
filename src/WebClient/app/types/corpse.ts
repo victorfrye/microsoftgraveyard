@@ -1,4 +1,4 @@
-interface Corpse {
+export interface Corpse {
   name: string;
   qualifier?: string;
   birthDate?: Date;
@@ -6,5 +6,3 @@ interface Corpse {
   description: string;
   link: string;
 }
-
-export type { Corpse };

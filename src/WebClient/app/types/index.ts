@@ -1,1 +1,1 @@
-export type { Corpse } from './Corpse';
+export type { Corpse } from './corpse';

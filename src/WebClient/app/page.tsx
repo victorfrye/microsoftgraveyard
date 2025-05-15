@@ -4,11 +4,9 @@ import { JSX } from 'react';
 
 import { makeStyles, tokens } from '@fluentui/react-components';
 
-import {
-  Headstone,
-  useCorpsesDocument,
-} from '@microsoftgraveyard/components/graveyard';
+import Headstone from '@microsoftgraveyard/headstone';
 import { Corpse } from '@microsoftgraveyard/types';
+import useCorpsesDocument from '@microsoftgraveyard/use-corpses-document';
 
 const useStyles = makeStyles({
   main: {

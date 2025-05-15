@@ -1,0 +1,57 @@
+{
+  "name": "Microsoft Graveyard",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0-bookworm",
+  // https://containers.dev/features
+  "features": {
+    "ghcr.io/devcontainers/features/powershell:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "installBicep": true
+    }
+  },
+
+  // "hostRequirements": {
+  //   "cpus": 8,
+  //   "memory": "32gb",
+  //   "storage": "64gb"
+  // },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [5000, 5001],
+  // "portsAttributes": {
+  //		"5001": {
+  //			"protocol": "https"
+  //		}
+  // }
+
+  // "mounts": [
+  //     {
+  //       "source": "${env:HOME}${env:USERPROFILE}/.aspnet/https",
+  //       "target": "/home/vscode/.aspnet/https",
+  //       "type": "bind"
+  //     }
+  // ],
+
+  "remoteUser": "root",
+  // "remoteEnv": {
+  //   "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx"
+  // },
+
+  "postCreateCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/install.sh",
+  "postStartCommand": "dotnet dev-certs https --trust",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "GitHub.copilot-chat",
+        "GitHub.copilot",
+        "ms-dotnettools.csdevkit",
+        "ms-azuretools.vscode-azurestaticwebapps",
+        "ms-azuretools.vscode-bicep"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}

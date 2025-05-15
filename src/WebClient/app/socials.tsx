@@ -2,7 +2,7 @@ import { JSX } from 'react';
 
 import { Button, Image, makeStyles, tokens } from '@fluentui/react-components';
 
-import { useDarkMode } from '@microsoftgraveyard/components/theme';
+import { useDarkMode } from '@microsoftgraveyard/theme';
 
 interface Social {
   href: string;
