@@ -37,7 +37,7 @@ const useStyles = makeStyles({
   },
 });
 
-const HomePage = () => {
+export default function HomePage() {
   const styles = useStyles();
   const corpses = useCorpsesDocument();
   const today: Date = new Date();
@@ -55,6 +55,4 @@ const HomePage = () => {
       <ul className={styles.list}>{renderHeadstones()}</ul>
     </main>
   );
-};
-
-export default HomePage;
+}

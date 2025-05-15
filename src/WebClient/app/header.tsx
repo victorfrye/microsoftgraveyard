@@ -32,7 +32,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Header = () => {
+export default function Header() {
   const styles = useStyles();
 
   return (
@@ -54,6 +54,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

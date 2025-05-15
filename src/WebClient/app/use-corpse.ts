@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { Corpse } from '@microsoftgraveyard/types';
 
-const useCorpse = (corpse: Corpse, today: Date) => {
+export default function useCorpse(corpse: Corpse, today: Date) {
   const name = corpse.qualifier
     ? `${corpse.name} (${corpse.qualifier})`
     : corpse.name;
@@ -96,6 +96,4 @@ const useCorpse = (corpse: Corpse, today: Date) => {
   }, [buildLifeDates, buildObituary]);
 
   return { name, lifeDates, obituary, isDead, loading };
-};
-
-export default useCorpse;
+}

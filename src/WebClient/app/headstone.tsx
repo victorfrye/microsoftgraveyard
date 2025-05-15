@@ -1,5 +1,3 @@
-import { FC } from 'react';
-
 import {
   Body1,
   Button,
@@ -68,7 +66,7 @@ interface HeadstoneProps {
   today: Date;
 }
 
-const Headstone: FC<HeadstoneProps> = ({ corpse, today }) => {
+export default function Headstone({ corpse, today }: Readonly<HeadstoneProps>) {
   const styles = useStyles();
   const { name, lifeDates, obituary, isDead, loading } = useCorpse(
     corpse,
@@ -160,6 +158,4 @@ const Headstone: FC<HeadstoneProps> = ({ corpse, today }) => {
       {loading ? renderSkeleton() : renderHeadstone()}
     </Card>
   );
-};
-
-export default Headstone;
+}
