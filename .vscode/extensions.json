@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "ms-azuretools.vscode-azurestaticwebapps",
+    "ms-azuretools.vscode-bicep",
+    "ms-dotnettools.csdevkit",
+    "ms-vscode.azurecli",
+    "ms-vscode.powershell",
+  ]
+}

@@ -14,13 +14,13 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "editorconfig.editorconfig",
         "dbaeumer.vscode-eslint",
-        "GitHub.copilot-chat",
+        "editorconfig.editorconfig",
         "GitHub.copilot",
-        "ms-dotnettools.csdevkit",
+        "GitHub.copilot-chat",
         "ms-azuretools.vscode-azurestaticwebapps",
-        "ms-azuretools.vscode-bicep"
+        "ms-azuretools.vscode-bicep",
+        "ms-dotnettools.csdevkit"
       ],
       "settings": {
         "editor.formatOnSave": true
