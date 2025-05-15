@@ -6,14 +6,22 @@ assignees:
   - victorfrye
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Feature description
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+A clear and concise description of what the feature is.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+## Impacted areas
 
-**Additional context**
+Please select all the areas that may be enhanced by this feature:
+
+- [ ] Web Client Application
+- [ ] Application Model
+- [ ] GitHub Action Workflows
+- [ ] Cloud Infrastructure
+- [ ] Developer Experience
+- [ ] Documentation
+- [ ] Other (please specify)
+
+## Additional context
+
 Add any other context or screenshots about the feature request here.
