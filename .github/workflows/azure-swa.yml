@@ -26,7 +26,7 @@ jobs:
     name: Build and Deploy
     
     environment:
-      name: ${{ github.event_name == 'push' && 'Production' || 'Staging' }}
+      name: ${{ github.event_name == 'push' && 'production' || 'staging' }}
       url: ${{ github.event_name == 'push' && 'https://microsoftgraveyard.com/' || steps.deploy.outputs.static_web_app_url }}
 
     concurrency:
