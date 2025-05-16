@@ -24,10 +24,6 @@ jobs:
     name: Analyze (${{ matrix.language }})
     runs-on: 'ubuntu-latest'
 
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: true
-
     strategy:
       fail-fast: false
       matrix:
