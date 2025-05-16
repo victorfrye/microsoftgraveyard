@@ -3,10 +3,12 @@
   "image": "mcr.microsoft.com/devcontainers/dotnet:9.0-bookworm",
   // https://containers.dev/features
   "features": {
-    "ghcr.io/devcontainers/features/powershell:1": {},
     "ghcr.io/devcontainers/features/azure-cli:1": {
       "installBicep": true
-    }
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/powershell:1": {}
   },
 
   "postCreateCommand": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/install.sh",
