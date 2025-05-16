@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     
-    environment: Production
+    environment: production
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -63,7 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Validate
 
-    environment: Production
+    environment: production
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
