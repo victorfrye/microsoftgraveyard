@@ -14,7 +14,7 @@
     "@fluentui/react-components": "^9.64.0",
     "@fluentui/react-icons": "^2.0.300",
     "@griffel/react": "^1.5.30",
-    "next": "^15.3.2",
+    "next": "^15.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-responsive": "^10.0.1"
