@@ -23,6 +23,69 @@
       "link": "https://www.xda-developers.com/microsoft-killing-off-app-october-2026/"
     },
     {
+      "name": "Bing Web Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to integrate world-wide-web document searching into their applications",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Image Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to search images from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing News Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to find headlines and trending news from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Video Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to integrate world-wide-web video searching into their applications",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Custom Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to create custom search experiences using Bing search capabilities",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Visual Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers return image insights and similar images from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Entity Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return information about people, places, or things from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Autosuggest API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return suggestions for search queries as users type",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Spell Check API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to perform contextual grammar and spell checking on text inputs",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
       "name": "InfoPath",
       "birthDate": "2003-11-19",
       "deathDate": "2026-07-14",
