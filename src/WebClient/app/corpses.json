@@ -9,6 +9,13 @@
       "link": "https://4sysops.com/archives/microsoft-will-not-release-a-free-hyper-v-server-2022/"
     },
     {
+      "name": "Azure Spring Apps",
+      "birthDate": "2019-10-08",
+      "deathDate": "2028-03-31",
+      "description": "a fully managed service for running Java Spring applications, jointly built by Microsoft and VMware",
+      "link": "https://learn.microsoft.com/en-us/azure/spring-apps/basic-standard/retirement-announcement"
+    },
+    {
       "name": "HoloLens",
       "birthDate": "2016-03-30",
       "deathDate": "2027-12-31",
