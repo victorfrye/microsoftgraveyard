@@ -37,7 +37,7 @@ export default function useCorpsesDocument() {
             link: corpse.link,
           } as Corpse;
         })
-        .sort(
+        .toSorted(
           (a, b) =>
             b.deathDate[Symbol.toPrimitive]('number') -
             a.deathDate[Symbol.toPrimitive]('number')

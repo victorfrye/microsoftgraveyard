@@ -56,7 +56,7 @@ const useStyles = makeStyles({
     margin: `${tokens.spacingVerticalXS} ${tokens.spacingHorizontalNone}`,
   },
   lifeDates: {
-    color: tokens.colorBrandForeground2,
+    color: tokens.colorNeutralForeground2,
     margin: `${tokens.spacingVerticalXS} ${tokens.spacingHorizontalNone}`,
   },
 });
