@@ -142,11 +142,25 @@
       "link": "https://www.howtogeek.com/windows-maps-end-of-life/"
     },
     {
+      "name": "E-tree",
+      "birthDate": "2023-05-30",
+      "deathDate": "2025-07-04",
+      "description": "a program in Edge that allowed users to plant and grow a virtual tree through daily tasks that would be planted for real by the Eden Reforestation Projects",
+      "link": "https://support.microsoft.com/en-us/topic/faq-for-e-tree-on-microsoft-edge-msn-weather-and-microsoft-wallet-d6fde56e-b61d-4990-bd69-7a503ed64895"
+    },
+    {
       "name": "Dev Home",
       "birthDate": "2023-05-30",
       "deathDate": "2025-05-31",
       "description": "a Windows application that offered a centralized location for simplified machine configuration, system monitoring, and widget extensions for developers",
       "link": "https://www.windowslatest.com/2025/01/29/windows-11-will-abandon-another-system-app-remove-dev-home-in-a-future-release/"
+    },
+    {
+      "name": "Wallet",
+      "birthDate": "2023-04-06",
+      "deathDate": "2025-05-29",
+      "description": "a secure digital hub in Edge for storing, managing, and using passwords, addresses, and payment methods",
+      "link": "https://www.windowscentral.com/software-apps/browsing/microsoft-edge-will-lose-all-these-features-this-month"
     },
     {
       "name": "Skype",
