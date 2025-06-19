@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   },
   tagline: {
     fontSize: tokens.fontSizeBase300,
-    color: tokens.colorBrandForeground2,
+    color: tokens.colorNeutralForeground2,
   },
 });
 
