@@ -2,6 +2,14 @@
   "$schema": "https://raw.githubusercontent.com/victorfrye/microsoftgraveyard/main/files/corpses.schema.json",
   "corpses": [
     {
+      "name": "Movies & TV",
+      "qualifier": "fka Xbox Video, Zune Video",
+      "birthDate": "2006-11-14",
+      "deathDate": "2025-07-18",
+      "description": "a digital video service that offered movies and TV shows for rental or purchase across Microsoft platforms",
+      "link": "https://www.theverge.com/news/709737/microsoft-movies-tv-store-closure-xbox-windows"
+    },
+    {
       "name": "Hyper-V Server",
       "birthDate": "2008-12-30",
       "deathDate": "2029-01-09",
