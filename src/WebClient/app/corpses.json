@@ -30,69 +30,6 @@
       "link": "https://www.xda-developers.com/microsoft-killing-off-app-october-2026/"
     },
     {
-      "name": "Bing Web Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to integrate world-wide-web document searching into their applications",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Image Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to search images from the world-wide-web",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing News Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to find headlines and trending news from the world-wide-web",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Video Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to integrate world-wide-web video searching into their applications",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Custom Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to create custom search experiences using Bing search capabilities",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Visual Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return image insights and similar images from the world-wide-web",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Entity Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return information about people, places, or things from the world-wide-web",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Autosuggest API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return suggestions for search queries as users type",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Spell Check API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to perform contextual grammar and spell checking on text inputs",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
       "name": "InfoPath",
       "birthDate": "2003-11-19",
       "deathDate": "2026-07-14",
@@ -121,11 +58,11 @@
       "link": "https://office365itpros.com/2024/12/09/viva-goals-retirement/"
     },
     {
-      "name": "Visual Studio LightSwitch",
-      "birthDate": "2010-08-23",
-      "deathDate": "2025-10-14",
-      "description": "a low-code development tool that enabled users to create business applications for the desktop, cloud, and mobile devices",
-      "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
+      "name": "Lens",
+      "birthDate": "2014-03-17",
+      "deathDate": "2025-12-15",
+      "description": "a document scanning mobile app for converting images to digital file formats and digitizing printed or handwritten text",
+      "link": "https://www.androidauthority.com/microsoft-lens-app-phasing-out-3585594/"
     },
     {
       "name": "Windows 10",
@@ -133,6 +70,76 @@
       "deathDate": "2025-10-14",
       "description": "a major release of the Windows NT operating system succeeding Windows 8.1",
       "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
+    },
+    {
+      "name": "Visual Studio LightSwitch",
+      "birthDate": "2010-08-23",
+      "deathDate": "2025-10-14",
+      "description": "a low-code development tool that enabled users to create business applications for the desktop, cloud, and mobile devices",
+      "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
+    },
+    {
+      "name": "Bing Spell Check API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to perform contextual grammar and spell checking on text inputs",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Entity Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return information about people, places, or things from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Web Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to integrate world-wide-web document searching into their applications",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Image Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to search images from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Custom Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to create custom search experiences using Bing search capabilities",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Video Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to integrate world-wide-web video searching into their applications",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Visual Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return image insights and similar images from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Autosuggest API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return suggestions for search queries as users type",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing News Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to find headlines and trending news from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
       "name": "Windows Maps",
@@ -147,6 +154,19 @@
       "deathDate": "2025-07-04",
       "description": "a program in Edge that allowed users to plant and grow a virtual tree through daily tasks that would be planted for real by the Eden Reforestation Projects",
       "link": "https://support.microsoft.com/en-us/topic/faq-for-e-tree-on-microsoft-edge-msn-weather-and-microsoft-wallet-d6fde56e-b61d-4990-bd69-7a503ed64895"
+    },
+    {
+      "name": "The Initiative",
+      "birthDate": "2018-06-10",
+      "deathDate": "2025-07-02",
+      "description": "a game development studio in Santa Monica formed to create the next installment in the Perfect Dark series",
+      "link": "https://www.windowscentral.com/gaming/xbox/microsoft-is-closing-down-xbox-studio-the-initiative"
+    },
+    {
+      "name": "Everwild",
+      "deathDate": "2025-07-02",
+      "description": "an unreleased fantasy game in development by Rare before being cancelled",
+      "link": "https://www.videogameschronicle.com/news/sources-everwild-has-been-cancelled-as-xbox-layoffs-hit-rare/"
     },
     {
       "name": "Dev Home",
@@ -1046,6 +1066,13 @@
       "link": "https://www.neowin.net/news/msn-music-shutting-down-for-zune/"
     },
     {
+      "name": "MS-DOS",
+      "birthDate": "1981-08-12",
+      "deathDate": "2006-07-11",
+      "description": "an operating system for x86-based personal computers that was the dominant operating system in the 1980s",
+      "link": "https://en.wikipedia.org/wiki/MS-DOS"
+    },
+    {
       "name": "Windows 98",
       "birthDate": "1998-06-25",
       "deathDate": "2006-07-11",
@@ -1061,13 +1088,6 @@
       "link": "https://en.wikipedia.org/wiki/Windows_Me"
     },
     {
-      "name": "MS-DOS",
-      "birthDate": "1981-08-12",
-      "deathDate": "2006-07-11",
-      "description": "an operating system for x86-based personal computers that was the dominant operating system in the 1980s",
-      "link": "https://en.wikipedia.org/wiki/MS-DOS"
-    },
-    {
       "name": "ASP.NET Web Matrix",
       "birthDate": "2002-06-01",
       "deathDate": "2005-11-01",
@@ -1075,11 +1095,11 @@
       "link": "https://web.archive.org/web/20100505221027/http://www.asp.net/downloads/archived-v1.1/web-matrix/"
     },
     {
-      "name": "Windows 95",
-      "birthDate": "1995-08-24",
-      "deathDate": "2001-12-31",
-      "description": "a major release of the Windows operating system in 1995 and the first of the Windows 9x family",
-      "link": "https://en.wikipedia.org/wiki/Windows_95"
+      "name": "UltimateTV",
+      "birthDate": "2000-10-26",
+      "deathDate": "2002-01-21",
+      "description": "a digital video recorder technology with interactive web-on-TV experience derived from WebTV Networks after acquisition by Microsoft",
+      "link": "https://wiki.webtv.zone/wiki/UltimateTV"
     },
     {
       "name": "Windows 3.0",
