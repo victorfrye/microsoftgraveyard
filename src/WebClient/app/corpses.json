@@ -2,14 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/victorfrye/microsoftgraveyard/main/files/corpses.schema.json",
   "corpses": [
     {
-      "name": "Movies & TV",
-      "qualifier": "fka Xbox Video, Zune Video",
-      "birthDate": "2006-11-14",
-      "deathDate": "2025-07-18",
-      "description": "a digital video service that offered movies and TV shows for rental or purchase across Microsoft platforms",
-      "link": "https://www.theverge.com/news/709737/microsoft-movies-tv-store-closure-xbox-windows"
-    },
-    {
       "name": "Hyper-V Server",
       "birthDate": "2008-12-30",
       "deathDate": "2029-01-09",
@@ -87,38 +79,10 @@
       "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
     },
     {
-      "name": "Bing Spell Check API",
+      "name": "Bing Visual Search API",
       "birthDate": "2020-10-30",
       "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to perform contextual grammar and spell checking on text inputs",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Entity Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return information about people, places, or things from the world-wide-web",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Web Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to integrate world-wide-web document searching into their applications",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Image Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to search images from the world-wide-web",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Custom Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to create custom search experiences using Bing search capabilities",
+      "description": "an API for third-party developers to return image insights and similar images from the world-wide-web",
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
@@ -129,10 +93,17 @@
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
-      "name": "Bing Visual Search API",
+      "name": "Bing Custom Search API",
       "birthDate": "2020-10-30",
       "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return image insights and similar images from the world-wide-web",
+      "description": "an API for third-party developers to create custom search experiences using Bing search capabilities",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Image Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to search images from the world-wide-web",
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
@@ -140,6 +111,27 @@
       "birthDate": "2020-10-30",
       "deathDate": "2025-08-11",
       "description": "an API for third-party developers to return suggestions for search queries as users type",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Entity Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return information about people, places, or things from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Spell Check API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to perform contextual grammar and spell checking on text inputs",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Web Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to integrate world-wide-web document searching into their applications",
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
@@ -155,6 +147,13 @@
       "deathDate": "2025-07-31",
       "description": "a mapping application that provided users with navigation, traffic conditions, and local business listings",
       "link": "https://www.howtogeek.com/windows-maps-end-of-life/"
+    },
+    {
+      "name": "Movies & TV",
+      "birthDate": "2006-11-14",
+      "deathDate": "2025-07-18",
+      "description": "a digital video service that offered movies and TV shows for rental or purchase across Microsoft platforms",
+      "link": "https://www.theverge.com/news/709737/microsoft-movies-tv-store-closure-xbox-windows"
     },
     {
       "name": "E-tree",
@@ -1074,6 +1073,14 @@
       "link": "https://www.neowin.net/news/msn-music-shutting-down-for-zune/"
     },
     {
+      "name": "Windows Millennium Edition",
+      "qualifier": "aka Windows Me",
+      "birthDate": "2000-09-14",
+      "deathDate": "2006-07-11",
+      "description": "a major release of the Windows operating system in 2000, succeeding Windows 98",
+      "link": "https://en.wikipedia.org/wiki/Windows_Me"
+    },
+    {
       "name": "MS-DOS",
       "birthDate": "1981-08-12",
       "deathDate": "2006-07-11",
@@ -1086,14 +1093,6 @@
       "deathDate": "2006-07-11",
       "description": "a major release of the Windows operating system in 1998, succeeding Windows 95",
       "link": "https://en.wikipedia.org/wiki/Windows_98"
-    },
-    {
-      "name": "Windows Millennium Edition",
-      "qualifier": "aka Windows Me",
-      "birthDate": "2000-09-14",
-      "deathDate": "2006-07-11",
-      "description": "a major release of the Windows operating system in 2000, succeeding Windows 98",
-      "link": "https://en.wikipedia.org/wiki/Windows_Me"
     },
     {
       "name": "ASP.NET Web Matrix",
