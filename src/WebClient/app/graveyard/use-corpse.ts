@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 
-import { Corpse } from '@microsoftgraveyard/types';
+import { Corpse } from '@microsoftgraveyard/graveyard/corpse';
 
 export default function useCorpse(corpse: Corpse, today: Date) {
   const name = corpse.qualifier

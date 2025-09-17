@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react';
 
-import corpsesDocument from '@microsoftgraveyard/corpses.json';
-import { Corpse } from '@microsoftgraveyard/types';
+import { Corpse } from '@microsoftgraveyard/graveyard/corpse';
+import corpsesDocument from '@microsoftgraveyard/graveyard/corpses.json';
 
 interface CorpseRecord {
   name: string;

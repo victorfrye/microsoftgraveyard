@@ -2,10 +2,10 @@ import { ReactNode } from 'react';
 
 import type { Metadata } from 'next';
 
-import Footer from '@microsoftgraveyard/footer';
+import { ClarityTag, Gtag } from '@microsoftgraveyard/analytics';
 import '@microsoftgraveyard/globals.css';
-import Header from '@microsoftgraveyard/header';
-import { DarkModeProvider, ThemeProvider } from '@microsoftgraveyard/theme';
+import ProviderTree from '@microsoftgraveyard/provider-tree';
+import { Shell } from '@microsoftgraveyard/shell';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://microsoftgraveyard.com'),
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'virtual graveyard',
     'dead products',
   ],
-  icons: ['images/headstone.svg'],
+  icons: ['assets/headstone.svg'],
   authors: {
     name: 'Victor Frye',
     url: 'https://victorfrye.com/',
@@ -47,15 +47,14 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
+      <Gtag tagId="G-0X07054Z3N" />
+      <ClarityTag projectId="tcaogrreyn" />
+
       <body>
         <div id="root">
-          <DarkModeProvider>
-            <ThemeProvider>
-              <Header />
-              {children}
-              <Footer />
-            </ThemeProvider>
-          </DarkModeProvider>
+          <ProviderTree>
+            <Shell>{children}</Shell>
+          </ProviderTree>
         </div>
       </body>
     </html>

@@ -7,7 +7,7 @@ on:
     types: [opened, synchronize, reopened]
     branches: [ "main" ]
   schedule:
-    - cron: '30 2 * * 0'
+    - cron: '00 2 * * 0'
 
 permissions:
   security-events: write
@@ -37,11 +37,11 @@ jobs:
           
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Set up .NET
       if: matrix.language == 'csharp'
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@v5
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
