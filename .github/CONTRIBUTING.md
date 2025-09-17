@@ -31,11 +31,11 @@ The current issue templates are:
 
 ## Code
 
-The core of the project is a static web application built using [Next.js](https://nextjs.org/). The project also uses [.NET Aspire](https://dotnet.microsoft.com/apps/cloud) for developer environment orchestration and Bicep for infrastructure as code.
+The core of the project is a static web application built using [Next.js](https://nextjs.org/). The project also uses [Aspire](https://dotnet.microsoft.com/apps/cloud) for developer environment orchestration and Bicep for infrastructure as code.
 
 ### Corpses Document
 
-Most code contributions are to the [Corpses document](../src/WebClient/app/corpses.json) located in `src/WebClient/app/corpses.json`. This document is a custom JSON schema that contains the complete list of dead Microsoft products rendered in the graveyard. The schema is defined in the [corpses.schema.json](../files/corpses.schema.json) file but can be summarized as the following properties:
+Most code contributions are to the [Corpses document](../src/WebClient/app/graveyard/corpses.json) located in `src/WebClient/app/graveyard/corpses.json`. This document is a custom JSON schema that contains the complete list of dead Microsoft products rendered in the graveyard. The schema is defined in the [corpses.schema.json](../files/corpses.schema.json) file but can be summarized as the following properties:
 
 - `name`: The name of the product.
 - `qualifier`: A short qualifier for the product to prevent duplicate entries (optional).

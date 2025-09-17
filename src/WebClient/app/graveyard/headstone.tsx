@@ -12,8 +12,8 @@ import {
 } from '@fluentui/react-components';
 import { News16Regular } from '@fluentui/react-icons';
 
-import { Corpse } from '@microsoftgraveyard/types';
-import useCorpse from '@microsoftgraveyard/use-corpse';
+import { Corpse } from '@microsoftgraveyard/graveyard/corpse';
+import useCorpse from '@microsoftgraveyard/graveyard/use-corpse';
 
 const useStyles = makeStyles({
   container: {
@@ -121,7 +121,7 @@ export default function Headstone({ corpse, today }: Readonly<HeadstoneProps>) {
         <CardHeader
           image={
             <Image
-              src={isDead ? '/images/headstone.svg' : '/images/coffin.svg'}
+              src={isDead ? '/assets/headstone.svg' : '/assets/coffin.svg'}
               alt="a headstone for that which is dead"
               height={72}
               width={72}

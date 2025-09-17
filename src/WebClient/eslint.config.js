@@ -4,6 +4,7 @@ import prettier from 'eslint-plugin-prettier';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -13,11 +14,7 @@ const compat = new FlatCompat({
   allConfig: js.configs.all,
 });
 
-const eslintConfig = tseslint.config(
-  {
-    ignores: ['out', '.next', 'node_modules'],
-    extends: [...compat.extends('next/core-web-vitals')],
-  },
+const eslintConfig = defineConfig(
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -48,20 +45,22 @@ const eslintConfig = tseslint.config(
     extends: [tseslint.configs.disableTypeChecked],
   },
   {
+    files: ['**/*.{js,ts,tsx}'],
     ...js.configs.recommended,
+    extends: [...compat.extends('next/core-web-vitals')],
     settings: {
       react: {
         version: 'detect',
       },
     },
-    files: ['**/*.{js,ts,tsx}'],
     plugins: {
       prettier,
     },
     rules: {
       ...prettier.configs.recommended.rules,
     },
-  }
+  },
+  globalIgnores(['out', '.next', 'next-env.d.ts', 'node_modules'])
 );
 
 export default eslintConfig;

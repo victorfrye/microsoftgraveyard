@@ -1,16 +1,26 @@
 'use client';
 
 import * as React from 'react';
+import { ReactNode, useEffect, useMemo, useState } from 'react';
 
 import {
   FluentProvider,
   makeStaticStyles,
+  makeStyles,
   tokens,
   webDarkTheme,
   webLightTheme,
 } from '@fluentui/react-components';
 
-import useDarkMode from '@microsoftgraveyard/theme/use-dark-mode';
+import useColorMode from '@microsoftgraveyard/theme/use-color-mode';
+
+const useStyles = makeStyles({
+  hidden: {
+    visibility: 'hidden',
+    height: '100vh',
+    width: '100vw',
+  },
+});
 
 const useStaticStyles = makeStaticStyles({
   html: {
@@ -39,25 +49,46 @@ const useStaticStyles = makeStaticStyles({
   small: {
     fontSize: '80%',
   },
-  ul: {
-    listStyleType: 'none',
-    marginBlockStart: tokens.spacingVerticalXS,
-    marginBlockEnd: tokens.spacingVerticalXS,
-    marginInlineStart: 0,
-    marginInlineEnd: 0,
-    paddingInlineStart: 0,
+  pre: {
+    fontFamily: tokens.fontFamilyMonospace,
+  },
+  code: {
+    fontFamily: tokens.fontFamilyMonospace,
+  },
+  kbd: {
+    fontFamily: tokens.fontFamilyMonospace,
+  },
+  samp: {
+    fontFamily: tokens.fontFamilyMonospace,
   },
 });
 
-export default function ThemeProvider({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
-  useStaticStyles();
-  const { isDark } = useDarkMode();
+interface ThemeProviderProps {
+  children: ReactNode;
+}
 
-  return (
-    <FluentProvider theme={isDark ? webDarkTheme : webLightTheme}>
-      {children}
-    </FluentProvider>
+export default function ThemeProvider({ children }: ThemeProviderProps) {
+  const styles = useStyles();
+  useStaticStyles();
+  const { isDark } = useColorMode();
+  const theme = useMemo(
+    () => (isDark ? webDarkTheme : webLightTheme),
+    [isDark]
   );
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className={styles.hidden}>
+        <FluentProvider theme={webLightTheme}>{children}</FluentProvider>
+      </div>
+    );
+  }
+
+  return <FluentProvider theme={theme}>{children}</FluentProvider>;
 }
