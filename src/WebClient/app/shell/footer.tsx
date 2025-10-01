@@ -66,11 +66,14 @@ const useStyles = makeStyles({
     columnGap: tokens.spacingVerticalL,
     '@media screen and (max-width: 576px)': {
       gap: tokens.spacingVerticalMNudge,
-      justifyContent: 'center', // Keep centered on mobile
-      padding: `${tokens.spacingVerticalMNudge} ${tokens.spacingHorizontalL} ${tokens.spacingVerticalNone}`,
+      justifyContent: 'center',
+      padding: `${tokens.spacingVerticalXXS} ${tokens.spacingHorizontalL} ${tokens.spacingVerticalNone}`,
     },
     flexWrap: 'wrap',
     padding: `${tokens.spacingVerticalNone} ${tokens.spacingHorizontalL}`,
+  },
+  copyright: {
+    color: tokens.colorNeutralForeground2,
   },
 });
 
@@ -93,7 +96,9 @@ export default function Footer() {
           <FooterButtons />
           <Tooltip
             withArrow
-            content={ShellText.footer.toggleColor(colorMode)}
+            content={ShellText.footer.toggleColor(
+              colorMode === 'light' ? 'dark' : 'light'
+            )}
             relationship="label"
           >
             <Button
@@ -128,7 +133,7 @@ export default function Footer() {
             </Caption1>
           </Link>
 
-          <Caption1 as="span" align="end" block>
+          <Caption1 as="span" align="end" block className={styles.copyright}>
             {ShellText.footer.copyright(today.getFullYear())}
           </Caption1>
         </div>
