@@ -17,7 +17,7 @@
     "@microsoft/clarity": "^1.0.0",
     "next": "^15.5.4",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
@@ -28,7 +28,7 @@
     "@types/gtag.js": "^0.0.20",
     "@types/node": "^24.6.1",
     "@types/react": "^18.3.25",
-    "@types/react-dom": "^18.3.7",
+    "@types/react-dom": "^19.2.0",
     "eslint": "^9.36.0",
     "eslint-config-next": "^15.5.4",
     "eslint-plugin-prettier": "^5.5.4",
