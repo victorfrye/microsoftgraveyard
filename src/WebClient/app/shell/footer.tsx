@@ -96,7 +96,9 @@ export default function Footer() {
           <FooterButtons />
           <Tooltip
             withArrow
-            content={ShellText.footer.toggleColor(colorMode)}
+            content={ShellText.footer.toggleColor(
+              colorMode === 'light' ? 'dark' : 'light'
+            )}
             relationship="label"
           >
             <Button
