@@ -308,13 +308,6 @@
       "link": "https://www.msn.com/en-us/entertainment/gaming/blizzard-cancels-survival-game-following-layoffs/ar-BB1hftuk"
     },
     {
-      "name": "Dynamics 365 Human Resources",
-      "birthDate": "2017-09-01",
-      "deathDate": "2023-12-31",
-      "description": "a stand-alone offering of the Dynamics 365 HR module that runs independently from Finance and Operations",
-      "link": "https://community.dynamics.com/blogs/post/?postid=846a24e2-4928-4980-9578-d56753b36175"
-    },
-    {
       "name": "Windows Mixed Reality",
       "birthDate": "2016-10-01",
       "deathDate": "2023-12-21",
@@ -355,6 +348,13 @@
       "deathDate": "2023-09-10",
       "description": "a line of dual-screen Android devices that acted as Microsoft's re-entry into the mobile device market",
       "link": "https://arstechnica.com/gadgets/2023/01/rip-surface-duo-microsoft-reportedly-gives-up-on-the-weird-form-factor/"
+    },
+    {
+      "name": "Xbox Games with Gold",
+      "birthDate": "2013-06-10",
+      "deathDate": "2023-09-01",
+      "description": "a perk of Xbox Live Gold that provided free games each month to subscribers",
+      "link": "https://www.theverge.com/2023/7/17/23794792/microsoft-xbox-game-pass-core-live-gold-replacement"
     },
     {
       "name": "WordPad",
@@ -407,10 +407,9 @@
     },
     {
       "name": "Interix",
-      "qualifier": "aka Subsystem for Unix-based Applications",
       "birthDate": "1996-03-29",
       "deathDate": "2023-01-10",
-      "description": "an optional Unix subsystem for Windows NT-based operating systems",
+      "description": "an optional Unix subsystem for Windows NT-based operating systems, also known as Subsystem for Unix-based Applications",
       "link": "https://en.wikipedia.org/wiki/Interix"
     },
     {
@@ -499,10 +498,9 @@
     },
     {
       "name": "Skype for Business",
-      "qualifier": "fka Lync",
       "birthDate": "2007-07-28",
       "deathDate": "2021-07-31",
-      "description": "an enterprise software application for instant messaging and videotelephony",
+      "description": "an enterprise software application for instant messaging and videotelephony, formerly known as Microsoft Lync",
       "link": "https://www.theverge.com/2017/9/25/16360072/microsoft-teams-replacing-skype-for-business"
     },
     {
@@ -549,7 +547,6 @@
     },
     {
       "name": "Visual Studio Codespaces",
-      "qualifier": "fka Visual Studio Online",
       "birthDate": "2019-11-04",
       "deathDate": "2021-02-17",
       "description": "a service providing cloud-hosted development environments",
@@ -677,10 +674,9 @@
     },
     {
       "name": "Groove Music Pass",
-      "qualifier": "fka Zune Music Pass",
       "birthDate": "2006-11-14",
       "deathDate": "2017-12-31",
-      "description": "a music subscription service that allowed streaming of its music catalog to a device",
+      "description": "a music subscription service that allowed streaming of its music catalog to a device, formerly known as Zune Music Pass and Xbox Music Pass",
       "link": "https://en.wikipedia.org/wiki/Groove_Music"
     },
     {
@@ -858,10 +854,9 @@
     },
     {
       "name": "Forefront",
-      "qualifier": "fka Antigen",
       "birthDate": "2006-07-17",
       "deathDate": "2015-12-31",
-      "description": "a suite of security solutions including network gateways, email spam and virus protection, and identity management",
+      "description": "a suite of security solutions including network gateways, email spam and virus protection, and identity management, formerly known as Antigen",
       "link": "https://en.wikipedia.org/wiki/Microsoft_Forefront"
     },
     {
@@ -873,10 +868,9 @@
     },
     {
       "name": "FoxPro",
-      "qualifier": "fka FoxBASE",
       "birthDate": "1984-12-01",
       "deathDate": "2015-01-13",
-      "description": "a data-centric procedural programming language and database management system originally developed by Fox Software before being acquired by Microsoft",
+      "description": "a data-centric procedural programming language and database management system originally developed by Fox Software before being acquired by Microsoft, formerly known as FoxBASE",
       "link": "http://www.foxprohistory.org/foxprotimeline.htm"
     },
     {
@@ -887,10 +881,9 @@
     },
     {
       "name": "Windows Live Messenger",
-      "qualifier": "fka MSN Messenger",
       "birthDate": "1999-07-22",
       "deathDate": "2014-10-31",
-      "description": "a cross-platform instant-messaging client",
+      "description": "a cross-platform instant messaging client, formerly known as MSN Messenger, that was once the most popular instant messaging service",
       "link": "https://thenextweb.com/news/microsoft-to-retire-its-messenger-im-service-in-q1-2013-moving-100mm-users-to-skype-in-single-move"
     },
     {
@@ -923,10 +916,9 @@
     },
     {
       "name": "PixelSense",
-      "qualifier": "fka Surface",
       "birthDate": "2008-04-17",
       "deathDate": "2013-12-03",
-      "description": "a multi-touch digital table for public places that allowed multiple users to interact with the device simultaneously",
+      "description": "a multi-touch digital table for public places that allowed multiple users to interact with the device simultaneously, originally known as Microsoft Surface before the brand was repurposed",
       "link": "https://finance.yahoo.com/news/microsofts-very-first-surface-largely-184340037.html"
     },
     {
@@ -1043,8 +1035,7 @@
       "link": "https://web.archive.org/web/20140831134121/https://support.microsoft.com/gp/lifean12"
     },
     {
-      "name": "Clippit",
-      "qualifier": "aka Clippy",
+      "name": "Clippy",
       "birthDate": "1996-11-19",
       "deathDate": "2007-01-30",
       "description": "the default Office Assistant and currently lives on in spirit as the Windows paperclip emoji",
@@ -1074,10 +1065,9 @@
     },
     {
       "name": "Windows Millennium Edition",
-      "qualifier": "aka Windows Me",
       "birthDate": "2000-09-14",
       "deathDate": "2006-07-11",
-      "description": "a major release of the Windows operating system in 2000, succeeding Windows 98",
+      "description": "a major release of the Windows operating system in 2000, succeeding Windows 98, and commonly known as Windows Me",
       "link": "https://en.wikipedia.org/wiki/Windows_Me"
     },
     {
