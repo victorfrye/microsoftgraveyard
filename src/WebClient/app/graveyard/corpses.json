@@ -51,6 +51,13 @@
       "link": "https://techcommunity.microsoft.com/blog/azuresqlblog/azure-data-studio-retirement/4371009"
     },
     {
+      "name": "Mobile Plans",
+      "birthDate": "2016-03-02",
+      "deathDate": "2026-02-27",
+      "description": "a desktop app that allowed users to purchase and manage data plans for their Windows devices with built-in cellular connectivity",
+      "link": "https://www.windowscentral.com/hardware/laptops/another-microsoft-app-is-shutting-down-but-you-wont-miss-the-mobile-plans-app"
+    },
+    {
       "name": "Viva Goals",
       "birthDate": "2022-08-01",
       "deathDate": "2025-12-31",
@@ -77,6 +84,20 @@
       "deathDate": "2025-10-14",
       "description": "a low-code development tool that enabled users to create business applications for the desktop, cloud, and mobile devices",
       "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
+    },
+    {
+      "name": "Outlook Lite",
+      "birthDate": "2022-09-02",
+      "deathDate": "2025-10-06",
+      "description": "a lightweight version of the Outlook mobile app designed for low-end devices and areas with limited internet connectivity",
+      "link": "https://www.windowscentral.com/software-apps/outlook-lite-is-dead-in-october"
+    },
+    {
+      "name": "Azure Database for MariaDB",
+      "birthDate": "2015-11-05",
+      "deathDate": "2025-09-19",
+      "description": "a managed relational database service for app development and deployment using the open-source MariaDB server engine",
+      "link": "https://virtual-dba.com/blog/azure-retiring-azure-database-for-mariadb/"
     },
     {
       "name": "Bing Visual Search API",
