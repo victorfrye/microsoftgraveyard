@@ -24,6 +24,7 @@
     "@eslint/js": "^9.36.0",
     "@griffel/next-extraction-plugin": "^0.1.13",
     "@griffel/webpack-loader": "^2.2.20",
+    "@svgr/webpack": "^8.1.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/gtag.js": "^0.0.20",
     "@types/node": "^24.6.1",

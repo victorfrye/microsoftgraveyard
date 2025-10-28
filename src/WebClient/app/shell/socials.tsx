@@ -2,10 +2,25 @@
 
 import { JSX, useCallback } from 'react';
 
-import { Button, Image, Tooltip } from '@fluentui/react-components';
+import {
+  Button,
+  Tooltip,
+  makeStyles,
+  tokens,
+} from '@fluentui/react-components';
 
+import GitHubSvg from '@microsoftgraveyard/assets/github.svg';
+import ThreadsSvg from '@microsoftgraveyard/assets/threads.svg';
 import ShellText from '@microsoftgraveyard/shell/text';
-import { useColorMode } from '@microsoftgraveyard/theme';
+
+const useStyles = makeStyles({
+  svg: {
+    color: tokens.colorNeutralForeground1,
+    fill: tokens.colorNeutralForeground1,
+    width: '20px',
+    height: 'auto',
+  },
+});
 
 interface Social {
   text: string;
@@ -14,7 +29,7 @@ interface Social {
 }
 
 export default function SocialButtons() {
-  const { isDark } = useColorMode();
+  const styles = useStyles();
 
   const getSocials = useCallback((): Social[] => {
     return [
@@ -22,11 +37,9 @@ export default function SocialButtons() {
         text: ShellText.footer.socials.github,
         link: 'https://github.com/victorfrye/microsoftgraveyard',
         image: (
-          <Image
-            src={isDark ? '/assets/github.svg' : '/assets/github_dark.svg'}
-            alt={ShellText.footer.socials.github}
-            height={20}
-            width={20}
+          <GitHubSvg
+            className={styles.svg}
+            aria-label={ShellText.footer.socials.github}
           />
         ),
       },
@@ -34,16 +47,14 @@ export default function SocialButtons() {
         text: ShellText.footer.socials.threads,
         link: 'https://www.threads.net/@microsoftgraveyard',
         image: (
-          <Image
-            src={isDark ? '/assets/threads.svg' : '/assets/threads_dark.svg'}
-            alt={ShellText.footer.socials.threads}
-            height={20}
-            width={20}
+          <ThreadsSvg
+            className={styles.svg}
+            aria-label={ShellText.footer.socials.github}
           />
         ),
       },
     ];
-  }, [isDark]);
+  }, []);
 
   const renderButtons = (): JSX.Element[] => {
     return getSocials().map((social) => (
