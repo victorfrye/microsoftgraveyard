@@ -1,0 +1,160 @@
+name: Terraform CI/CD
+
+on:
+  push:
+    branches: ['main']
+    paths:
+      - 'infra/**'
+      - '.github/workflows/terraform.yml'
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: ['main']
+    paths:
+      - 'infra/**'
+      - '.github/workflows/terraform.yml'
+
+permissions:
+  contents: read
+  pull-requests: write
+  id-token: write
+
+env:
+  ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+  ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+  ARM_USE_AZUREAD: true
+  ARM_USE_OIDC: true
+
+jobs:
+  plan:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    name: Plan
+    environment: production
+    outputs:
+      exitcode: ${{ steps.plan.outputs.exitcode }}
+
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ env.ARM_CLIENT_ID }}
+          subscription-id: ${{ env.ARM_SUBSCRIPTION_ID }}
+          tenant-id: ${{ env.ARM_TENANT_ID }}
+
+      - name: Initialize configuration
+        run: terraform -chdir=infra init -input=false
+
+      - name: Verify formatting
+        run: terraform -chdir=infra fmt -check -recursive
+
+      - name: Validate configuration
+        run: terraform -chdir=infra validate
+
+      - name: Build plan
+        id: plan
+        run: |
+          export exitcode=0
+          terraform -chdir=infra plan -detailed-exitcode -out=tfplan || export exitcode=$?
+
+          echo "exitcode=$exitcode" >> $GITHUB_OUTPUT
+
+          if [ $exitcode -eq 1 ]; then
+            exit 1
+          else
+            exit 0
+          fi
+
+      - name: Publish plan
+        uses: actions/upload-artifact@v4
+        with:
+          name: tfplan-${{ github.run_id }}
+          path: infra/tfplan
+
+      - name: Build summary
+        id: build-summary
+        run: |
+          TF_PLAN=$(terraform -chdir=infra show -no-color tfplan)
+          
+          delimiter="$(openssl rand -hex 8)"
+          echo "summary<<${delimiter}" >> $GITHUB_OUTPUT
+          echo "## Terraform Plan" >> $GITHUB_OUTPUT
+          echo "<details><summary>Click to expand</summary>" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo '```terraform' >> $GITHUB_OUTPUT
+          echo "$TF_PLAN" >> $GITHUB_OUTPUT
+          echo '```' >> $GITHUB_OUTPUT
+          echo "</details>" >> $GITHUB_OUTPUT
+          echo "${delimiter}" >> $GITHUB_OUTPUT
+
+      - name: Publish summary
+        env:
+          SUMMARY: ${{ steps.build-summary.outputs.summary }}
+        run: echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
+        
+      - name: Push summary to PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          SUMMARY: "${{ steps.build-summary.outputs.summary }}"
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = `${process.env.SUMMARY}`;
+            github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: body
+            })
+
+  apply:
+    needs: plan
+    if: github.event_name == 'push' && needs.plan.outputs.exitcode == 2
+    runs-on: ubuntu-latest
+    name: Apply
+    environment: production
+
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ env.ARM_CLIENT_ID }}
+          subscription-id: ${{ env.ARM_SUBSCRIPTION_ID }}
+          tenant-id: ${{ env.ARM_TENANT_ID }}
+
+      - name: Initialize configuration
+        run: terraform -chdir=infra init -input=false
+
+      - name: Download plan
+        uses: actions/download-artifact@v4
+        with:
+          name: tfplan-${{ github.run_id }}
+          path: infra
+
+      - name: Apply plan
+        run: terraform -chdir=infra apply -auto-approve tfplan
