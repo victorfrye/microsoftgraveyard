@@ -151,7 +151,7 @@ jobs:
         run: terraform -chdir=infra init -input=false
 
       - name: Download plan
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: tfplan-${{ github.run_id }}
           path: infra
