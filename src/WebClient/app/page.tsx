@@ -1,14 +1,9 @@
 'use client';
 
-import { JSX } from 'react';
-
 import { makeStyles, tokens } from '@fluentui/react-components';
+import type { JSX } from 'react';
 
-import {
-  Corpse,
-  Headstone,
-  useCorpsesDocument,
-} from '@microsoftgraveyard/graveyard';
+import { type Corpse, Headstone, useCorpsesDocument } from '@/graveyard';
 
 const useStyles = makeStyles({
   main: {

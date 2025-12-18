@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import {
   Button,
   makeStyles,
@@ -7,6 +5,7 @@ import {
   tokens,
 } from '@fluentui/react-components';
 import { ArrowDown32Regular } from '@fluentui/react-icons';
+import { useEffect, useState } from 'react';
 
 const useStyles = makeStyles({
   fab: {
@@ -59,7 +58,7 @@ export default function ScrollFab() {
       size="large"
       className={mergeClasses(
         styles.fab,
-        isAtBottom ? styles.hidden : styles.visible
+        isAtBottom ? styles.hidden : styles.visible,
       )}
       onClick={handleFabClick}
     />

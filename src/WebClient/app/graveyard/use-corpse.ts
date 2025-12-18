@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 
-import { Corpse } from '@microsoftgraveyard/graveyard/corpse';
+import type { Corpse } from '@/graveyard/corpse';
 
 export default function useCorpse(corpse: Corpse, today: Date) {
   const name = corpse.qualifier
@@ -21,7 +21,7 @@ export default function useCorpse(corpse: Corpse, today: Date) {
       corpse.birthDate
         ? `${corpse.birthDate.getFullYear()} - ${corpse.deathDate.getFullYear()}`
         : `${corpse.deathDate.getFullYear()}`,
-    [corpse]
+    [corpse],
   );
 
   const getExpectedDeathDate = useCallback(
@@ -30,7 +30,7 @@ export default function useCorpse(corpse: Corpse, today: Date) {
         month: 'long',
         year: 'numeric',
       }),
-    [corpse]
+    [corpse],
   );
 
   const getAge = useCallback(
@@ -58,12 +58,12 @@ export default function useCorpse(corpse: Corpse, today: Date) {
       const days = end.getDate() - start.getDate();
       return { age: days, period: days === 1 ? 'day' : 'days' };
     },
-    []
+    [],
   );
 
   const buildLifeDates = useCallback(
     () => setLifeDates(isDead ? getLifeDates() : getExpectedDeathDate()),
-    [getExpectedDeathDate, getLifeDates, isDead]
+    [getExpectedDeathDate, getLifeDates, isDead],
   );
 
   const buildObituary = useCallback(() => {

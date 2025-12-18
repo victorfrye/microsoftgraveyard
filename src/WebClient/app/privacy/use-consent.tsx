@@ -2,7 +2,7 @@
 
 import { useContext } from 'react';
 
-import { ConsentContext } from '@microsoftgraveyard/privacy/consent-provider';
+import { ConsentContext } from '@/privacy/consent-provider';
 
 export default function useConsent() {
   return useContext(ConsentContext);

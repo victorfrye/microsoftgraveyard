@@ -1,8 +1,5 @@
 'use client';
 
-import * as React from 'react';
-import { ReactNode, useEffect, useMemo, useState } from 'react';
-
 import {
   FluentProvider,
   makeStaticStyles,
@@ -11,8 +8,9 @@ import {
   webDarkTheme,
   webLightTheme,
 } from '@fluentui/react-components';
+import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
-import useColorMode from '@microsoftgraveyard/theme/use-color-mode';
+import useColorMode from '@/theme/use-color-mode';
 
 const useStyles = makeStyles({
   hidden: {
@@ -67,13 +65,15 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export default function ThemeProvider({ children }: ThemeProviderProps) {
+export default function ThemeProvider({
+  children,
+}: Readonly<ThemeProviderProps>) {
   const styles = useStyles();
   useStaticStyles();
   const { isDark } = useColorMode();
   const theme = useMemo(
     () => (isDark ? webDarkTheme : webLightTheme),
-    [isDark]
+    [isDark],
   );
 
   const [mounted, setMounted] = useState(false);

@@ -1,13 +1,13 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
+    "biomejs.biome",
     "editorconfig.editorconfig",
-    "GitHub.copilot",
     "GitHub.copilot-chat",
+    "hashicorp.terraform",
     "ms-azuretools.vscode-azurestaticwebapps",
-    "ms-azuretools.vscode-bicep",
+    "ms-azuretools.vscode-azureterraform",
     "ms-dotnettools.csdevkit",
     "ms-vscode.azurecli",
-    "ms-vscode.powershell",
+    "ms-vscode.powershell"
   ]
 }

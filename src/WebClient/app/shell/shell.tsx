@@ -1,13 +1,12 @@
 'use client';
 
-import { ReactNode } from 'react';
-
 import { makeStyles, tokens } from '@fluentui/react-components';
+import type { ReactNode } from 'react';
 
-import { CookieBanner } from '@microsoftgraveyard/privacy';
-import Footer from '@microsoftgraveyard/shell/footer';
-import Header from '@microsoftgraveyard/shell/header';
-import ScrollFab from '@microsoftgraveyard/shell/scroll-fab';
+import { CookieBanner } from '@/privacy';
+import Footer from '@/shell/footer';
+import Header from '@/shell/header';
+import ScrollFab from '@/shell/scroll-fab';
 
 const useStyles = makeStyles({
   shell: {

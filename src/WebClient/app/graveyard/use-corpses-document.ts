@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react';
 
-import { Corpse } from '@microsoftgraveyard/graveyard/corpse';
-import corpsesDocument from '@microsoftgraveyard/graveyard/corpses.json';
+import type { Corpse } from '@/graveyard/corpse';
+import corpsesDocument from '@/graveyard/corpses.json';
 
 interface CorpseRecord {
   name: string;
@@ -40,8 +40,8 @@ export default function useCorpsesDocument() {
         .toSorted(
           (a, b) =>
             b.deathDate[Symbol.toPrimitive]('number') -
-            a.deathDate[Symbol.toPrimitive]('number')
-        )
+            a.deathDate[Symbol.toPrimitive]('number'),
+        ),
     );
   }, []);
 

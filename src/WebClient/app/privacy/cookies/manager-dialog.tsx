@@ -1,7 +1,5 @@
 'use client';
 
-import { ChangeEvent } from 'react';
-
 import {
   Button,
   Dialog,
@@ -10,11 +8,12 @@ import {
   DialogContent,
   DialogSurface,
   DialogTitle,
-  SwitchOnChangeData,
+  type SwitchOnChangeData,
 } from '@fluentui/react-components';
+import type { ChangeEvent } from 'react';
 
-import CookieConsentRow from '@microsoftgraveyard/privacy/cookies/consent-row';
-import CookieText from '@microsoftgraveyard/privacy/cookies/text';
+import CookieConsentRow from '@/privacy/cookies/consent-row';
+import CookieText from '@/privacy/cookies/text';
 
 interface CookieManagerDialogProps {
   open: boolean;
@@ -25,11 +24,11 @@ interface CookieManagerDialogProps {
   analyticsEnabled: boolean;
   onAdvertisingToggle: (
     event: ChangeEvent<HTMLInputElement>,
-    data: SwitchOnChangeData
+    data: SwitchOnChangeData,
   ) => void;
   onAnalyticsToggle: (
     event: ChangeEvent<HTMLInputElement>,
-    data: SwitchOnChangeData
+    data: SwitchOnChangeData,
   ) => void;
 }
 
@@ -72,9 +71,9 @@ export default function CookieManagerDialog({
           <DialogContent>
             {CookieText.managerDialog.body}
 
-            {consentRows.map((row, index) => (
+            {consentRows.map((row) => (
               <CookieConsentRow
-                key={index}
+                key={row.title}
                 title={row.title}
                 description={row.description}
                 checked={row.checked}

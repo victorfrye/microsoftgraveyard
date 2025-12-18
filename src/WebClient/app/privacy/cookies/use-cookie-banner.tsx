@@ -1,11 +1,10 @@
 'use client';
 
-import { ChangeEvent, useEffect, useState } from 'react';
+import type { SwitchOnChangeData } from '@fluentui/react-components';
+import { type ChangeEvent, useEffect, useState } from 'react';
 
-import { SwitchOnChangeData } from '@fluentui/react-components';
-
-import ConsentSettings from '@microsoftgraveyard/privacy/consent-settings';
-import useConsent from '@microsoftgraveyard/privacy/use-consent';
+import type ConsentSettings from '@/privacy/consent-settings';
+import useConsent from '@/privacy/use-consent';
 
 export default function useCookieBanner() {
   const { consent: settings, onConsentChange } = useConsent();
@@ -15,10 +14,10 @@ export default function useCookieBanner() {
   const [managerDialogOpen, setManagerDialogOpen] = useState(false);
 
   const [analyticsEnabled, setAnalyticsEnabled] = useState(
-    settings?.analytics ?? true
+    settings?.analytics ?? true,
   );
   const [advertisingEnabled, setAdvertisingEnabled] = useState(
-    settings?.advertising ?? true
+    settings?.advertising ?? true,
   );
 
   useEffect(() => {
@@ -77,14 +76,14 @@ export default function useCookieBanner() {
 
   const handleAnalyticsToggle = (
     _event: ChangeEvent<HTMLInputElement>,
-    data: SwitchOnChangeData
+    data: SwitchOnChangeData,
   ) => {
     setAnalyticsEnabled(data.checked);
   };
 
   const handleAdvertisingToggle = (
     _event: ChangeEvent<HTMLInputElement>,
-    data: SwitchOnChangeData
+    data: SwitchOnChangeData,
   ) => {
     setAdvertisingEnabled(data.checked);
   };
