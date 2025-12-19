@@ -11,10 +11,6 @@ on:
 
 permissions:
   security-events: write
-  
-defaults:
-  run:
-    shell: pwsh
 
 env:
   DOTNET_VERSION: '10.x'
