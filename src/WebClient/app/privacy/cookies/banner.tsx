@@ -1,9 +1,9 @@
 'use client';
 
-import CookieConsentDialog from '@microsoftgraveyard/privacy/cookies/consent-dialog';
-import CookieFab from '@microsoftgraveyard/privacy/cookies/fab';
-import CookieManagerDialog from '@microsoftgraveyard/privacy/cookies/manager-dialog';
-import useCookieBanner from '@microsoftgraveyard/privacy/cookies/use-cookie-banner';
+import CookieConsentDialog from '@/privacy/cookies/consent-dialog';
+import CookieFab from '@/privacy/cookies/fab';
+import CookieManagerDialog from '@/privacy/cookies/manager-dialog';
+import useCookieBanner from '@/privacy/cookies/use-cookie-banner';
 
 export default function CookieBanner() {
   const {

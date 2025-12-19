@@ -2,13 +2,13 @@
 
 import {
   Image,
+  makeStyles,
   Subtitle2,
   Title1,
-  makeStyles,
   tokens,
 } from '@fluentui/react-components';
 
-import ShellText from '@microsoftgraveyard/shell/text';
+import ShellText from '@/shell/text';
 
 const useStyles = makeStyles({
   header: {

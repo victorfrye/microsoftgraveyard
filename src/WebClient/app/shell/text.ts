@@ -11,7 +11,7 @@ const ShellText = {
     toggleColor(mode: string) {
       return `Toggle ${mode} mode`;
     },
-    byline: 'Made with ❤️ by Victor Frye',
+    byline: 'Made with 💙 by Victor Frye',
     privacy: 'Privacy',
     copyright(year: number) {
       return `© Victor Frye ${year}`;

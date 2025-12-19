@@ -1,11 +1,10 @@
-import { ReactNode } from 'react';
-
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 
-import { ClarityTag, Gtag } from '@microsoftgraveyard/analytics';
-import '@microsoftgraveyard/globals.css';
-import ProviderTree from '@microsoftgraveyard/provider-tree';
-import { Shell } from '@microsoftgraveyard/shell';
+import { ClarityTag, Gtag } from '@/analytics';
+import '@/globals.css';
+import ProviderTree from '@/provider-tree';
+import { Shell } from '@/shell';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://microsoftgraveyard.com'),

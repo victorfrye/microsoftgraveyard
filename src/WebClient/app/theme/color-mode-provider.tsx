@@ -1,19 +1,19 @@
 'use client';
 
 import {
-  ReactNode,
   createContext,
+  type ReactNode,
   useCallback,
   useEffect,
   useMemo,
   useState,
 } from 'react';
 
-import { useLocalStorage } from '@microsoftgraveyard/storage';
-import ColorMode from '@microsoftgraveyard/theme/color-mode';
-import initColorMode from '@microsoftgraveyard/theme/init-color-mode';
-import ThemePreferences from '@microsoftgraveyard/theme/theme-preferences';
-import useThemeMediaQuery from '@microsoftgraveyard/theme/use-theme-media-query';
+import { useLocalStorage } from '@/storage';
+import type ColorMode from '@/theme/color-mode';
+import initColorMode from '@/theme/init-color-mode';
+import type ThemePreferences from '@/theme/theme-preferences';
+import useThemeMediaQuery from '@/theme/use-theme-media-query';
 
 interface ColorModeContextProps {
   colorMode: ColorMode;
@@ -29,10 +29,8 @@ export const ColorModeContext = createContext<ColorModeContextProps>({
   colorMode: initialMode,
   isLight: initialMode === 'light',
   isDark: initialMode === 'dark',
-  /* eslint-disable @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function */
   onColorModeToggle: () => {},
   onColorModeChange: (_mode: ColorMode) => {},
-  /* eslint-enable @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function */
 });
 
 interface ColorModeProviderProps {
@@ -41,7 +39,7 @@ interface ColorModeProviderProps {
 
 export default function ColorModeProvider({
   children,
-}: ColorModeProviderProps) {
+}: Readonly<ColorModeProviderProps>) {
   const {
     value: themePreferences,
     handleValueChange: handleThemePreferencesChange,
@@ -49,7 +47,7 @@ export default function ColorModeProvider({
   const systemPrefersDark = useThemeMediaQuery();
 
   const [colorMode, setColorMode] = useState<ColorMode>(
-    themePreferences?.colorMode ?? (systemPrefersDark ? 'dark' : 'light')
+    themePreferences?.colorMode ?? (systemPrefersDark ? 'dark' : 'light'),
   );
 
   const isLight = colorMode === 'light';
@@ -63,7 +61,7 @@ export default function ColorModeProvider({
       });
       setColorMode(colorMode);
     },
-    [handleThemePreferencesChange, themePreferences]
+    [handleThemePreferencesChange, themePreferences],
   );
 
   const handleColorModeToggle = useCallback(() => {
@@ -80,7 +78,7 @@ export default function ColorModeProvider({
       onColorModeToggle: handleColorModeToggle,
       onColorModeChange: handleColorModeChange,
     }),
-    [colorMode, isLight, isDark, handleColorModeToggle, handleColorModeChange]
+    [colorMode, isLight, isDark, handleColorModeToggle, handleColorModeChange],
   );
 
   useEffect(() => {

@@ -4,16 +4,18 @@ import {
   Card,
   CardHeader,
   Image,
+  makeStyles,
   Skeleton,
   SkeletonItem,
   Subtitle1,
-  makeStyles,
   tokens,
 } from '@fluentui/react-components';
-import { News16Regular } from '@fluentui/react-icons';
+import { NewsRegular } from '@fluentui/react-icons';
 
-import { Corpse } from '@microsoftgraveyard/graveyard/corpse';
-import useCorpse from '@microsoftgraveyard/graveyard/use-corpse';
+import type { JSX } from 'react';
+
+import type { Corpse } from '@/graveyard/corpse';
+import useCorpse from '@/graveyard/use-corpse';
 
 const useStyles = makeStyles({
   container: {
@@ -70,7 +72,7 @@ export default function Headstone({ corpse, today }: Readonly<HeadstoneProps>) {
   const styles = useStyles();
   const { name, lifeDates, obituary, isDead, loading } = useCorpse(
     corpse,
-    today
+    today,
   );
 
   const renderSkeleton = (): JSX.Element => {
@@ -140,7 +142,7 @@ export default function Headstone({ corpse, today }: Readonly<HeadstoneProps>) {
           action={
             <Button
               as="a"
-              icon={<News16Regular />}
+              icon={<NewsRegular height={16} width={16} />}
               appearance="subtle"
               href={corpse.link}
               target="_blank"

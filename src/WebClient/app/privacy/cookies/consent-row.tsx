@@ -1,14 +1,13 @@
 'use client';
 
-import { ChangeEvent } from 'react';
-
 import {
+  makeStyles,
   Subtitle2,
   Switch,
-  SwitchOnChangeData,
-  makeStyles,
+  type SwitchOnChangeData,
   tokens,
 } from '@fluentui/react-components';
+import type { ChangeEvent } from 'react';
 
 const useStyles = makeStyles({
   row: {
@@ -27,7 +26,7 @@ interface CookieConsentRowProps {
   checked: boolean;
   onChange?: (
     event: ChangeEvent<HTMLInputElement>,
-    data: SwitchOnChangeData
+    data: SwitchOnChangeData,
   ) => void;
   disabled?: boolean;
 }

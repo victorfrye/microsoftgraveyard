@@ -9,19 +9,26 @@ updates:
   - package-ecosystem: 'nuget'
     directory: '/'
     schedule:
-      interval: 'weekly'
-    labels: ['📦 Issue-Dependencies', '🏛️ Area-AppModel']
+      interval: 'quarterly'
+    labels: ['📦 Issue-Dependencies', '🛠️ Area-AppHost']
 
   # Maintain dependencies for npm
   - package-ecosystem: 'npm'
     directory: '/src/WebClient'
     schedule:
-      interval: 'monthly'
+      interval: 'quarterly'
     labels: ['📦 Issue-Dependencies', '🌐 Area-WebApp']
+
+  # Maintain dependencies for Terraform
+  - package-ecosystem: 'terraform'
+    directory: '/infra'
+    schedule:
+      interval: 'quarterly'
+    labels: ['📦 Issue-Dependencies', '🚧 Area-Infrastructure']
 
     # Maintain dependencies for GitHub Actions
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'quarterly'
     labels: ['📦 Issue-Dependencies', '♾️ Area-Workflow']

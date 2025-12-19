@@ -1,10 +1,23 @@
 import { withGriffelCSSExtraction } from '@griffel/next-extraction-plugin';
-import { NextConfig } from 'next';
+import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = withGriffelCSSExtraction()({
+const nextConfig: NextConfig = {
   output: 'export',
-  turbopack: {},
+
+  reactStrictMode: true,
+  reactCompiler: true,
+
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
+
   webpack: (config) => {
+    // Add Griffel loader for CSS-in-JS support
     config.module.rules.unshift(
       {
         test: /\.(js|jsx)$/,
@@ -28,11 +41,37 @@ const nextConfig: NextConfig = withGriffelCSSExtraction()({
             },
           },
         ],
-      }
+      },
     );
+
+    // Configure SVG handling
+    // biome-ignore lint/suspicious/noExplicitAny: Webpack config typing
+    const fileLoaderRule = config.module.rules.find((rule: any) =>
+      rule.test?.test?.('.svg'),
+    );
+
+    config.module.rules.push(
+      {
+        ...fileLoaderRule,
+        test: /\.svg$/i,
+        resourceQuery: /url/, // *.svg?url
+      },
+      {
+        test: /\.svg$/i,
+        issuer: fileLoaderRule.issuer,
+        resourceQuery: {
+          not: [...fileLoaderRule.resourceQuery.not, /url/],
+        }, // exclude if *.svg?url
+        use: ['@svgr/webpack'],
+      },
+    );
+
+    fileLoaderRule.exclude = /\.svg$/i;
 
     return config;
   },
-});
+};
 
-export default nextConfig;
+const withGriffel = withGriffelCSSExtraction();
+
+export default withGriffel(nextConfig);
