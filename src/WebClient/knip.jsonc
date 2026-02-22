@@ -1,0 +1,20 @@
+{
+	"$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
+	"entry": [
+		// Next.js convention files using .tsx extension (knip's Next.js plugin only matches .ts)
+		"app/robots.tsx",
+		"app/sitemap.tsx"
+	],
+	"ignoreDependencies": [
+		// Referenced as string literals in next.config.ts webpack function
+		"@griffel/webpack-loader",
+		"@svgr/webpack",
+		// Ambient type declarations for gtag global
+		"@types/gtag.js",
+		// Jest module alias mapped in jest.config.ts
+		"@test-utils",
+		// Used by Jest to parse TypeScript config (jest.config.ts)
+		"ts-node"
+	],
+	"ignoreExportsUsedInFile": true
+}

@@ -13,7 +13,7 @@ import { WeatherMoonFilled, WeatherSunnyFilled } from '@fluentui/react-icons';
 import { useCallback } from 'react';
 
 import FooterButtons from '@/shell/socials';
-import ShellText from '@/shell/text';
+import ShellText from '@/shell/strings';
 import { useColorMode } from '@/theme';
 
 const useStyles = makeStyles({

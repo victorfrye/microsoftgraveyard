@@ -13,7 +13,7 @@ import {
 import type { ChangeEvent } from 'react';
 
 import CookieConsentRow from '@/privacy/cookies/consent-row';
-import CookieText from '@/privacy/cookies/text';
+import CookieText from '@/privacy/cookies/strings';
 
 interface CookieManagerDialogProps {
   open: boolean;
