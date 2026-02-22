@@ -7,8 +7,4 @@
     <File Path="README.md" />
   </Folder>
   <Project Path="src/AppHost/AppHost.csproj" />
-  <Project Path="src/WebClient/WebClient.esproj">
-    <Build />
-    <Deploy />
-  </Project>
 </Solution>

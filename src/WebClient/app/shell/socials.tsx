@@ -3,7 +3,7 @@
 import { Button, makeStyles, Tooltip } from '@fluentui/react-components';
 import { type JSX, useCallback } from 'react';
 import { GitHubIcon, ThreadsIcon } from '@/assets';
-import ShellText from '@/shell/text';
+import ShellText from '@/shell/strings';
 
 const useStyles = makeStyles({
   svg: {

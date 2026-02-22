@@ -53,6 +53,9 @@ jobs:
       - name: Verify formatting
         run: npm run lint:ci --prefix ./src/WebClient
 
+      - name: Run tests
+        run: npm run test:coverage --prefix ./src/WebClient
+
       - name: Build sources
         run: npm run build --prefix ./src/WebClient
 

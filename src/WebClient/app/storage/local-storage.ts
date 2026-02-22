@@ -1,5 +1,7 @@
 'use client';
 
+import { useCallback, useState } from 'react';
+
 export function readValue<T>(key: string): T | null {
   if (typeof window === 'undefined') {
     return null;
@@ -24,4 +26,23 @@ export function writeValue<T>(key: string, value: T): void {
   } catch (error) {
     console.error('Error setting localStorage key:', key, error);
   }
+}
+
+export default function useLocalStorage<T>(
+  key: string,
+  initialValue: T | null = null,
+) {
+  const [value, setValue] = useState<T | null>(
+    readValue<T>(key) ?? initialValue,
+  );
+
+  const handleValueChange = useCallback(
+    (value: T) => {
+      setValue(value);
+      writeValue(key, value);
+    },
+    [key],
+  );
+
+  return { value, handleValueChange };
 }

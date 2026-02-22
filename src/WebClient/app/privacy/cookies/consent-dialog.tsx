@@ -12,7 +12,7 @@ import {
   tokens,
 } from '@fluentui/react-components';
 
-import CookieText from '@/privacy/cookies/text';
+import CookieText from '@/privacy/cookies/strings';
 
 const useStyles = makeStyles({
   fab: {
