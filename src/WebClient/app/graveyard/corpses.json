@@ -44,6 +44,27 @@
       "link": "https://www.pluralsight.com/resources/blog/cloud/azure-blueprints-shelved"
     },
     {
+      "name": "Xbox Social Clubs",
+      "birthDate": "2016-08-01",
+      "deathDate": "2026-04-01",
+      "description": "a feature allowing Xbox gamers to create and join community groups based on shared interests",
+      "link": "https://www.purexbox.com/news/2026/02/xbox-announces-social-clubs-will-be-removed-from-consoles-in-april-2026"
+    },
+    {
+      "name": ".NET Interactive",
+      "birthDate": "2020-02-06",
+      "deathDate": "2026-03-27",
+      "description": "an open-source engine powering interactive programming experiences with .NET languages in notebooks and REPLs",
+      "link": "https://github.com/dotnet/interactive/issues/4163"
+    },
+    {
+      "name": "Polyglot Notebooks",
+      "birthDate": "2022-11-03",
+      "deathDate": "2026-03-27",
+      "description": "a VS Code extension for creating multi-language notebooks supporting C#, F#, PowerShell, JavaScript, SQL, and more",
+      "link": "https://github.com/dotnet/interactive/issues/4163"
+    },
+    {
       "name": "Azure Data Studio",
       "birthDate": "2017-11-15",
       "deathDate": "2026-02-28",
@@ -72,18 +93,18 @@
       "link": "https://www.androidauthority.com/microsoft-lens-app-phasing-out-3585594/"
     },
     {
-      "name": "Windows 10",
-      "birthDate": "2015-07-15",
-      "deathDate": "2025-10-14",
-      "description": "a major release of the Windows NT operating system succeeding Windows 8.1",
-      "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
-    },
-    {
       "name": "Visual Studio LightSwitch",
       "birthDate": "2010-08-23",
       "deathDate": "2025-10-14",
       "description": "a low-code development tool that enabled users to create business applications for the desktop, cloud, and mobile devices",
       "link": "https://learn.microsoft.com/en-us/lifecycle/faq/developer-tools"
+    },
+    {
+      "name": "Windows 10",
+      "birthDate": "2015-07-15",
+      "deathDate": "2025-10-14",
+      "description": "a major release of the Windows NT operating system succeeding Windows 8.1",
+      "link": "https://www.microsoft.com/en-us/windows/end-of-support?os=win10"
     },
     {
       "name": "Outlook Lite",
@@ -100,17 +121,10 @@
       "link": "https://virtual-dba.com/blog/azure-retiring-azure-database-for-mariadb/"
     },
     {
-      "name": "Bing Visual Search API",
+      "name": "Bing Autosuggest API",
       "birthDate": "2020-10-30",
       "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return image insights and similar images from the world-wide-web",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Video Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to integrate world-wide-web video searching into their applications",
+      "description": "an API for third-party developers to return suggestions for search queries as users type",
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
@@ -121,6 +135,13 @@
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
+      "name": "Bing Entity Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return information about people, places, or things from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
       "name": "Bing Image Search API",
       "birthDate": "2020-10-30",
       "deathDate": "2025-08-11",
@@ -128,17 +149,10 @@
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
-      "name": "Bing Autosuggest API",
+      "name": "Bing News Search API",
       "birthDate": "2020-10-30",
       "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return suggestions for search queries as users type",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing Entity Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to return information about people, places, or things from the world-wide-web",
+      "description": "an API for third-party developers to find headlines and trending news from the world-wide-web",
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
@@ -149,17 +163,24 @@
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
+      "name": "Bing Video Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to integrate world-wide-web video searching into their applications",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
+      "name": "Bing Visual Search API",
+      "birthDate": "2020-10-30",
+      "deathDate": "2025-08-11",
+      "description": "an API for third-party developers to return image insights and similar images from the world-wide-web",
+      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
+    },
+    {
       "name": "Bing Web Search API",
       "birthDate": "2020-10-30",
       "deathDate": "2025-08-11",
       "description": "an API for third-party developers to integrate world-wide-web document searching into their applications",
-      "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
-    },
-    {
-      "name": "Bing News Search API",
-      "birthDate": "2020-10-30",
-      "deathDate": "2025-08-11",
-      "description": "an API for third-party developers to find headlines and trending news from the world-wide-web",
       "link": "https://www.theverge.com/news/667517/microsoft-bing-search-api-end-of-support-ai-replacement"
     },
     {
@@ -184,17 +205,17 @@
       "link": "https://support.microsoft.com/en-us/topic/faq-for-e-tree-on-microsoft-edge-msn-weather-and-microsoft-wallet-d6fde56e-b61d-4990-bd69-7a503ed64895"
     },
     {
+      "name": "Everwild",
+      "deathDate": "2025-07-02",
+      "description": "an unreleased fantasy game in development by Rare before being cancelled",
+      "link": "https://www.videogameschronicle.com/news/sources-everwild-has-been-cancelled-as-xbox-layoffs-hit-rare/"
+    },
+    {
       "name": "The Initiative",
       "birthDate": "2018-06-10",
       "deathDate": "2025-07-02",
       "description": "a game development studio in Santa Monica formed to create the next installment in the Perfect Dark series",
       "link": "https://www.windowscentral.com/gaming/xbox/microsoft-is-closing-down-xbox-studio-the-initiative"
-    },
-    {
-      "name": "Everwild",
-      "deathDate": "2025-07-02",
-      "description": "an unreleased fantasy game in development by Rare before being cancelled",
-      "link": "https://www.videogameschronicle.com/news/sources-everwild-has-been-cancelled-as-xbox-layoffs-hit-rare/"
     },
     {
       "name": "Dev Home",
@@ -239,20 +260,6 @@
       "link": "https://www.purexbox.com/news/2024/11/xbox-is-making-big-changes-to-avatars-in-january-2025"
     },
     {
-      "name": "Windows Calendar",
-      "birthDate": "2007-01-25",
-      "deathDate": "2024-12-31",
-      "description": "a simple calendar application that allowed users to manage events, appointments, and reminders",
-      "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
-    },
-    {
-      "name": "Windows People",
-      "birthDate": "2010-10-21",
-      "deathDate": "2024-12-31",
-      "description": "a simple contact management application that allowed users to store and organize contact information",
-      "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
-    },
-    {
       "name": "Delve",
       "birthDate": "2015-03-16",
       "deathDate": "2024-12-31",
@@ -260,10 +267,24 @@
       "link": "https://www.hubsite365.com/en-ww/crm-pages/goodbye-to-delve.htm"
     },
     {
+      "name": "Windows Calendar",
+      "birthDate": "2007-01-25",
+      "deathDate": "2024-12-31",
+      "description": "a simple calendar application that allowed users to manage events, appointments, and reminders",
+      "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
+    },
+    {
       "name": "Windows Mail",
       "birthDate": "2006-11-30",
       "deathDate": "2024-12-31",
       "description": "a simple mail client that allowed users to send, receive, and manage email messages",
+      "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
+    },
+    {
+      "name": "Windows People",
+      "birthDate": "2010-10-21",
+      "deathDate": "2024-12-31",
+      "description": "a simple contact management application that allowed users to store and organize contact information",
       "link": "https://www.theverge.com/2024/11/12/24294652/microsoft-windows-11-mail-calendar-apps-end-of-support"
     },
     {
@@ -329,18 +350,18 @@
       "link": "https://www.msn.com/en-us/entertainment/gaming/blizzard-cancels-survival-game-following-layoffs/ar-BB1hftuk"
     },
     {
-      "name": "Windows Mixed Reality",
-      "birthDate": "2016-10-01",
-      "deathDate": "2023-12-21",
-      "description": "an augmented and virtual reality platform for compatible Windows headsets",
-      "link": "https://www.theverge.com/2023/12/21/24010787/microsoft-windows-mixed-reality-deprecated"
-    },
-    {
       "name": "LinkedIn Skill Assessments",
       "birthDate": "2019-09-17",
       "deathDate": "2023-12-21",
       "description": "a feature that allowed users to validate their skills via standardized quizzes and then showcase proficiency with a profile badge",
       "link": "https://medium.com/@Neelesh-Janga/linkedin-skill-assessments-no-longer-available-0598ccef1464"
+    },
+    {
+      "name": "Windows Mixed Reality",
+      "birthDate": "2016-10-01",
+      "deathDate": "2023-12-21",
+      "description": "an augmented and virtual reality platform for compatible Windows headsets",
+      "link": "https://www.theverge.com/2023/12/21/24010787/microsoft-windows-mixed-reality-deprecated"
     },
     {
       "name": "Tips",
@@ -371,13 +392,6 @@
       "link": "https://arstechnica.com/gadgets/2023/01/rip-surface-duo-microsoft-reportedly-gives-up-on-the-weird-form-factor/"
     },
     {
-      "name": "Xbox Games with Gold",
-      "birthDate": "2013-06-10",
-      "deathDate": "2023-09-01",
-      "description": "a perk of Xbox Live Gold that provided free games each month to subscribers",
-      "link": "https://www.theverge.com/2023/7/17/23794792/microsoft-xbox-game-pass-core-live-gold-replacement"
-    },
-    {
       "name": "WordPad",
       "birthDate": "1995-08-24",
       "deathDate": "2023-09-01",
@@ -385,11 +399,11 @@
       "link": "https://www.msn.com/en-us/news/technology/microsoft-is-saying-goodbye-to-wordpad-forever/ar-AA1muYal"
     },
     {
-      "name": "Kaizala",
-      "birthDate": "2019-06-29",
-      "deathDate": "2023-08-31",
-      "description": "a secure messaging and workplace productivity application for collaboration",
-      "link": "https://www.zdnet.com/article/microsoft-to-drop-its-kaizala-group-messaging-service-in-2023/"
+      "name": "Xbox Games with Gold",
+      "birthDate": "2013-06-10",
+      "deathDate": "2023-09-01",
+      "description": "a perk of Xbox Live Gold that provided free games each month to subscribers",
+      "link": "https://www.theverge.com/2023/7/17/23794792/microsoft-xbox-game-pass-core-live-gold-replacement"
     },
     {
       "name": "Cortana",
@@ -397,6 +411,13 @@
       "deathDate": "2023-08-31",
       "description": "a virtual assistant that used Bing search engine to perform tasks",
       "link": "https://www.theverge.com/2023/8/11/23828311/microsoft-shuts-down-cortana-windows-11"
+    },
+    {
+      "name": "Kaizala",
+      "birthDate": "2019-06-29",
+      "deathDate": "2023-08-31",
+      "description": "a secure messaging and workplace productivity application for collaboration",
+      "link": "https://www.zdnet.com/article/microsoft-to-drop-its-kaizala-group-messaging-service-in-2023/"
     },
     {
       "name": "Soundscape",
@@ -455,11 +476,11 @@
       "link": "https://learn.microsoft.com/en-us/analysis-services/data-mining/data-mining-ssas"
     },
     {
-      "name": "Trident",
+      "name": "Internet Explorer",
       "birthDate": "1995-08-24",
       "deathDate": "2022-06-15",
-      "description": "a proprietary browser engine (aka MSHTML) for Internet Explorer and IE mode of Edge",
-      "link": "https://en.wikipedia.org/wiki/Trident_(software)"
+      "description": "a web browser that once attained a peak 95% usage share",
+      "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date"
     },
     {
       "name": "JScript",
@@ -469,11 +490,11 @@
       "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date"
     },
     {
-      "name": "Internet Explorer",
+      "name": "Trident",
       "birthDate": "1995-08-24",
       "deathDate": "2022-06-15",
-      "description": "a web browser that once attained a peak 95% usage share",
-      "link": "https://www.theverge.com/2021/5/19/22443997/microsoft-internet-explorer-end-of-support-date"
+      "description": "a proprietary browser engine (aka MSHTML) for Internet Explorer and IE mode of Edge",
+      "link": "https://en.wikipedia.org/wiki/Trident_(software)"
     },
     {
       "name": "Forza Street",
@@ -525,18 +546,18 @@
       "link": "https://www.theverge.com/2017/9/25/16360072/microsoft-teams-replacing-skype-for-business"
     },
     {
-      "name": "Xbox SmartGlass",
-      "birthDate": "2012-06-05",
-      "deathDate": "2021-06-30",
-      "description": "a companion application to provide supplement content while playing games on Xbox devices",
-      "link": "https://mspoweruser.com/microsoft-killing-xbox-one-smartglass-app-windows-pcs/#:~:text=Microsoft%20today%20announced%20that%20Xbox%20One%20SmartGlass%20app,who%20already%20downloaded%20the%20app%20to%20their%20devices."
-    },
-    {
       "name": "Minecraft Earth",
       "birthDate": "2019-10-17",
       "deathDate": "2021-06-30",
       "description": "an augmented reality and geo-location sandbox game that allowed players to build structures in the real world",
       "link": "https://kotaku.com/minecraft-earth-ends-this-summer-1845992885"
+    },
+    {
+      "name": "Xbox SmartGlass",
+      "birthDate": "2012-06-05",
+      "deathDate": "2021-06-30",
+      "description": "a companion application to provide supplement content while playing games on Xbox devices",
+      "link": "https://mspoweruser.com/microsoft-killing-xbox-one-smartglass-app-windows-pcs/#:~:text=Microsoft%20today%20announced%20that%20Xbox%20One%20SmartGlass%20app,who%20already%20downloaded%20the%20app%20to%20their%20devices."
     },
     {
       "name": "Azure Dev Spaces",
@@ -665,18 +686,18 @@
       "link": "https://www.trueachievements.com/n35216/age-of-empires-castle-siege-shuts-down-in-may-2019"
     },
     {
-      "name": "PowerPoint Viewer",
-      "birthDate": "1992-08-01",
-      "deathDate": "2018-04-30",
-      "description": "a freeware program for Windows that can display and print Microsoft PowerPoint presentations",
-      "link": "https://en.wikipedia.org/wiki/Microsoft_PowerPoint#PowerPoint_Viewer"
-    },
-    {
       "name": "Excel Viewer",
       "birthDate": "1997-02-27",
       "deathDate": "2018-04-30",
       "description": "a freeware program for Windows that can display and print Microsoft Excel spreadsheets",
       "link": "https://en.wikipedia.org/wiki/Microsoft_Excel#Microsoft_Excel_Viewer"
+    },
+    {
+      "name": "PowerPoint Viewer",
+      "birthDate": "1992-08-01",
+      "deathDate": "2018-04-30",
+      "description": "a freeware program for Windows that can display and print Microsoft PowerPoint presentations",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_PowerPoint#PowerPoint_Viewer"
     },
     {
       "name": "Reader",
@@ -736,18 +757,18 @@
       "link": "https://techcommunity.microsoft.com/t5/microsoft-security-and/application-remoting-and-the-cloud/ba-p/249927"
     },
     {
-      "name": "Visual SourceSafe",
-      "birthDate": "1994-01-01",
-      "deathDate": "2017-07-11",
-      "description": "a source control software, originally created by One Tree Software before being acquired by Microsoft",
-      "link": "https://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe"
-    },
-    {
       "name": "ProClarity",
       "birthDate": "1995-01-01",
       "deathDate": "2017-07-11",
       "description": "a business intelligence solution that allowed users to analyze data and create graphical visualizations, acquired by Microsoft in 2006",
       "link": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/pps-2007-end-of-support"
+    },
+    {
+      "name": "Visual SourceSafe",
+      "birthDate": "1994-01-01",
+      "deathDate": "2017-07-11",
+      "description": "a source control software, originally created by One Tree Software before being acquired by Microsoft",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe"
     },
     {
       "name": "Xbox Fitness",
@@ -771,6 +792,20 @@
       "link": "https://en.wikipedia.org/wiki/Windows_Vista"
     },
     {
+      "name": "Windows Live Mail",
+      "birthDate": "2007-11-06",
+      "deathDate": "2017-01-10",
+      "description": "a desktop email client that allowed users to access multiple email accounts in one place",
+      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
+    },
+    {
+      "name": "Windows Live Writer",
+      "birthDate": "2007-11-06",
+      "deathDate": "2017-01-10",
+      "description": "a desktop blog-publishing application that allowed users to compose blog posts offline and publish them to their website",
+      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
+    },
+    {
       "name": "Windows Movie Maker",
       "birthDate": "2000-09-14",
       "deathDate": "2017-01-10",
@@ -782,20 +817,6 @@
       "birthDate": "2003-06-03",
       "deathDate": "2017-01-10",
       "description": "a photo management software that allowed users to import photos from their cameras, organize them into albums, and edit them",
-      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
-    },
-    {
-      "name": "Windows Live Writer",
-      "birthDate": "2007-11-06",
-      "deathDate": "2017-01-10",
-      "description": "a desktop blog-publishing application that allowed users to compose blog posts offline and publish them to their website",
-      "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
-    },
-    {
-      "name": "Windows Live Mail",
-      "birthDate": "2007-11-06",
-      "deathDate": "2017-01-10",
-      "description": "a desktop email client that allowed users to access multiple email accounts in one place",
       "link": "https://support.microsoft.com/en-us/windows/windows-essentials-2707b879-5004-4349-c4a4-e5900945f2a9"
     },
     {
@@ -888,6 +909,27 @@
       "link": "https://en.wikipedia.org/wiki/Windows_Media_Center"
     },
     {
+      "name": "Nokia Store",
+      "birthDate": "2009-05-26",
+      "deathDate": "2015-03-31",
+      "description": "an application marketplace for Nokia phones, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "link": "https://en.wikipedia.org/wiki/Ovi_(Nokia)"
+    },
+    {
+      "name": "Nokia Chat",
+      "birthDate": "2008-08-28",
+      "deathDate": "2015-03-09",
+      "description": "an instant messaging service for Nokia phone users originally part of the Ovi suite, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "link": "https://nokia.fandom.com/wiki/Nokia_Mail_and_Nokia_Chat"
+    },
+    {
+      "name": "Nokia Mail",
+      "birthDate": "2008-12-22",
+      "deathDate": "2015-03-09",
+      "description": "a free web-based email service for Nokia phone users originally launched as Mail on Ovi, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "link": "https://nokia.fandom.com/wiki/Nokia_Mail_and_Nokia_Chat"
+    },
+    {
       "name": "FoxPro",
       "birthDate": "1984-12-01",
       "deathDate": "2015-01-13",
@@ -899,6 +941,20 @@
       "deathDate": "2015-01-01",
       "description": "a managed code operating system that was in research and development but never released",
       "link": "https://www.zdnet.com/article/whatever-happened-to-microsofts-midori-operating-system-project/"
+    },
+    {
+      "name": "Nokia Sync",
+      "birthDate": "2008-08-01",
+      "deathDate": "2014-12-05",
+      "description": "a cloud synchronization service for backing up contacts, calendars, and notes across Nokia devices, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "link": "https://nokia.fandom.com/wiki/Ovi_Sync"
+    },
+    {
+      "name": "Windows Azure SQL Reporting",
+      "birthDate": "2012-06-12",
+      "deathDate": "2014-10-31",
+      "description": "a cloud-based platform-as-a-service for creating and delivering SQL Server Reporting Services reports on Windows Azure",
+      "link": "https://www.jamesserra.com/archive/2013/11/windows-azure-sql-reporting-discontinued/"
     },
     {
       "name": "Windows Live Messenger",
@@ -915,18 +971,18 @@
       "link": "https://www.ign.com/articles/2014/10/30/xbox-entertainment-studios-reportedly-shuttered-as-heads-leave"
     },
     {
-      "name": "Windows XP",
-      "birthDate": "2001-08-24",
-      "deathDate": "2014-04-08",
-      "description": "a major release of the Windows operating system built on Windows NT kernel explicitly for consumer use",
-      "link": "https://en.wikipedia.org/wiki/Windows_XP"
-    },
-    {
       "name": "FrontPage",
       "birthDate": "1995-11-01",
       "deathDate": "2014-04-08",
       "description": "a WYSIWYG HTML editor and website administration tool that allowed users to create and manage web pages",
       "link": "https://en.wikipedia.org/wiki/Microsoft_FrontPage"
+    },
+    {
+      "name": "Windows XP",
+      "birthDate": "2001-08-24",
+      "deathDate": "2014-04-08",
+      "description": "a major release of the Windows operating system built on Windows NT kernel explicitly for consumer use",
+      "link": "https://en.wikipedia.org/wiki/Windows_XP"
     },
     {
       "name": "XNA",
@@ -1085,13 +1141,6 @@
       "link": "https://www.neowin.net/news/msn-music-shutting-down-for-zune/"
     },
     {
-      "name": "Windows Millennium Edition",
-      "birthDate": "2000-09-14",
-      "deathDate": "2006-07-11",
-      "description": "a major release of the Windows operating system in 2000, succeeding Windows 98, and commonly known as Windows Me",
-      "link": "https://en.wikipedia.org/wiki/Windows_Me"
-    },
-    {
       "name": "MS-DOS",
       "birthDate": "1981-08-12",
       "deathDate": "2006-07-11",
@@ -1104,6 +1153,13 @@
       "deathDate": "2006-07-11",
       "description": "a major release of the Windows operating system in 1998, succeeding Windows 95",
       "link": "https://en.wikipedia.org/wiki/Windows_98"
+    },
+    {
+      "name": "Windows Millennium Edition",
+      "birthDate": "2000-09-14",
+      "deathDate": "2006-07-11",
+      "description": "a major release of the Windows operating system in 2000, succeeding Windows 98, and commonly known as Windows Me",
+      "link": "https://en.wikipedia.org/wiki/Windows_Me"
     },
     {
       "name": "ASP.NET Web Matrix",
@@ -1120,18 +1176,11 @@
       "link": "https://wiki.webtv.zone/wiki/UltimateTV"
     },
     {
-      "name": "Windows 3.0",
-      "birthDate": "1990-05-22",
+      "name": "Windows 1.0",
+      "birthDate": "1985-11-20",
       "deathDate": "2001-12-31",
-      "description": "the third major release of the Windows operating system and successor to Windows 2.1",
-      "link": "https://en.wikipedia.org/wiki/Windows_3.0"
-    },
-    {
-      "name": "Windows 2.1",
-      "birthDate": "1988-05-27",
-      "deathDate": "2001-12-31",
-      "description": "a major release of the Windows operating system and successor to Windows 2.0",
-      "link": "https://en.wikipedia.org/wiki/Windows_2.1x"
+      "description": "the first major release of the Windows operating system",
+      "link": "https://en.wikipedia.org/wiki/Windows_1.0x"
     },
     {
       "name": "Windows 2.0",
@@ -1141,11 +1190,18 @@
       "link": "https://en.wikipedia.org/wiki/Windows_2.0x"
     },
     {
-      "name": "Windows 1.0",
-      "birthDate": "1985-11-20",
+      "name": "Windows 2.1",
+      "birthDate": "1988-05-27",
       "deathDate": "2001-12-31",
-      "description": "the first major release of the Windows operating system",
-      "link": "https://en.wikipedia.org/wiki/Windows_1.0x"
+      "description": "a major release of the Windows operating system and successor to Windows 2.0",
+      "link": "https://en.wikipedia.org/wiki/Windows_2.1x"
+    },
+    {
+      "name": "Windows 3.0",
+      "birthDate": "1990-05-22",
+      "deathDate": "2001-12-31",
+      "description": "the third major release of the Windows operating system and successor to Windows 2.1",
+      "link": "https://en.wikipedia.org/wiki/Windows_3.0"
     },
     {
       "name": "Fahrenheit",
