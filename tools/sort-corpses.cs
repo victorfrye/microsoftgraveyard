@@ -1,3 +1,4 @@
+using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
@@ -17,7 +18,7 @@ corpses.Clear();
 foreach (var corpse in sorted)
     corpses.Add(corpse);
 
-var options = new JsonSerializerOptions { WriteIndented = true };
+var options = new JsonSerializerOptions { WriteIndented = true, Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
 await File.WriteAllTextAsync(CorpsesPath, doc.ToJsonString(options) + Environment.NewLine);
 
 Console.WriteLine($"✓ Sorted {sorted.Count} corpses in {CorpsesPath}");
