@@ -191,7 +191,7 @@
       "link": "https://www.howtogeek.com/windows-maps-end-of-life/"
     },
     {
-      "name": "Movies & TV",
+      "name": "Movies \u0026 TV",
       "birthDate": "2006-11-14",
       "deathDate": "2025-07-18",
       "description": "a digital video service that offered movies and TV shows for rental or purchase across Microsoft platforms",
@@ -388,7 +388,7 @@
       "name": "Surface Duo",
       "birthDate": "2020-09-10",
       "deathDate": "2023-09-10",
-      "description": "a line of dual-screen Android devices that acted as Microsoft's re-entry into the mobile device market",
+      "description": "a line of dual-screen Android devices that acted as Microsoft\u0027s re-entry into the mobile device market",
       "link": "https://arstechnica.com/gadgets/2023/01/rip-surface-duo-microsoft-reportedly-gives-up-on-the-weird-form-factor/"
     },
     {
@@ -515,13 +515,13 @@
       "birthDate": "2016-11-02",
       "deathDate": "2022-01-21",
       "description": "a feature that allowed individual users to discover earning potential and salary insights based on factors such as job title and location",
-      "link": "https://www.youtube.com/watch?v=1H75GEYxXd0&t=2s"
+      "link": "https://www.youtube.com/watch?v=1H75GEYxXd0\u0026t=2s"
     },
     {
       "name": "Channel 9",
       "birthDate": "2004-04-01",
       "deathDate": "2021-12-01",
-      "description": "a website for hosting videos and podcasts that Microsoft employees created and the company's first blob",
+      "description": "a website for hosting videos and podcasts that Microsoft employees created and the company\u0027s first blob",
       "link": "https://www.windowscentral.com/microsoft-learn-absorbs-channel-9-and-commits-preserving-its-essence"
     },
     {
@@ -857,7 +857,7 @@
       "name": "Lionhead Studios",
       "birthDate": "1997-07-01",
       "deathDate": "2016-04-29",
-      "description": "a British video game development studio best known for Black & White and Fable series",
+      "description": "a British video game development studio best known for Black \u0026 White and Fable series",
       "link": "https://www.polygon.com/2016/3/7/11172408/fable-legends-canceled-lionhead-studios-closing"
     },
     {
@@ -884,7 +884,7 @@
       "name": "Press Play",
       "birthDate": "2006-01-01",
       "deathDate": "2016-03-10",
-      "description": "a Danish video game development studio best known for Max & the Magic Marker, Max: The Curse of Brotherhood, and Kalimba",
+      "description": "a Danish video game development studio best known for Max \u0026 the Magic Marker, Max: The Curse of Brotherhood, and Kalimba",
       "link": "https://mcvuk.com/business-news/publishing/lionhead-ceases-fable-legends-development-considering-closure/"
     },
     {
@@ -912,21 +912,21 @@
       "name": "Nokia Store",
       "birthDate": "2009-05-26",
       "deathDate": "2015-03-31",
-      "description": "an application marketplace for Nokia phones, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "description": "an application marketplace for Nokia phones, acquired by Microsoft as part of Nokia\u0027s devices and services division in 2014",
       "link": "https://en.wikipedia.org/wiki/Ovi_(Nokia)"
     },
     {
       "name": "Nokia Chat",
       "birthDate": "2008-08-28",
       "deathDate": "2015-03-09",
-      "description": "an instant messaging service for Nokia phone users originally part of the Ovi suite, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "description": "an instant messaging service for Nokia phone users originally part of the Ovi suite, acquired by Microsoft as part of Nokia\u0027s devices and services division in 2014",
       "link": "https://nokia.fandom.com/wiki/Nokia_Mail_and_Nokia_Chat"
     },
     {
       "name": "Nokia Mail",
       "birthDate": "2008-12-22",
       "deathDate": "2015-03-09",
-      "description": "a free web-based email service for Nokia phone users originally launched as Mail on Ovi, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "description": "a free web-based email service for Nokia phone users originally launched as Mail on Ovi, acquired by Microsoft as part of Nokia\u0027s devices and services division in 2014",
       "link": "https://nokia.fandom.com/wiki/Nokia_Mail_and_Nokia_Chat"
     },
     {
@@ -946,7 +946,7 @@
       "name": "Nokia Sync",
       "birthDate": "2008-08-01",
       "deathDate": "2014-12-05",
-      "description": "a cloud synchronization service for backing up contacts, calendars, and notes across Nokia devices, acquired by Microsoft as part of Nokia's devices and services division in 2014",
+      "description": "a cloud synchronization service for backing up contacts, calendars, and notes across Nokia devices, acquired by Microsoft as part of Nokia\u0027s devices and services division in 2014",
       "link": "https://nokia.fandom.com/wiki/Ovi_Sync"
     },
     {
@@ -1033,6 +1033,13 @@
       "deathDate": "2011-01-31",
       "description": "a personal finance management software that allowed users to track bank accounts, investments, and bills",
       "link": "https://en.wikipedia.org/wiki/Microsoft_Money"
+    },
+    {
+      "name": "Windows SteadyState",
+      "birthDate": "2007-06-01",
+      "deathDate": "2010-12-31",
+      "description": "a free tool that allowed administrators to lock down and manage shared Windows computers in schools, libraries, and cafes, reverting all changes on reboot to preserve a clean, consistent state for every user",
+      "link": "https://en.wikipedia.org/wiki/Windows_SteadyState"
     },
     {
       "name": "Kin",
@@ -1137,7 +1144,7 @@
       "name": "MSN Music",
       "birthDate": "2004-02-18",
       "deathDate": "2006-11-14",
-      "description": "a music download store made to compete with Apple's iTunes Music Store",
+      "description": "a music download store made to compete with Apple\u0027s iTunes Music Store",
       "link": "https://www.neowin.net/news/msn-music-shutting-down-for-zune/"
     },
     {
