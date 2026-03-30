@@ -1035,6 +1035,13 @@
       "link": "https://en.wikipedia.org/wiki/Microsoft_Money"
     },
     {
+      "name": "Windows SteadyState",
+      "birthDate": "2007-06-01",
+      "deathDate": "2010-12-31",
+      "description": "a free tool that allowed administrators to lock down and manage shared Windows computers in schools, libraries, and cafes, reverting all changes on reboot to preserve a clean, consistent state for every user",
+      "link": "https://en.wikipedia.org/wiki/Windows_SteadyState"
+    },
+    {
       "name": "Kin",
       "birthDate": "2010-04-12",
       "deathDate": "2010-06-30",
