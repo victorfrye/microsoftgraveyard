@@ -1,5 +1,7 @@
+using Spectre.Console;
 using Spectre.Console.Cli;
 
+using VictorFrye.MicrosoftGraveyard.CommandLine.Models;
 using VictorFrye.MicrosoftGraveyard.CommandLine.Services;
 
 namespace VictorFrye.MicrosoftGraveyard.CommandLine.Commands.Corpses;
@@ -23,11 +25,32 @@ public sealed class SortCommand(CorpsesRepository repository, CorpseSorter sorte
     protected override int Execute(CommandContext context, Settings settings, CancellationToken cancellationToken)
     {
         _ = context;
-        _ = settings;
-        _ = cancellationToken;
-        _ = repository;
-        _ = sorter;
-        throw new NotImplementedException();
+
+        Models.CorpsesDocument document = repository.LoadAsync(cancellationToken).GetAwaiter().GetResult();
+        List<Corpse> sortedCorpses = sorter.Sort(document.Corpses).ToList();
+
+        if (settings.Verify)
+        {
+            if (sorter.IsAlreadySorted(document.Corpses))
+            {
+                AnsiConsole.MarkupLine("[green]✓ corpses.json is already sorted correctly.[/]");
+                return 0;
+            }
+
+            AnsiConsole.MarkupLine("[red]✗ corpses.json is NOT sorted.[/]");
+            string? diff = sorter.GetDiff(document.Corpses, sortedCorpses);
+            if (!string.IsNullOrWhiteSpace(diff))
+            {
+                AnsiConsole.WriteLine(diff);
+            }
+
+            return 1;
+        }
+
+        document.Corpses = sortedCorpses;
+        repository.SaveAsync(document, cancellationToken).GetAwaiter().GetResult();
+        AnsiConsole.MarkupLine($"[green]✓ Sorted {sortedCorpses.Count} corpses.[/]");
+        return 0;
     }
 
     /// <summary>
@@ -35,5 +58,10 @@ public sealed class SortCommand(CorpsesRepository repository, CorpseSorter sorte
     /// </summary>
     public sealed class Settings : CommandSettings
     {
+        /// <summary>
+        /// Gets or sets a value indicating whether the command should only verify the sort order.
+        /// </summary>
+        [CommandOption("--verify|-v|--check")]
+        public bool Verify { get; set; }
     }
 }
