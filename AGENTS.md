@@ -60,6 +60,11 @@ terraform plan
 - Coverage threshold: 80% across statements, branches, functions, and lines
 - Test files are colocated side-by-side with source (e.g., `headstone.test.tsx` next to `headstone.tsx`)
 - Shared test utilities in `test-utils.tsx` — import via `@test-utils` alias for `renderWithProviders`
+- **Playwright E2E** — `tests/` at repo root; `npm run test` from `tests/`; targets Edge, Chrome, Safari
+  - Configurable base URL: `PLAYWRIGHT_BASE_URL` env var (default: `http://localhost:3000`)
+  - `Headstone` Card renders with `data-testid="headstone"` — use `[data-testid="headstone"]` to count cards
+  - `ScrollFab` renders with `data-testid="scroll-fab"`; cookie consent FAB with `data-testid="cookie-fab"`
+  - Fluent UI `Card` renders as a `div` with `role="group"` (NOT `<article>`) in the DOM
 
 ## Conventions
 

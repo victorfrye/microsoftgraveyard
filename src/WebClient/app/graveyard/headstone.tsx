@@ -156,7 +156,11 @@ export default function Headstone({ corpse, today }: Readonly<HeadstoneProps>) {
   };
 
   return (
-    <Card appearance="filled-alternative" className={styles.container}>
+    <Card
+      data-testid="headstone"
+      appearance="filled-alternative"
+      className={styles.container}
+    >
       {loading ? renderSkeleton() : renderHeadstone()}
     </Card>
   );
