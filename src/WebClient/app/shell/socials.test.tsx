@@ -33,7 +33,7 @@ describe('SocialButtons', () => {
     const threadsLink = threadsIcon.closest('a');
     expect(threadsLink).toHaveAttribute(
       'href',
-      'https://www.threads.net/@microsoftgraveyard',
+      'https://www.threads.com/@microsoftgraveyard',
     );
     expect(threadsLink).toHaveAttribute('target', '_blank');
     expect(threadsLink).toHaveAttribute('rel', 'me noreferrer noopener');
