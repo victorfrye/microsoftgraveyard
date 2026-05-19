@@ -62,12 +62,17 @@ public sealed class ObitWriter
         }
 
         int months = end.Month - start.Month + (12 * (end.Year - start.Year));
+        if (end.Day < start.Day)
+        {
+            months--;
+        }
+
         if (months >= 1)
         {
             return (months, months == 1 ? "month" : "months");
         }
 
-        int days = end.Day - start.Day;
+        int days = end.DayNumber - start.DayNumber;
         return (days, days == 1 ? "day" : "days");
     }
 }
