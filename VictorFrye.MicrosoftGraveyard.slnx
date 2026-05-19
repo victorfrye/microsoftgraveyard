@@ -7,4 +7,6 @@
     <File Path="README.md" />
   </Folder>
   <Project Path="src/AppHost/AppHost.csproj" />
+  <Project Path="src/CommandLine/VictorFrye.MicrosoftGraveyard.CommandLine.csproj" />
+  <Project Path="src/CommandLine.Tests/VictorFrye.MicrosoftGraveyard.CommandLine.Tests.csproj" />
 </Solution>
