@@ -16,4 +16,8 @@
     <PackageReference Include="Aspire.Hosting.JavaScript" Version="13.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CommandLine\VictorFrye.MicrosoftGraveyard.CommandLine.csproj" />
+  </ItemGroup>
+
 </Project>
