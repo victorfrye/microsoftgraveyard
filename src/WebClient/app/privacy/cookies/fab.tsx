@@ -21,6 +21,7 @@ export default function CookieFab({ onClick }: CookieFabProps) {
 
   return (
     <Button
+      data-testid="cookie-fab"
       icon={<Cookies32Regular />}
       as="button"
       shape="circular"

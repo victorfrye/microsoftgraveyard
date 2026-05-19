@@ -52,6 +52,7 @@ export default function ScrollFab() {
 
   return (
     <Button
+      data-testid="scroll-fab"
       icon={<ArrowDown32Regular />}
       shape="circular"
       appearance="secondary"

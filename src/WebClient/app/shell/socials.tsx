@@ -30,7 +30,7 @@ export default function SocialButtons() {
       },
       {
         text: ShellText.footer.socials.threads,
-        link: 'https://www.threads.net/@microsoftgraveyard',
+        link: 'https://www.threads.com/@microsoftgraveyard',
         image: <ThreadsIcon className={styles.svg} />,
       },
     ];

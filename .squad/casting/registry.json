@@ -1,0 +1,44 @@
+{
+  "agents": {
+    "bill": {
+      "persistent_name": "Bill",
+      "real_name": "Bill Gates",
+      "universe": "Famous Microsoft Developers",
+      "created_at": "2026-05-19T09:37:41.672-04:00",
+      "legacy_named": false,
+      "status": "active"
+    },
+    "anders": {
+      "persistent_name": "Anders",
+      "real_name": "Anders Hejlsberg",
+      "universe": "Famous Microsoft Developers",
+      "created_at": "2026-05-19T09:37:41.672-04:00",
+      "legacy_named": false,
+      "status": "active"
+    },
+    "scott": {
+      "persistent_name": "Scott",
+      "real_name": "Scott Hanselman",
+      "universe": "Famous Microsoft Developers",
+      "created_at": "2026-05-19T09:37:41.672-04:00",
+      "legacy_named": false,
+      "status": "active"
+    },
+    "mark": {
+      "persistent_name": "Mark",
+      "real_name": "Mark Russinovich",
+      "universe": "Famous Microsoft Developers",
+      "created_at": "2026-05-19T09:37:41.672-04:00",
+      "legacy_named": false,
+      "status": "active"
+    },
+    "alan": {
+      "persistent_name": "Alan",
+      "real_name": "Alan Page",
+      "universe": "Famous Microsoft Developers",
+      "created_at": "2026-05-19T09:37:41.672-04:00",
+      "legacy_named": false,
+      "status": "active"
+    }
+  }
+}
