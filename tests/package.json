@@ -1,0 +1,15 @@
+{
+  "name": "@victorfrye/microsoftgraveyard-e2e",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=github",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^25.0.3"
+  }
+}
