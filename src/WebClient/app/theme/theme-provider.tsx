@@ -2,12 +2,12 @@
 
 import {
   FluentProvider,
-  makeStaticStyles,
   makeStyles,
   tokens,
   webDarkTheme,
   webLightTheme,
 } from '@fluentui/react-components';
+import { makeStaticStyles } from '@griffel/react';
 import { type ReactNode, useEffect, useMemo, useState } from 'react';
 
 import useColorMode from '@/theme/use-color-mode';

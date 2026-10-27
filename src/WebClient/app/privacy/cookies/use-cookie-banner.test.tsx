@@ -2,17 +2,24 @@ import type { SwitchOnChangeData } from '@fluentui/react-components';
 import { act, renderHook } from '@testing-library/react';
 import type { ChangeEvent } from 'react';
 
+import type ConsentSettings from '@/privacy/consent-settings';
+
 import useCookieBanner from './use-cookie-banner';
 
-const mockOnConsentChange = jest.fn();
-const mockUseConsent = jest.fn(() => ({
+interface MockConsentContext {
+  consent: ConsentSettings | null;
+  onConsentChange: (settings: ConsentSettings) => void;
+}
+
+const mockOnConsentChange = jest.fn<void, [ConsentSettings]>();
+const mockUseConsent = jest.fn<MockConsentContext, []>(() => ({
   consent: { analytics: true, advertising: true },
   onConsentChange: mockOnConsentChange,
 }));
 
 jest.mock('@/privacy/use-consent', () => ({
   __esModule: true,
-  default: (...args: unknown[]) => mockUseConsent(...args),
+  default: () => mockUseConsent(),
 }));
 
 describe('useCookieBanner', () => {

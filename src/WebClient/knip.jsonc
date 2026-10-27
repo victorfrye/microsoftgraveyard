@@ -11,8 +11,8 @@
 		"@svgr/webpack",
 		// Ambient type declarations for gtag global
 		"@types/gtag.js",
-		// Jest module alias mapped in jest.config.ts
-		"@test-utils",
+		// Existing package retained because dependency cleanup is outside this upgrade
+		"globals",
 		// Used by Jest to parse TypeScript config (jest.config.ts)
 		"ts-node"
 	],
