@@ -1,5 +1,5 @@
 {
-	"$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
+	"$schema": "https://unpkg.com/knip@6/schema-jsonc.json",
 	"entry": [
 		// Next.js convention files using .tsx extension (knip's Next.js plugin only matches .ts)
 		"app/robots.tsx",
@@ -8,7 +8,6 @@
 	"ignoreDependencies": [
 		// Referenced as string literals in next.config.ts webpack function
 		"@griffel/webpack-loader",
-		"@svgr/webpack",
 		// Ambient type declarations for gtag global
 		"@types/gtag.js",
 		// Existing package retained because dependency cleanup is outside this upgrade
@@ -16,5 +15,9 @@
 		// Used by Jest to parse TypeScript config (jest.config.ts)
 		"ts-node"
 	],
+	"ignoreIssues": {
+		// Intentional named and default type exports for internal and public consumers
+		"app/theme/color-mode.ts": ["duplicates"]
+	},
 	"ignoreExportsUsedInFile": true
 }
