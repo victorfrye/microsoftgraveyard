@@ -7,7 +7,7 @@ version: 2
 updates:
   # Maintain dependencies for NuGet
   - package-ecosystem: 'nuget'
-    directory: '/'
+    directory: '/src/AppHost'
     schedule:
       interval: 'quarterly'
     labels: ['📦 Issue-Dependencies', '🛠️ Area-AppHost']
@@ -26,7 +26,7 @@ updates:
       interval: 'quarterly'
     labels: ['📦 Issue-Dependencies', '🚧 Area-Infrastructure']
 
-    # Maintain dependencies for GitHub Actions
+  # Maintain dependencies for GitHub Actions
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:

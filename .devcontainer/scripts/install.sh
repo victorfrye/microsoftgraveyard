@@ -4,6 +4,6 @@ echo "Restoration of .NET dependencies complete."
 
 echo "Installing npm dependencies..."
 pushd src/WebClient
-npm install
+npm ci
 popd
 echo "Installation of npm dependencies complete."

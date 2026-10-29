@@ -1,8 +1,10 @@
 terraform {
+  required_version = "~> 1.17.0"
+
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 4.57"
+      version = "~> 5.11"
     }
   }
 
@@ -15,6 +17,11 @@ terraform {
 }
 
 provider "azurerm" {
+  resource_providers_to_register = [
+    "Microsoft.Network",
+    "Microsoft.Web",
+  ]
+
   features {}
 }
 

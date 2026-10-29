@@ -40,15 +40,16 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
 
       - name: Set up Terraform
-        uses: hashicorp/setup-terraform@v3
+        uses: hashicorp/setup-terraform@v4.0.1
         with:
+          terraform_version: '1.17.0'
           terraform_wrapper: false
 
       - name: Login to Azure
-        uses: azure/login@v2
+        uses: azure/login@v3.1.0
         with:
           client-id: ${{ env.ARM_CLIENT_ID }}
           subscription-id: ${{ env.ARM_SUBSCRIPTION_ID }}
@@ -78,7 +79,7 @@ jobs:
           fi
 
       - name: Publish plan
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: tfplan-${{ github.run_id }}
           path: infra/tfplan
@@ -106,7 +107,7 @@ jobs:
         
       - name: Push summary to PR
         if: github.event_name == 'pull_request'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9.0.0
         env:
           SUMMARY: "${{ steps.build-summary.outputs.summary }}"
         with:
@@ -133,15 +134,16 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
 
       - name: Set up Terraform
-        uses: hashicorp/setup-terraform@v3
+        uses: hashicorp/setup-terraform@v4.0.1
         with:
+          terraform_version: '1.17.0'
           terraform_wrapper: false
 
       - name: Login to Azure
-        uses: azure/login@v2
+        uses: azure/login@v3.1.0
         with:
           client-id: ${{ env.ARM_CLIENT_ID }}
           subscription-id: ${{ env.ARM_SUBSCRIPTION_ID }}
@@ -151,7 +153,7 @@ jobs:
         run: terraform -chdir=infra init -input=false
 
       - name: Download plan
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8.0.2
         with:
           name: tfplan-${{ github.run_id }}
           path: infra
